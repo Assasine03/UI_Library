@@ -1,7 +1,6 @@
 if _G.Key ~= "#31987234899564821549731" then
     print("I think you are not allowed to use the Library")
 else
-	_G.Key = nil
 local Assasine03_GUI_REV = Instance.new("ScreenGui")
 local MainFrame = Instance.new("ImageLabel")
 local TitleBar = Instance.new("ImageLabel")
@@ -82,7 +81,7 @@ local MultiToToggleListFrame = Instance.new("ImageLabel")
 local MultiToToggleListFrame_2 = Instance.new("ImageLabel")
 
 --Normal Settings
-_G.Discord = "http://assasine03.com/discord"
+_G.Discord = "http://assasine.com/discord"
 _G.UIName = "Assasine03_Autofarm"
 
 
@@ -140,7 +139,7 @@ DiscordTag.Position = UDim2.new(0.584285676, 0, 0, 0)
 DiscordTag.Size = UDim2.new(0, 200, 0, 30)
 DiscordTag.ZIndex = 2
 DiscordTag.Font = Enum.Font.GothamBlack
-DiscordTag.Text = "Discord Server"
+DiscordTag.Text = "DiscordServer"
 DiscordTag.TextColor3 = Color3.fromRGB(255, 255, 255)
 DiscordTag.TextSize = 24.000
 
@@ -220,7 +219,7 @@ UIListLayout.Padding = UDim.new(0, 5)
 
 UIPadding.Parent = Selection
 UIPadding.PaddingBottom = UDim.new(0, 5)
-UIPadding.PaddingLeft = UDim.new(0, 10)
+UIPadding.PaddingLeft = UDim.new(0, 5)
 UIPadding.PaddingRight = UDim.new(0, 5)
 UIPadding.PaddingTop = UDim.new(0, 5)
 
@@ -816,13 +815,10 @@ do -- MainFrame.MainHandler
 			end;
 			--ToggleButtonFunctions
 			GetValueByID = function(ReachingID)
-				if _G.Existing[ReachingID] then
-					return _G.Existing[ReachingID].Value
-				else
-					return nil
-				end
+				return _G.Existing[ReachingID].Value
 			end;
 		}
+
 	end
 	fake_module_scripts[script] = module_script
 	_G.getScript = module_script
@@ -1227,7 +1223,7 @@ ListButtonToToggle_Roundify_12px.Active = true
 ListButtonToToggle_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
 ListButtonToToggle_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ListButtonToToggle_Roundify_12px.BackgroundTransparency = 1.000
-ListButtonToToggle_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ListButtonToToggle_Roundify_12px.Position = UDim2.new(11.8125868, 0, 0.5, 0)
 ListButtonToToggle_Roundify_12px.Selectable = true
 ListButtonToToggle_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
 ListButtonToToggle_Roundify_12px.Image = "rbxassetid://3570695787"
@@ -1241,7 +1237,7 @@ Toggler_2.Parent = ButtonToToggle_2
 Toggler_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggler_2.BackgroundTransparency = 1.000
 Toggler_2.BorderSizePixel = 0
-Toggler_2.Position = UDim2.new(0.125, 0, 0.125, 0)
+Toggler_2.Position = UDim2.new(11.4375868, 0, 0.125, 0)
 Toggler_2.Size = UDim2.new(0.75, 0, 0.75, 0)
 Toggler_2.ZIndex = 2
 Toggler_2.Font = Enum.Font.GothamBold
@@ -1268,7 +1264,7 @@ ToggleButtonText_2.Parent = ToggleList
 ToggleButtonText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButtonText_2.BackgroundTransparency = 1.000
 ToggleButtonText_2.BorderSizePixel = 0
-ToggleButtonText_2.Position = UDim2.new(-0.1, 0, 0.075, 0)
+ToggleButtonText_2.Position = UDim2.new(-1.3155843, 0, 0.125, 0)
 ToggleButtonText_2.Size = UDim2.new(0.623946548, 0, 0.875, 0)
 ToggleButtonText_2.Font = Enum.Font.GothamBlack
 ToggleButtonText_2.Text = "List"
@@ -1281,7 +1277,7 @@ CurrentSelected.Name = "CurrentSelected"
 CurrentSelected.Parent = ToggleList
 CurrentSelected.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
 CurrentSelected.BackgroundTransparency = 1.000
-CurrentSelected.Position = UDim2.new(-1.25, 0, 0, 0)
+CurrentSelected.Position = UDim2.new(-0.749536276, 0, 0, 0)
 CurrentSelected.Size = UDim2.new(1.1579783, 0, 0.166666672, 20)
 CurrentSelected.ZIndex = 0
 CurrentSelected.Image = "rbxassetid://3570695787"
@@ -1429,7 +1425,7 @@ MultiToggleButtonText.Parent = MultiToggleList
 MultiToggleButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MultiToggleButtonText.BackgroundTransparency = 1.000
 MultiToggleButtonText.BorderSizePixel = 0
-MultiToggleButtonText.Position = UDim2.new(-1.2, 0, 0.125, 0)
+MultiToggleButtonText.Position = UDim2.new(-1.3155843, 0, 0.125, 0)
 MultiToggleButtonText.Size = UDim2.new(1.70519459, 0, 0.875, 0)
 MultiToggleButtonText.ZIndex = 2
 MultiToggleButtonText.Font = Enum.Font.GothamBlack
@@ -1460,7 +1456,7 @@ ListButtonToToggle_Roundify_12px_2.Active = true
 ListButtonToToggle_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
 ListButtonToToggle_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ListButtonToToggle_Roundify_12px_2.BackgroundTransparency = 1.000
-ListButtonToToggle_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ListButtonToToggle_Roundify_12px_2.Position = UDim2.new(11.8125868, 0, 0.5, 0)
 ListButtonToToggle_Roundify_12px_2.Selectable = true
 ListButtonToToggle_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
 ListButtonToToggle_Roundify_12px_2.ZIndex = 2
@@ -1475,7 +1471,7 @@ Toggler_3.Parent = MultiButtonToToggle
 Toggler_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggler_3.BackgroundTransparency = 1.000
 Toggler_3.BorderSizePixel = 0
-Toggler_3.Position = UDim2.new(0.125, 0, 0.125, 0)
+Toggler_3.Position = UDim2.new(11.4375868, 0, 0.125, 0)
 Toggler_3.Size = UDim2.new(0.75, 0, 0.75, 0)
 Toggler_3.ZIndex = 2
 Toggler_3.Font = Enum.Font.GothamBold
@@ -1661,11 +1657,6 @@ local function ZXUNOGZ_fake_script() -- DiscordTag.Top
 	script.Parent.MouseButton1Click:Connect(function()
 		pcall(function()
 			setclipboard(_G.Discord)
-			game.StarterGui:SetCore("SendNotification", {
-				Title = "Copied",
-				Text = "Copied to your Clipboard!",
-				Duration = 5
-			})
 		end)
 	end)
 end
@@ -2138,340 +2129,5 @@ local function IWUMW_fake_script() -- MainFrame.Test
 	
 end
 coroutine.wrap(IWUMW_fake_script)()
-spawn(function()
-	repeat wait() until _G.Existing["#Settings"]
-	local function getTabCount(tab)
-		local co = 0
-		for i,v in pairs(tab)do
-			co = co+1
-		end
-		return co
-	end
-
-	local function isinTab(tab,val)
-		for i,v in pairs(tab)do
-			if v == val then
-				return true
-			end
-		end
-		return false
-	end
-
-	local function getmulties(list)
-		local tab = {}
-		for i,v in pairs(list)do
-			if v == true then
-				table.insert(tab,i)
-			end
-		end
-		return tab
-	end
-
-	local Name = _G.UIName..".settings"
-		local Library = _G.getScript
-		local DefaultSettings = {["DefaultProfile"] = {["Data"] = {},["LoadIn"] = true, ["Overwrite"] = false}}
-
-		for i2,v2 in pairs(_G.Existing)do
-			for i,v in pairs(v2)do
-				if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-					if i == "Value" then
-						if type(v) == "boolean" then
-							DefaultSettings["DefaultProfile"]["Data"][i2] = v
-						elseif type(v) == "string" then
-							DefaultSettings["DefaultProfile"]["Data"][i2] = v
-						elseif type(v) == "table" then
-							DefaultSettings["DefaultProfile"]["Data"][i2] = v
-						end
-					end
-				end
-			end
-		end
-
-		
-		local JSON
-			
-		if not pcall(function() readfile(Name) end) then 
-			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings)) 
-		end 	
-		pcall(function()
-		JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
-		end)
-		if not JSON then
-			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings)) 
-		end
-		
-			
-		local function Save()
-			writefile(Name,game:service'HttpService':JSONEncode(JSON))
-			JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
-		end
-			
-		local function resetToDefaults()
-			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings))
-			JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
-		end
-
-		local ProfileFrame = Library.CreateNewMainFrame("Profiles","Profs")
-		local loadedprofile = Library.CreateTextItem("Loaded Profile: Error_No Profile_Loaded","This will show your Profile that is currently Loaded\nNote: nothing will save while your Default Profile is loaded","loadingText",ProfileFrame.ReachingID)
-
-		local function UpdateNote(prof)
-			loadedprofile.TextFrame.Text.Text = "Loaded Profile: "..prof
-		end
-
-		local FunctionList
-		local ProfileList
-		local function ExeSelectedFunction()
-			if FunctionList.Value == "Create new Profile" then
-				local newData = {["Data"] = JSON.DefaultProfile.Data,["LoadIn"] = false, ["Overwrite"] = false}
-			--[[
-				for i2,v2 in pairs(_G.Existing)do
-					if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-						for i,v in pairs(v2)do
-							if i == "Value" then
-								if type(v) == "boolean" then
-									newData["Data"][i2] = v
-								elseif type(v) == "string" then
-									newData["Data"][i2] = v
-								elseif type(v) == "table" then
-									newData["Data"][i2] = v
-								end
-							end
-						end
-					end
-				end
-				 ]]
-				local co = 0
-				repeat wait() co = co+1 until not JSON["Profile"..co]
-				local ProfileName = "Profile"..co
-				JSON[ProfileName] = newData
-				Save()
-				ProfileList.DestroyFrame()
-				local ProfTab = {}
-				for i,v in pairs(JSON)do
-					table.insert(ProfTab,i)
-				end
-				ProfileList = Library.CreateNewListItem("Select Profile",ProfileName,ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
-
-			elseif FunctionList.Value == "Reset Profiles" then
-				resetToDefaults()
-				Save()
-				ProfileList.DestroyFrame()
-				local ProfTab = {}
-				for i,v in pairs(JSON)do
-					table.insert(ProfTab,i)
-				end
-				ProfileList = Library.CreateNewListItem("Select Profile","DefaultProfile",ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
-				
-			elseif FunctionList.Value == "Delete Selected Profile" then
-				if ProfileList.Value ~= "DefaultProfile" then
-					JSON[ProfileList.Value] = nil
-					Save()
-					ProfileList.DestroyFrame()
-					local ProfTab = {}
-					for i,v in pairs(JSON)do
-						table.insert(ProfTab,i)
-					end
-					ProfileList = Library.CreateNewListItem("Select Profile","DefaultProfile",ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
-				end
-			elseif FunctionList.Value == "Load Selected Profile" then
-				local prof = ProfileList.Value
-				if JSON[prof].LoadIn == false then
-					for i,v in pairs(JSON)do
-						v.Overwrite = false
-					end
-					JSON[prof].Overwrite = false
-					Save()
-					for i,v in pairs(JSON)do
-						if i == prof then
-							for i2,v2 in pairs(_G.Existing)do
-								if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-									for i,v in pairs(v2)do
-										if i == "Value" then
-											_G.Existing[i2].Value = JSON[prof].Data[i2]
-											if type(v) == "table" then
-												for i,v3 in pairs(_G.Existing[i2].ToggleFrame.MultiToToggleListScroll:GetChildren())do
-													if v3.Name == "ToToggleListScrollFrame" then
-														for i4,v4 in pairs(JSON[prof].Data[i2])do
-															if v4 == true and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
-																v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56,212,0)
-															elseif v4 == false and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
-																v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
-															end
-														end
-													end
-												end
-											end
-											if type(v) == "string" then
-												_G.Existing[i2].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text = JSON[prof].Data[i2]
-											end
-										end
-									end
-								end
-							end
-							v.LoadIn = true
-						else
-							v.LoadIn = false
-						end
-					end
-					if prof ~= "DefaultProfile" then
-						JSON[prof].Overwrite = true
-						
-					end
-					UpdateNote(prof)
-					Save()
-					spawn(function()
-						if prof ~= "DefaultProfile" then
-							pcall(function()
-								while JSON[prof].Overwrite == true and Assasine03_GUI_REV and Assasine03_GUI_REV.Parent and wait(5)do
-									local changes = false
-									for i2,v2 in pairs(_G.Existing)do 
-										if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-											for i,v in pairs(v2)do
-												if i == "Value" and JSON[prof].Overwrite == true then
-													local Data = _G.Existing[i2].Value 
-													local Stored = JSON[prof].Data[i2]
-													if type(v) == "table" then
-														for i3,v3 in pairs(Data)do
-															if v3 ~= Stored[i3] then
-																JSON[prof].Data[i2] = Data
-																changes = true
-															end
-														end
-													end
-													if type(v) == "string" then
-														if Data ~= Stored then
-															JSON[prof].Data[i2] = Data
-															changes = true
-														end
-													end
-													if type(v) == "boolean" then
-														if Data ~= Stored then
-															JSON[prof].Data[i2] = Data
-															changes = true
-														end
-													end
-												end
-											end
-										end
-									end
-									if changes == true then
-										Save()
-									end
-								end
-							end)
-							
-						end
-					end)
-					
-				end
-			end
-		end
-		
-		local executioninfo = Library.CreateExecuteButton("Execute Function",ExeSelectedFunction,"Select a Function you want to Run and Execute it with this Button","ExecuteFunction",ProfileFrame.ReachingID)
-		local exeSave = Library.CreateExecuteButton("Save",Save,"Save all your Settings\nNote: Default Settings will not save","savef",ProfileFrame.ReachingID)
-
-		FunctionList = Library.CreateNewListItem("Functions","Create new Profile",{"Create new Profile","Delete Selected Profile","Load Selected Profile","Reset Profiles"},"Select a Function you want to Run","AllFunctions",ProfileFrame.ReachingID)
-		if not JSON then
-			resetToDefaults()
-		end
-		local ProfTab = {}
-		for i,v in pairs(JSON)do
-			table.insert(ProfTab,i)
-		end
-		local LoadingIn = "Loading Error"
-		for i,v in pairs(JSON)do
-			if i == "DefaultProfile" and v.LoadIn == true then
-				LoadingIn = i
-			elseif i ~= "DefaultProfile" and v.LoadIn == true then
-				LoadingIn = i
-				for i2,v2 in pairs(JSON)do
-					if i2 ~= i and v2.LoadIn == true then
-						v2.LoadIn = false
-					end
-				end
-			end
-		end
-		Save()
-		ProfileList = Library.CreateNewListItem("Select Profile",LoadingIn,ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
-		if LoadingIn ~= "Loading Error" then
-			local suc,log = pcall(function()
-				for i2,v2 in pairs(_G.Existing)do
-					if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-						for i,v in pairs(v2)do
-							if i == "Value" then
-								_G.Existing[i2].Value = JSON[LoadingIn].Data[i2]
-								if type(v) == "table" then
-									for i,v3 in pairs(_G.Existing[i2].ToggleFrame.MultiToToggleListScroll:GetChildren())do
-										if v3.Name == "ToToggleListScrollFrame" then
-											if JSON[LoadingIn].Data[i2] then
-												for i4,v4 in pairs(JSON[LoadingIn].Data[i2])do
-													if v4 == true and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
-														v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56,212,0)
-													elseif v4 == false and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
-														v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
-													end
-												end
-											end
-										end
-									end
-								end
-								if type(v) == "string" then
-									_G.Existing[i2].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text = JSON[LoadingIn].Data[i2]
-								end
-							end
-						end
-					end
-				end
-			end)
-			if not suc then
-				resetToDefaults()
-			end
-		end
-		UpdateNote(LoadingIn)
-		spawn(function()
-			local prof = LoadingIn
-			if prof ~= "DefaultProfile" then
-				pcall(function()
-					while JSON[prof].Overwrite == true and Assasine03_GUI_REV and Assasine03_GUI_REV.Parent and wait()do
-						local changes = false
-						for i2,v2 in pairs(_G.Existing)do 
-							if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
-								for i,v in pairs(v2)do
-									if i == "Value" and JSON[prof].Overwrite == true then
-										local Data = _G.Existing[i2].Value 
-										local Stored = JSON[prof].Data[i2]
-										if type(v) == "table" then
-											for i3,v3 in pairs(Data)do
-												if v3 ~= Stored[i3] then
-													JSON[prof].Data[i2] = Data
-													changes = true
-												end
-											end
-										end
-										if type(v) == "string" then
-											if Data ~= Stored then
-												JSON[prof].Data[i2] = Data
-												changes = true
-											end
-										end
-										if type(v) == "boolean" then
-											if Data ~= Stored then
-												JSON[prof].Data[i2] = Data
-												changes = true
-											end
-										end
-									end
-								end
-							end
-						end
-						if changes == true then
-							Save()
-						end
-					end
-				end)
-				
-			end
-		end)
-	end)
 return _G.getScript
 end
