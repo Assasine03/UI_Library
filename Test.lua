@@ -1,12 +1,2477 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.3) ~  Much Love, Ferib 
+if _G.Key ~= "#31987234899564821549731" then
+    print("I think you are not allowed to use the Library")
+else
+	_G.Key = nil
+local Assasine03_GUI_REV = Instance.new("ScreenGui")
+local MainFrame = Instance.new("ImageLabel")
+local TitleBar = Instance.new("ImageLabel")
+local DiscordTag = Instance.new("TextButton")
+local Dc = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local SelectionFrame = Instance.new("ImageLabel")
+local SelectFrame = Instance.new("ImageLabel")
+local Selection = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local InformationFrame = Instance.new("ScrollingFrame")
+local InfoMain = Instance.new("ImageLabel")
+local InfoMainFrame = Instance.new("ImageLabel")
+local InfoText = Instance.new("TextLabel")
+local OK_Button = Instance.new("TextButton")
+local OK_Button_Roundify_12px = Instance.new("ImageLabel")
+local Selections = Instance.new("ScrollingFrame")
+local Selections_2 = Instance.new("Folder")
+local SelectionTemplate = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local ToToggleListScrollFrame = Instance.new("ImageLabel")
+local ToToggleListScrollFrameExecuteButton = Instance.new("TextButton")
+local ToToggleListScrollFrameExecuteButton_Roundify_12px = Instance.new("ImageLabel")
+local MainFrames = Instance.new("Folder")
+local TemplateFrame = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local UIPadding_2 = Instance.new("UIPadding")
+local FunctionButtons = Instance.new("Folder")
+local ExecuteButton = Instance.new("Frame")
+local ExecuteButtonFrame = Instance.new("ImageLabel")
+local ExecuteButtonQuestion = Instance.new("TextButton")
+local ExecuteButtonQuestion_Roundify_12px = Instance.new("ImageLabel")
+local ExecuteButton_2 = Instance.new("TextButton")
+local ExecuteButton_Roundify_12px = Instance.new("ImageLabel")
+local ExecuteButtonText = Instance.new("TextLabel")
+local ToggleButton = Instance.new("Frame")
+local ToggleButtonFrame = Instance.new("ImageLabel")
+local ToggleButtonQuestion = Instance.new("TextButton")
+local ToggleButtonQuestion_Roundify_12px = Instance.new("ImageLabel")
+local ButtonToToggle = Instance.new("TextButton")
+local ButtonToToggle_Roundify_12px = Instance.new("ImageLabel")
+local Toggler = Instance.new("TextButton")
+local Toggler_Roundify_12px = Instance.new("ImageLabel")
+local ToggleButtonText = Instance.new("TextLabel")
+local ToggleList = Instance.new("Frame")
+local ToToggleListFrame = Instance.new("ImageLabel")
+local ToToggleListQuestion = Instance.new("TextButton")
+local ToToggleListQuestion_Roundify_12px = Instance.new("ImageLabel")
+local ToToggleListScroll = Instance.new("ScrollingFrame")
+local ToToggleListScrollUIListLayout = Instance.new("UIListLayout")
+local ToToggleListScrollUIPadding = Instance.new("UIPadding")
+local ButtonToToggle_2 = Instance.new("TextButton")
+local ListButtonToToggle_Roundify_12px = Instance.new("ImageLabel")
+local Toggler_2 = Instance.new("TextButton")
+local ToggleButtonArrow = Instance.new("TextLabel")
+local ToggleButtonText_2 = Instance.new("TextLabel")
+local CurrentSelected = Instance.new("ImageLabel")
+local CurrentSelectedButton = Instance.new("TextButton")
+local CurrentSelectedButton_Roundify_12px = Instance.new("ImageLabel")
+local JustText = Instance.new("Frame")
+local JustTextFrame = Instance.new("ImageLabel")
+local Text = Instance.new("TextLabel")
+local JustTextQuestion = Instance.new("TextButton")
+local JustTextQuestion_Roundify_12px = Instance.new("ImageLabel")
+local MultiToggleList = Instance.new("Frame")
+local MultiToToggleListQuestion = Instance.new("TextButton")
+local MoreToToggleListQuestion_Roundify_12px = Instance.new("ImageLabel")
+local MultiToggleButtonText = Instance.new("TextLabel")
+local MultiButtonToToggle = Instance.new("TextButton")
+local ListButtonToToggle_Roundify_12px_2 = Instance.new("ImageLabel")
+local Toggler_3 = Instance.new("TextButton")
+local ToggleButtonArrow_2 = Instance.new("TextLabel")
+local MultiToToggleListScroll = Instance.new("ScrollingFrame")
+local ToToggleListScrollUIListLayout_2 = Instance.new("UIListLayout")
+local ToToggleListScrollUIPadding_2 = Instance.new("UIPadding")
+local MultiToToggleListFrame = Instance.new("ImageLabel")
+local MultiToToggleListFrame_2 = Instance.new("ImageLabel")
 
-]]--
+--Normal Settings
+_G.Discord = "http://assasine03.com/discord"
+_G.UIName = "Assasine03_Autofarm"
 
-if (_G.Key~="#31987234899564821549731") then print("I think you are not allowed to use the Library");else local v0=0 + 0 ;local v1;local v2;local v3;local v4;local v5;local v6;local v7;local v8;local v9;local v10;local v11;local v12;local v13;local v14;local v15;local v16;local v17;local v18;local v19;local v20;local v21;local v22;local v23;local v24;local v25;local v26;local v27;local v28;local v29;local v30;local v31;local v32;local v33;local v34;local v35;local v36;local v37;local v38;local v39;local v40;local v41;local v42;local v43;local v44;local v45;local v46;local v47;local v48;local v49;local v50;local v51;local v52;local v53;local v54;local v55;local v56;local v57;local v58;local v59;local v60;local v61;local v62;local v63;local v64;local v65;local v66;local v67;local v68;local v69;local v70;local v71;local v72;local v73;local v74;local v75;local v76;local v77;local v78;local v79;local v80;local v81;local v82;local v83;local v84;local v85;local v86;local v87;local v88;local v89;local v90;local v91;local v92;local v93;while true do if (v0==(431 -(15 + 398))) then v7.Image="rbxassetid://3570695787";v7.ImageColor3=Color3.fromRGB(1062 -(18 + 964) ,564 -414 ,139 + 101 );v7.ScaleType=Enum.ScaleType.Slice;v7.SliceCenter=Rect.new(100,64 + 36 ,950 -(20 + 830) ,79 + 21 );v7.SliceScale=126.04 -(116 + 10) ;v8.Name="SelectFrame";v8.Parent=v7;v8.BackgroundColor3=Color3.fromRGB(50,1 + 12 ,800 -(542 + 196) );v8.BackgroundTransparency=1 -0 ;v0=6 + 13 ;end if (v0==(5 + 3)) then v72=Instance.new("TextButton");v73=Instance.new("TextLabel");v74=Instance.new("ScrollingFrame");v75=Instance.new("UIListLayout");v76=Instance.new("UIPadding");v77=Instance.new("ImageLabel");v78=Instance.new("ImageLabel");_G.Discord="http://assasine03.com/discord";_G.UIName="Assasine03_Autofarm";v0=4 + 5 ;end if (v0==(231 -143)) then v65.ScaleType=Enum.ScaleType.Slice;v65.SliceCenter=Rect.new(256 -156 ,1651 -(1126 + 425) ,505 -(118 + 287) ,391 -291 );v65.SliceScale=1121.09 -(118 + 1003) ;v66.Name="MultiToggleList";v66.Parent=v29;v66.BackgroundColor3=Color3.fromRGB(255,255,255);v66.BackgroundTransparency=2 -1 ;v66.Position=UDim2.new(0.060406547,0,377.0239334963 -(142 + 235) ,0 -0 );v66.Size=UDim2.new(0,34 + 120 ,0,1001 -(553 + 424) );v0=167 -78 ;end if (v0==(19 + 2)) then v10.Padding=UDim.new(0 + 0 ,3 + 2 );v11.Parent=v9;v11.PaddingBottom=UDim.new(0 + 0 ,5);v11.PaddingLeft=UDim.new(0 + 0 ,21 -11 );v11.PaddingRight=UDim.new(0 -0 ,11 -6 );v11.PaddingTop=UDim.new(0,2 + 3 );v12.Name="InformationFrame";v12.Parent=v2;v12.Active=true;v0=106 -84 ;end if (v0==19) then v8.BorderSizePixel=753 -(239 + 514) ;v8.Position=UDim2.new(0.0387093425,0,0.0220044367 + 0 ,0);v8.Size=UDim2.new(1329.920928776 -(797 + 532) ,0 + 0 ,0.953315198,0);v8.Image="rbxassetid://3570695787";v8.ImageColor3=Color3.fromRGB(15 + 29 ,194 -111 ,132);v8.ScaleType=Enum.ScaleType.Slice;v8.SliceCenter=Rect.new(1302 -(373 + 829) ,831 -(476 + 255) ,1230 -(369 + 761) ,58 + 42 );v8.SliceScale=0.04;v9.Name="Selection";v0=20;end if (v0==29) then v17.Active=true;v17.AnchorPoint=Vector2.new(0.5,0.5 -0 );v17.BackgroundColor3=Color3.fromRGB(255,482 -227 ,255);v17.BackgroundTransparency=239 -(64 + 174) ;v17.Position=UDim2.new(0.5,0,0.5 + 0 ,0);v17.Selectable=true;v17.Size=UDim2.new(1 -0 ,0,1,0);v17.ZIndex=345 -(144 + 192) ;v17.Image="rbxassetid://3570695787";v0=30;end if (v0==(273 -(42 + 174))) then v42.Position=UDim2.new(0.5 + 0 ,0 + 0 ,0.5 + 0 ,1504 -(363 + 1141) );v42.Selectable=true;v42.Size=UDim2.new(1,1580 -(1183 + 397) ,2 -1 ,0 + 0 );v42.Image="rbxassetid://3570695787";v42.ImageColor3=Color3.fromRGB(42 + 14 ,2083 -(1913 + 62) ,108 + 62 );v42.ScaleType=Enum.ScaleType.Slice;v42.SliceCenter=Rect.new(100,100,264 -164 ,2033 -(565 + 1368) );v42.SliceScale=0.09;v43.Name="Toggler";v0=218 -160 ;end if (v0==71) then v53.TextScaled=true;v53.TextSize=1686 -(1477 + 184) ;v53.TextWrapped=true;v54.Name="ListButtonToToggle_Roundify_12px";v54.Parent=v53;v54.Active=true;v54.AnchorPoint=Vector2.new(0.5 -0 ,0.5 + 0 );v54.BackgroundColor3=Color3.fromRGB(1111 -(564 + 292) ,255,255);v54.BackgroundTransparency=1 -0 ;v0=216 -144 ;end if (v0==83) then v62.Size=UDim2.new(2.46103907,304 -(244 + 60) ,1.00000012 + 0 ,476 -(41 + 435) );v62.Image="rbxassetid://3570695787";v62.ImageColor3=Color3.fromRGB(80,1181 -(938 + 63) ,185 + 55 );v62.ScaleType=Enum.ScaleType.Slice;v62.SliceCenter=Rect.new(1225 -(936 + 189) ,100,33 + 67 ,1713 -(1565 + 48) );v62.SliceScale=0.05 + 0 ;v63.Name="Text";v63.Parent=v61;v63.BackgroundColor3=Color3.fromRGB(255,1393 -(782 + 356) ,522 -(176 + 91) );v0=84;end if (v0==(242 -149)) then v69.ZIndex=2;v69.Font=Enum.Font.GothamBlack;v69.Text="Multi List";v69.TextColor3=Color3.fromRGB(375 -120 ,255,255);v69.TextSize=1107 -(975 + 117) ;v69.TextWrapped=true;v69.TextXAlignment=Enum.TextXAlignment.Left;v70.Name="MultiButtonToToggle";v70.Parent=v66;v0=94;end if (v0==(1876 -(157 + 1718))) then v9=Instance.new("ScrollingFrame");v10=Instance.new("UIListLayout");v11=Instance.new("UIPadding");v12=Instance.new("ScrollingFrame");v13=Instance.new("ImageLabel");v14=Instance.new("ImageLabel");v15=Instance.new("TextLabel");v16=Instance.new("TextButton");v17=Instance.new("ImageLabel");v0=2;end if (v0==(64 + 14)) then v58.ImageColor3=Color3.fromRGB(283 -203 ,615 -435 ,1258 -(697 + 321) );v58.ImageTransparency=2 -1 ;v58.ScaleType=Enum.ScaleType.Slice;v58.SliceCenter=Rect.new(211 -111 ,230 -130 ,39 + 61 ,187 -87 );v58.SliceScale=0.05;v59.Name="CurrentSelectedButton";v59.Parent=v58;v59.BackgroundColor3=Color3.fromRGB(683 -428 ,255,255);v59.BackgroundTransparency=1228 -(322 + 905) ;v0=690 -(602 + 9) ;end if (v0==64) then v47.ScaleType=Enum.ScaleType.Slice;v47.SliceCenter=Rect.new(1289 -(449 + 740) ,972 -(826 + 46) ,1047 -(245 + 702) ,315 -215 );v47.SliceScale=0.05 + 0 ;v48.Name="ToToggleListQuestion";v48.Parent=v46;v48.BackgroundColor3=Color3.fromRGB(2153 -(260 + 1638) ,695 -(382 + 58) ,818 -563 );v48.BackgroundTransparency=1 + 0 ;v48.BorderSizePixel=0;v48.Position=UDim2.new(0.850000024,0 -0 ,0 -0 ,1205 -(902 + 303) );v0=142 -77 ;end if (v0==(86 -50)) then v23.TextSize=3 + 22 ;v23.TextWrapped=true;v24.Name="ToToggleListScrollFrameExecuteButton_Roundify_12px";v24.Parent=v23;v24.Active=true;v24.AnchorPoint=Vector2.new(1690.5 -(1121 + 569) ,0.5);v24.BackgroundColor3=Color3.fromRGB(255,255,469 -(22 + 192) );v24.BackgroundTransparency=684 -(483 + 200) ;v24.Position=UDim2.new(1463.5 -(1404 + 59) ,0 -0 ,0.5 -0 ,765 -(468 + 297) );v0=599 -(334 + 228) ;end if ((47 -33)==v0) then v4.TextSize=55 -31 ;v5.Name="Dc";v5.Parent=v4;v5.Active=true;v5.AnchorPoint=Vector2.new(0.5 -0 ,0.5 + 0 );v5.BackgroundColor3=Color3.fromRGB(255,255,491 -(141 + 95) );v5.BackgroundTransparency=1 + 0 ;v5.Position=UDim2.new(0.495000005 -0 ,0 -0 ,0.5 + 0 ,0 -0 );v5.Selectable=true;v0=11 + 4 ;end if (v0==(5 + 4)) then Instance.new("StringValue",v32).Name="InfoText";Instance.new("StringValue",v64).Name="InfoText";Instance.new("StringValue",v67).Name="InfoText";Instance.new("StringValue",v39).Name="InfoText";Instance.new("StringValue",v48).Name="InfoText";Instance.new("BoolValue",v70).Name="Toggle";Instance.new("BoolValue",v41).Name="Toggle";Instance.new("BoolValue",v53).Name="Toggle";Instance.new("BoolValue",v16).Name="InformationToggler";v0=14 -4 ;end if (105==v0) then v81=nil;function v81() local v1023=Instance.new("LocalScript",v4);local v1024=require;local v1025=function(v1126) local v1127=v79[v1126];if v1127 then return v1127();end return v1024(v1126);end;local v1026=game:GetService("TweenService");v1023.Parent.MouseEnter:Connect(function() v1026:Create(v1023.Parent,TweenInfo.new(0.1 + 0 ,Enum.EasingStyle.Linear),{TextSize=190 -(92 + 71) }):Play();end);v1023.Parent.MouseLeave:Connect(function() v1026:Create(v1023.Parent,TweenInfo.new(0.05 + 0 ,Enum.EasingStyle.Linear),{TextSize=24}):Play();end);v1023.Parent.MouseButton1Click:Connect(function() pcall(function() local v1171=0;while true do if ((0 -0)==v1171) then setclipboard(_G.Discord);game.StarterGui:SetCore("SendNotification",{Title="Copied",Text="Copied to your Clipboard!",Duration=770 -(574 + 191) });break;end end end);end);end coroutine.wrap(v81)();v82=nil;function v82() local v1027=Instance.new("LocalScript",v16);local v1028=require;local v1029=function(v1128) local v1129=v79[v1128];if v1129 then return v1129();end return v1028(v1128);end;v1027.Parent.MouseButton1Click:Connect(function() v1027.Parent.InformationToggler.Value=false;local v1131=game:GetService("TweenService");v1131:Create(v1027.Parent.Parent.Parent,TweenInfo.new(2,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{ImageTransparency=1}):Play();v1131:Create(v1027.Parent.Parent,TweenInfo.new(1 + 0 ,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{Position=UDim2.new(0 -0 ,0,1.1 + 0 ,849 -(254 + 595) )}):Play();end);v1027.Parent.InformationToggler.Changed:Connect(function() if (v1027.Parent.InformationToggler.Value==true) then local v1175=game:GetService("TweenService");v1175:Create(v1027.Parent.Parent.Parent,TweenInfo.new(1,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{ImageTransparency=0.2}):Play();v1175:Create(v1027.Parent.Parent,TweenInfo.new(127.2 -(55 + 71) ,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{Position=UDim2.new(0 -0 ,1790 -(573 + 1217) ,0.82,0 -0 )}):Play();end end);end coroutine.wrap(v82)();v83=nil;function v83() local v1030=Instance.new("LocalScript",v32);local v1031=require;local v1032=function(v1132) local v1133=v79[v1132];if v1133 then return v1133();end return v1031(v1132);end;local v1033=v1030.Parent.Parent.Parent.Parent.Parent.InformationFrame;if v1033:FindFirstChild(v1033.InfoMain.InfoMainFrame.OK_Button:FindFirstChild("InformationToggler")) then local v1172=v1033.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1173=v1033.InfoMain.InfoMainFrame.InfoText;local v1174=v1030.Parent.InfoText.Value;v1030.Parent.MouseButton1Click:Connect(function() if (v1172.Value==false) then v1173.Text=v1174;v1172.Value=true;end end);end end coroutine.wrap(v83)();v0=9 + 97 ;end if (v0==(162 -61)) then v75.Name="ToToggleListScrollUIListLayout";v75.Parent=v74;v75.HorizontalAlignment=Enum.HorizontalAlignment.Center;v75.SortOrder=Enum.SortOrder.LayoutOrder;v75.Padding=UDim.new(939 -(714 + 225) ,5);v76.Name="ToToggleListScrollUIPadding";v76.Parent=v74;v76.PaddingBottom=UDim.new(0,14 -9 );v76.PaddingLeft=UDim.new(0,2 -0 );v0=102;end if (v0==10) then v1.Name="Assasine03_GUI";v1.Parent=game.CoreGui;v2.Name="MainFrame";v2.Parent=v1;v2.BackgroundColor3=Color3.fromRGB(28 + 227 ,255,368 -113 );v2.BackgroundTransparency=1;v2.BorderSizePixel=0;v2.Position=UDim2.new(806.2517564 -(118 + 688) ,0,0.316348404,0);v2.Size=UDim2.new(0,648 -(25 + 23) ,0 + 0 ,2236 -(927 + 959) );v0=36 -25 ;end if (v0==(835 -(16 + 716))) then v77.ImageColor3=Color3.fromRGB(154 -74 ,277 -(11 + 86) ,585 -345 );v77.ScaleType=Enum.ScaleType.Slice;v77.SliceCenter=Rect.new(385 -(175 + 110) ,252 -152 ,493 -393 ,1896 -(503 + 1293) );v77.SliceScale=0.05;v78.Name="MultiToToggleListFrame";v78.Parent=v66;v78.BackgroundColor3=Color3.fromRGB(223 -143 ,131 + 49 ,240);v78.BackgroundTransparency=1;v78.Position=UDim2.new( -1.42857146,1061 -(810 + 251) ,0 + 0 ,0);v0=32 + 72 ;end if (v0==23) then v13.BorderSizePixel=0;v13.Size=UDim2.new(1 + 0 ,533 -(43 + 490) ,734 -(711 + 22) ,0);v13.ZIndex=30 -22 ;v13.Image="rbxassetid://3570695787";v13.ImageColor3=Color3.fromRGB(939 -(240 + 619) ,150,58 + 182 );v13.ImageTransparency=1 -0 ;v13.ScaleType=Enum.ScaleType.Slice;v13.SliceCenter=Rect.new(7 + 93 ,100,100,1844 -(1344 + 400) );v13.SliceScale=0.04;v0=429 -(255 + 150) ;end if ((16 + 4)==v0) then v9.Parent=v8;v9.Active=true;v9.BackgroundColor3=Color3.fromRGB(137 + 118 ,1089 -834 ,823 -568 );v9.BackgroundTransparency=1740 -(404 + 1335) ;v9.Size=UDim2.new(1,406 -(183 + 223) ,1,0 -0 );v9.CanvasSize=UDim2.new(0 + 0 ,0 + 0 ,0,337 -(10 + 327) );v9.VerticalScrollBarPosition=Enum.VerticalScrollBarPosition.Left;v10.Parent=v9;v10.SortOrder=Enum.SortOrder.LayoutOrder;v0=15 + 6 ;end if (v0==44) then v33.AnchorPoint=Vector2.new(338.5 -(118 + 220) ,0.5 + 0 );v33.BackgroundColor3=Color3.fromRGB(255,704 -(108 + 341) ,115 + 140 );v33.BackgroundTransparency=1;v33.Position=UDim2.new(0.5,0 -0 ,1493.5 -(711 + 782) ,0 -0 );v33.Selectable=true;v33.Size=UDim2.new(470 -(270 + 199) ,0,1 + 0 ,0);v33.Image="rbxassetid://3570695787";v33.ImageColor3=Color3.fromRGB(1875 -(580 + 1239) ,320 -212 ,163 + 7 );v33.ScaleType=Enum.ScaleType.Slice;v0=2 + 43 ;end if (v0==65) then v48.Size=UDim2.new(0.158999994 + 0 ,0 -0 ,1 + 0 ,1167 -(645 + 522) );v48.ZIndex=1792 -(1010 + 780) ;v48.Font=Enum.Font.GothamBold;v48.Text="?";v48.TextColor3=Color3.fromRGB(255 + 0 ,1214 -959 ,255);v48.TextScaled=true;v48.TextSize=73 -48 ;v48.TextWrapped=true;v49.Name="ToToggleListQuestion_Roundify_12px";v0=1902 -(1045 + 791) ;end if ((181 -109)==v0) then v54.Position=UDim2.new(0.5 -0 ,505 -(351 + 154) ,1574.5 -(1281 + 293) ,0);v54.Selectable=true;v54.Size=UDim2.new(267 -(28 + 238) ,0 -0 ,1560 -(1381 + 178) ,0 + 0 );v54.Image="rbxassetid://3570695787";v54.ImageColor3=Color3.fromRGB(46 + 10 ,47 + 61 ,170);v54.ScaleType=Enum.ScaleType.Slice;v54.SliceCenter=Rect.new(344 -244 ,52 + 48 ,570 -(381 + 89) ,100);v54.SliceScale=0.09 + 0 ;v55.Name="Toggler";v0=50 + 23 ;end if (v0==(51 -21)) then v17.ImageColor3=Color3.fromRGB(1212 -(1074 + 82) ,236 -128 ,1954 -(214 + 1570) );v17.ImageTransparency=0.5;v17.ScaleType=Enum.ScaleType.Slice;v17.SliceCenter=Rect.new(1555 -(990 + 465) ,42 + 58 ,44 + 56 ,98 + 2 );v17.SliceScale=0.12;v18.Name="Selections";v18.Parent=v2;v18.Active=true;v18.BackgroundColor3=Color3.fromRGB(1003 -748 ,1981 -(1668 + 58) ,881 -(512 + 114) );v0=80 -49 ;end if (v0==27) then v15.TextXAlignment=Enum.TextXAlignment.Left;v15.TextYAlignment=Enum.TextYAlignment.Top;v16.Name="OK_Button";v16.Parent=v14;v16.BackgroundColor3=Color3.fromRGB(56,223 -115 ,170);v16.BackgroundTransparency=3 -2 ;v16.BorderSizePixel=0;v16.Position=UDim2.new(0.836666644,0 + 0 ,0.238095224,0 + 0 );v16.Size=UDim2.new(0 + 0 ,59,0 -0 ,2030 -(109 + 1885) );v0=1497 -(1269 + 200) ;end if ((120 -57)==v0) then v46.Size=UDim2.new(0,969 -(98 + 717) ,826 -(802 + 24) ,24);v47.Name="ToToggleListFrame";v47.Parent=v46;v47.BackgroundColor3=Color3.fromRGB(137 -57 ,227 -47 ,36 + 204 );v47.BackgroundTransparency=1;v47.Position=UDim2.new( -(1.42857146 + 0),0 + 0 ,0,0 + 0 );v47.Size=UDim2.new(5.46103907 -3 ,0 -0 ,1.00000012,0);v47.Image="rbxassetid://3570695787";v47.ImageColor3=Color3.fromRGB(29 + 51 ,180,240);v0=27 + 37 ;end if (v0==(80 + 16)) then v71.Position=UDim2.new(0.5 + 0 ,0,0.5 + 0 ,1433 -(797 + 636) );v71.Selectable=true;v71.Size=UDim2.new(1,0,4 -3 ,0);v71.ZIndex=1621 -(1427 + 192) ;v71.Image="rbxassetid://3570695787";v71.ImageColor3=Color3.fromRGB(20 + 36 ,250 -142 ,153 + 17 );v71.ScaleType=Enum.ScaleType.Slice;v71.SliceCenter=Rect.new(46 + 54 ,100,426 -(192 + 134) ,1376 -(316 + 960) );v71.SliceScale=0.09 + 0 ;v0=97;end if (v0==47) then v35.Active=true;v35.AnchorPoint=Vector2.new(0.5,0.5);v35.BackgroundColor3=Color3.fromRGB(197 + 58 ,236 + 19 ,255);v35.BackgroundTransparency=3 -2 ;v35.Position=UDim2.new(551.5 -(83 + 468) ,1806 -(1202 + 604) ,0.5,0 -0 );v35.Selectable=true;v35.Size=UDim2.new(1 -0 ,0 -0 ,326 -(45 + 280) ,0);v35.Image="rbxassetid://3570695787";v35.ImageColor3=Color3.fromRGB(56,105 + 3 ,170);v0=48;end if (v0==0) then _G.Key=nil;v1=Instance.new("ScreenGui");v2=Instance.new("ImageLabel");v3=Instance.new("ImageLabel");v4=Instance.new("TextButton");v5=Instance.new("ImageLabel");v6=Instance.new("TextLabel");v7=Instance.new("ImageLabel");v8=Instance.new("ImageLabel");v0=1;end if (v0==(68 + 9)) then v57.TextXAlignment=Enum.TextXAlignment.Left;v58.Name="CurrentSelected";v58.Parent=v46;v58.BackgroundColor3=Color3.fromRGB(30 + 50 ,100 + 80 ,240);v58.BackgroundTransparency=1;v58.Position=UDim2.new( -1.25,0 + 0 ,0 -0 ,1911 -(340 + 1571) );v58.Size=UDim2.new(1.1579783,0 + 0 ,0.166666672,20);v58.ZIndex=1772 -(1733 + 39) ;v58.Image="rbxassetid://3570695787";v0=78;end if ((148 -94)==v0) then v40.Selectable=true;v40.Size=UDim2.new(1035 -(125 + 909) ,0,1949 -(1096 + 852) ,0);v40.Image="rbxassetid://3570695787";v40.ImageColor3=Color3.fromRGB(56,49 + 59 ,242 -72 );v40.ScaleType=Enum.ScaleType.Slice;v40.SliceCenter=Rect.new(97 + 3 ,612 -(409 + 103) ,100,336 -(46 + 190) );v40.SliceScale=0.09;v41.Name="ButtonToToggle";v41.Parent=v37;v0=150 -(51 + 44) ;end if (v0==(4 + 9)) then v4.BackgroundColor3=Color3.fromRGB(1397 -(1114 + 203) ,906 -(228 + 498) ,240);v4.BackgroundTransparency=1;v4.BorderSizePixel=0 + 0 ;v4.Position=UDim2.new(0.584285676,0 + 0 ,663 -(174 + 489) ,0);v4.Size=UDim2.new(0,200,0,30);v4.ZIndex=2;v4.Font=Enum.Font.GothamBlack;v4.Text="Discord Server";v4.TextColor3=Color3.fromRGB(664 -409 ,2160 -(830 + 1075) ,779 -(303 + 221) );v0=1283 -(231 + 1038) ;end if (v0==(56 + 11)) then v49.ImageColor3=Color3.fromRGB(56,1270 -(171 + 991) ,170);v49.ScaleType=Enum.ScaleType.Slice;v49.SliceCenter=Rect.new(412 -312 ,268 -168 ,100,249 -149 );v49.SliceScale=0.09;v50.Name="ToToggleListScroll";v50.Parent=v46;v50.Active=true;v50.BackgroundColor3=Color3.fromRGB(80,121 + 29 ,841 -601 );v50.Position=UDim2.new( -(2.37662339 -1),0 -0 ,3.20833337 -2 ,0);v0=1316 -(111 + 1137) ;end if (v0==(226 -(91 + 67))) then v50.Size=UDim2.new(0 -0 ,300,0 + 0 ,523 -(423 + 100) );v50.Visible=false;v50.ZIndex=4;v50.CanvasSize=UDim2.new(0,0,1 + 0 ,207 -132 );v50.ScrollBarThickness=0 + 0 ;v51.Name="ToToggleListScrollUIListLayout";v51.Parent=v50;v51.HorizontalAlignment=Enum.HorizontalAlignment.Center;v51.SortOrder=Enum.SortOrder.LayoutOrder;v0=840 -(326 + 445) ;end if (v0==(170 -131)) then v26.VerticalScrollBarPosition=Enum.VerticalScrollBarPosition.Left;v27.Parent=v26;v27.SortOrder=Enum.SortOrder.LayoutOrder;v27.Padding=UDim.new(0 -0 ,5);v28.Parent=v26;v28.PaddingBottom=UDim.new(0 -0 ,5);v28.PaddingLeft=UDim.new(0,931 -(530 + 181) );v28.PaddingRight=UDim.new(881 -(614 + 267) ,5);v28.PaddingTop=UDim.new(32 -(19 + 13) ,7 -2 );v0=93 -53 ;end if (v0==12) then v3.BorderSizePixel=0 -0 ;v3.Size=UDim2.new(1,0 + 0 ,0,52 -22 );v3.Image="rbxassetid://3570695787";v3.ImageColor3=Color3.fromRGB(165 -85 ,1962 -(1293 + 519) ,489 -249 );v3.ScaleType=Enum.ScaleType.Slice;v3.SliceCenter=Rect.new(261 -161 ,100,191 -91 ,431 -331 );v3.SliceScale=0.04 -0 ;v4.Name="DiscordTag";v4.Parent=v3;v0=7 + 6 ;end if (v0==(10 + 39)) then v36.Size=UDim2.new(1.468364,0 -0 ,1 + 0 ,0);v36.Font=Enum.Font.GothamBlack;v36.Text="Execution Button";v36.TextColor3=Color3.fromRGB(85 + 170 ,160 + 95 ,1351 -(709 + 387) );v36.TextSize=15;v36.TextWrapped=true;v36.TextXAlignment=Enum.TextXAlignment.Left;v37.Name="ToggleButton";v37.Parent=v29;v0=1908 -(673 + 1185) ;end if (26==v0) then v15.Position=UDim2.new(0.04730957 -0 ,0,0.174603164,0);v15.Size=UDim2.new(0.76435709,0,0.71428591 -0 ,0 -0 );v15.ZIndex=8 + 2 ;v15.Font=Enum.Font.GothamBlack;v15.Text="This is just a Sample text for a function that might be a Press, Toggle or a List.";v15.TextColor3=Color3.fromRGB(191 + 64 ,343 -88 ,255);v15.TextScaled=true;v15.TextSize=14;v15.TextWrapped=true;v0=7 + 20 ;end if (v0==24) then v14.Name="InfoMainFrame";v14.Parent=v13;v14.BackgroundColor3=Color3.fromRGB(508 -253 ,500 -245 ,2135 -(446 + 1434) );v14.BackgroundTransparency=1;v14.BorderSizePixel=1283 -(1040 + 243) ;v14.Position=UDim2.new(0 -0 ,1847 -(559 + 1288) ,1.10000002,0);v14.Size=UDim2.new(1,0,0.180000007,1931 -(609 + 1322) );v14.ZIndex=463 -(13 + 441) ;v14.Image="rbxassetid://3570695787";v0=93 -68 ;end if (v0==(196 -121)) then v56.Size=UDim2.new(4 -3 ,0 + 0 ,3 -2 ,0 + 0 );v56.Font=Enum.Font.GothamBold;v56.Text=">";v56.TextColor3=Color3.fromRGB(112 + 143 ,756 -501 ,140 + 115 );v56.TextSize=55 -25 ;v56.TextWrapped=true;v57.Name="ToggleButtonText";v57.Parent=v46;v57.BackgroundColor3=Color3.fromRGB(169 + 86 ,255,142 + 113 );v0=76;end if (v0==(77 + 29)) then v84=nil;function v84() local v1034=Instance.new("LocalScript",v39);local v1035=require;local v1036=function(v1134) local v1135=v79[v1134];if v1135 then return v1135();end return v1035(v1134);end;local v1037=v1034.Parent.Parent.Parent.Parent.Parent.InformationFrame;local v1038=v1037.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1039=v1037.InfoMain.InfoMainFrame.InfoText;local v1040=v1034.Parent.InfoText.Value;v1034.Parent.MouseButton1Click:Connect(function() if (v1038.Value==false) then v1039.Text=v1040;v1038.Value=true;end end);end coroutine.wrap(v84)();v85=nil;function v85() local v1041=Instance.new("LocalScript",v41);local v1042=require;local v1043=function(v1136) local v1137=v79[v1136];if v1137 then return v1137();end return v1042(v1136);end;if (v1041.Parent.Parent.Parent.Name=="FunctionButtons") then return;end local v1044=game:GetService("TweenService");if (v1041.Parent.Toggle.Value==true) then v1044:Create(v1041.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(1,0,1 + 0 ,433 -(153 + 280) )}):Play();else v1044:Create(v1041.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,0 + 0 ,0 + 0 ,0)}):Play();end v1041.Parent.MouseButton1Down:Connect(function() if (v1041.Parent.Toggle.Value==true) then v1041.Parent.Toggle.Value=false;else v1041.Parent.Toggle.Value=true;end end);v1041.Parent.Toggler.MouseButton1Down:Connect(function() if (v1041.Parent.Toggle.Value==true) then v1041.Parent.Toggle.Value=false;else v1041.Parent.Toggle.Value=true;end end);v1041.Parent.Toggle.Changed:Connect(function() if (v1041.Parent.Toggle.Value==true) then v1044:Create(v1041.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(1 + 0 ,0 + 0 ,1,0 -0 )}):Play();else v1044:Create(v1041.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(667 -(89 + 578) ,0 + 0 ,0 -0 ,1049 -(572 + 477) )}):Play();end end);end coroutine.wrap(v85)();v86=nil;function v86() local v1045=Instance.new("LocalScript",v48);local v1046=require;local v1047=function(v1138) local v1139=v79[v1138];if v1139 then return v1139();end return v1046(v1138);end;local v1048=v1045.Parent.Parent.Parent.Parent.Parent.InformationFrame;local v1049=v1048.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1050=v1048.InfoMain.InfoMainFrame.InfoText;local v1051=v1045.Parent.InfoText.Value;v1045.Parent.MouseButton1Click:Connect(function() if (v1049.Value==false) then local v1182=0 + 0 ;while true do if ((0 + 0)==v1182) then v1050.Text=v1051;v1049.Value=true;break;end end end end);end coroutine.wrap(v86)();v0=13 + 94 ;end if (v0==(121 -(84 + 2))) then v23.BackgroundTransparency=1;v23.BorderSizePixel=0 -0 ;v23.Position=UDim2.new(0.0500000007 + 0 ,842 -(497 + 345) ,0.100000001 + 0 ,0);v23.Size=UDim2.new(0.899999976,0 + 0 ,1333.800000012 -(605 + 728) ,0 + 0 );v23.ZIndex=5;v23.Font=Enum.Font.GothamBold;v23.Text="Template_Unit_LongerName";v23.TextColor3=Color3.fromRGB(566 -311 ,12 + 243 ,255);v23.TextScaled=true;v0=133 -97 ;end if (v0==(29 + 3)) then v20.Parent=v19;v20.BackgroundColor3=Color3.fromRGB(706 -451 ,193 + 62 ,744 -(457 + 32) );v20.BackgroundTransparency=1;v20.Position=UDim2.new(0.060406547 + 0 ,1402 -(832 + 570) ,0.0239334963 + 0 ,0);v20.Size=UDim2.new(0 + 0 ,154,0 -0 ,12 + 12 );v21.Parent=v20;v21.BackgroundColor3=Color3.fromRGB(44,83,132);v21.Size=UDim2.new(1,0,797 -(588 + 208) ,0 -0 );v21.Font=Enum.Font.GothamBlack;v0=1833 -(884 + 916) ;end if (v0==(167 -87)) then v59.TextWrapped=true;v60.Name="CurrentSelectedButton_Roundify_12px";v60.Parent=v59;v60.Active=true;v60.AnchorPoint=Vector2.new(0.5 + 0 ,653.5 -(232 + 421) );v60.BackgroundColor3=Color3.fromRGB(2144 -(1569 + 320) ,255,63 + 192 );v60.BackgroundTransparency=1 + 0 ;v60.Position=UDim2.new(0.5 -0 ,605 -(316 + 289) ,0.5 -0 ,0 + 0 );v60.Selectable=true;v0=1534 -(666 + 787) ;end if (v0==(450 -(360 + 65))) then v14.ImageColor3=Color3.fromRGB(75 + 5 ,404 -(79 + 175) ,240);v14.ImageTransparency=0.2;v14.ScaleType=Enum.ScaleType.Slice;v14.SliceCenter=Rect.new(157 -57 ,79 + 21 ,306 -206 ,192 -92 );v14.SliceScale=0.04;v15.Name="InfoText";v15.Parent=v14;v15.BackgroundColor3=Color3.fromRGB(1154 -(503 + 396) ,436 -(92 + 89) ,255);v15.BackgroundTransparency=1 -0 ;v0=14 + 12 ;end if (v0==(32 + 21)) then v39.TextSize=25;v39.TextWrapped=true;v40.Name="ToggleButtonQuestion_Roundify_12px";v40.Parent=v39;v40.Active=true;v40.AnchorPoint=Vector2.new(0.5 -0 ,0.5 + 0 );v40.BackgroundColor3=Color3.fromRGB(581 -326 ,223 + 32 ,122 + 133 );v40.BackgroundTransparency=1;v40.Position=UDim2.new(0.5 -0 ,0 + 0 ,0.5,0 -0 );v0=1298 -(485 + 759) ;end if (v0==(182 -103)) then v59.BorderSizePixel=1189 -(442 + 747) ;v59.Position=UDim2.new(0.0500000007,1135 -(832 + 303) ,946.100000001 -(88 + 858) ,0 + 0 );v59.Size=UDim2.new(0.899999976 + 0 ,0 + 0 ,789.800000012 -(766 + 23) ,0 -0 );v59.ZIndex=3 -0 ;v59.Font=Enum.Font.GothamBold;v59.Text="Template_Unit_LongerName";v59.TextColor3=Color3.fromRGB(255,255,671 -416 );v59.TextScaled=true;v59.TextSize=84 -59 ;v0=1153 -(1036 + 37) ;end if (v0==(36 + 14)) then v37.BackgroundColor3=Color3.fromRGB(496 -241 ,201 + 54 ,1735 -(641 + 839) );v37.BackgroundTransparency=1;v37.Position=UDim2.new(913.060406547 -(910 + 3) ,0,0.0239334963 -0 ,0);v37.Size=UDim2.new(0,1838 -(1466 + 218) ,0 + 0 ,1172 -(556 + 592) );v38.Name="ToggleButtonFrame";v38.Parent=v37;v38.BackgroundColor3=Color3.fromRGB(80,65 + 115 ,1048 -(329 + 479) );v38.BackgroundTransparency=855 -(174 + 680) ;v38.Position=UDim2.new( -1.42857146,0 -0 ,0 -0 ,0 + 0 );v0=790 -(396 + 343) ;end if (v0==46) then v34.ZIndex=2;v34.Font=Enum.Font.GothamBold;v34.Text="Execute";v34.TextColor3=Color3.fromRGB(23 + 232 ,1732 -(29 + 1448) ,1644 -(135 + 1254) );v34.TextScaled=true;v34.TextSize=25;v34.TextWrapped=true;v35.Name="ExecuteButton_Roundify_12px";v35.Parent=v34;v0=176 -129 ;end if (v0==(9 -7)) then v18=Instance.new("ScrollingFrame");v19=Instance.new("Folder");v20=Instance.new("Frame");v21=Instance.new("TextButton");v22=Instance.new("ImageLabel");v23=Instance.new("TextButton");v24=Instance.new("ImageLabel");v25=Instance.new("Folder");v26=Instance.new("ScrollingFrame");v0=3;end if (v0==(30 + 15)) then v33.SliceCenter=Rect.new(100,100,1627 -(389 + 1138) ,674 -(102 + 472) );v33.SliceScale=0.09 + 0 ;v34.Name="ExecuteButton";v34.Parent=v30;v34.BackgroundColor3=Color3.fromRGB(142 + 113 ,238 + 17 ,255);v34.BackgroundTransparency=1546 -(320 + 1225) ;v34.BorderSizePixel=0 -0 ;v34.Position=UDim2.new( -(1.38999999 + 0),1464 -(157 + 1307) ,0,1859 -(821 + 1038) );v34.Size=UDim2.new(0.658999503 -0 ,0 + 0 ,1 -0 ,0);v0=46;end if ((6 + 10)==v0) then v6.BorderSizePixel=0 -0 ;v6.Position=UDim2.new(1026.0483333319 -(834 + 192) ,0,0 + 0 ,0 + 0 );v6.Size=UDim2.new(0 + 0 ,296,0,46 -16 );v6.Font=Enum.Font.GothamBlack;v6.Text=_G.UIName;v6.TextColor3=Color3.fromRGB(559 -(300 + 4) ,69 + 186 ,667 -412 );v6.TextScaled=true;v6.TextSize=386 -(112 + 250) ;v6.TextWrapped=true;v0=7 + 10 ;end if (v0==(155 -93)) then v45.TextColor3=Color3.fromRGB(147 + 108 ,132 + 123 ,255);v45.TextSize=12 + 3 ;v45.TextWrapped=true;v45.TextXAlignment=Enum.TextXAlignment.Left;v46.Name="ToggleList";v46.Parent=v29;v46.BackgroundColor3=Color3.fromRGB(255,255,127 + 128 );v46.BackgroundTransparency=1 + 0 ;v46.Position=UDim2.new(1414.060406547 -(1001 + 413) ,0,0.0239334963,0 -0 );v0=945 -(244 + 638) ;end if (v0==(736 -(627 + 66))) then v32.Font=Enum.Font.GothamBold;v32.Text="?";v32.TextColor3=Color3.fromRGB(759 -504 ,857 -(512 + 90) ,2161 -(1665 + 241) );v32.TextScaled=true;v32.TextSize=742 -(373 + 344) ;v32.TextWrapped=true;v33.Name="ExecuteButtonQuestion_Roundify_12px";v33.Parent=v32;v33.Active=true;v0=44;end if (v0==(45 + 54)) then v73.BorderSizePixel=0;v73.Size=UDim2.new(1 + 0 ,0 -0 ,1 -0 ,1099 -(35 + 1064) );v73.ZIndex=2 + 0 ;v73.Font=Enum.Font.GothamBold;v73.Text=">";v73.TextColor3=Color3.fromRGB(545 -290 ,255,255);v73.TextSize=1 + 29 ;v73.TextWrapped=true;v74.Name="MultiToToggleListScroll";v0=100;end if (v0==(1328 -(298 + 938))) then v68.SliceCenter=Rect.new(100,1359 -(233 + 1026) ,1766 -(636 + 1030) ,52 + 48 );v68.SliceScale=0.09 + 0 ;v69.Name="MultiToggleButtonText";v69.Parent=v66;v69.BackgroundColor3=Color3.fromRGB(76 + 179 ,18 + 237 ,476 -(55 + 166) );v69.BackgroundTransparency=1 + 0 ;v69.BorderSizePixel=0;v69.Position=UDim2.new( -(1.2 + 0),0 -0 ,0.125,297 -(36 + 261) );v69.Size=UDim2.new(1.70519459,0 -0 ,1368.875 -(34 + 1334) ,0);v0=36 + 57 ;end if (v0==6) then v54=Instance.new("ImageLabel");v55=Instance.new("TextButton");v56=Instance.new("TextLabel");v57=Instance.new("TextLabel");v58=Instance.new("ImageLabel");v59=Instance.new("TextButton");v60=Instance.new("ImageLabel");v61=Instance.new("Frame");v62=Instance.new("ImageLabel");v0=7;end if (v0==(71 + 20)) then v68.BackgroundColor3=Color3.fromRGB(255,1538 -(1035 + 248) ,276 -(20 + 1) );v68.BackgroundTransparency=1;v68.Position=UDim2.new(0.5,0,0.5,0 + 0 );v68.Selectable=true;v68.Size=UDim2.new(320 -(134 + 185) ,1133 -(549 + 584) ,686 -(314 + 371) ,0 -0 );v68.ZIndex=2;v68.Image="rbxassetid://3570695787";v68.ImageColor3=Color3.fromRGB(1024 -(478 + 490) ,108,91 + 79 );v68.ScaleType=Enum.ScaleType.Slice;v0=1264 -(786 + 386) ;end if (v0==(55 -38)) then v6.TextXAlignment=Enum.TextXAlignment.Left;spawn(function() while wait() do v6.Text=_G.UIName;end end);v7.Name="SelectionFrame";v7.Parent=v2;v7.BackgroundColor3=Color3.fromRGB(1429 -(1055 + 324) ,13,1402 -(1093 + 247) );v7.BackgroundTransparency=1;v7.BorderSizePixel=0 + 0 ;v7.Position=UDim2.new(0.0133333839,0 + 0 ,0.105142869 -0 ,0 -0 );v7.Size=UDim2.new(0.317999989 -0 ,0 -0 ,0.876571476 + 0 ,0);v0=69 -51 ;end if (v0==(117 -83)) then v22.ZIndex=4 + 0 ;v22.Image="rbxassetid://3570695787";v22.ImageColor3=Color3.fromRGB(80,180,613 -373 );v22.ScaleType=Enum.ScaleType.Slice;v22.SliceCenter=Rect.new(100,788 -(364 + 324) ,100,274 -174 );v22.SliceScale=0.05 -0 ;v23.Name="ToToggleListScrollFrameExecuteButton";v23.Parent=v22;v23.BackgroundColor3=Color3.fromRGB(85 + 170 ,1066 -811 ,255);v0=35;end if (v0==(105 -39)) then v49.Parent=v48;v49.Active=true;v49.AnchorPoint=Vector2.new(0.5 -0 ,1268.5 -(1249 + 19) );v49.BackgroundColor3=Color3.fromRGB(231 + 24 ,992 -737 ,1341 -(686 + 400) );v49.BackgroundTransparency=1 + 0 ;v49.Position=UDim2.new(229.5 -(73 + 156) ,0 + 0 ,0.5,0);v49.Selectable=true;v49.Size=UDim2.new(812 -(721 + 90) ,0 + 0 ,1,0);v49.Image="rbxassetid://3570695787";v0=217 -150 ;end if (v0==(539 -(224 + 246))) then v51.Padding=UDim.new(0 -0 ,9 -4 );v52.Name="ToToggleListScrollUIPadding";v52.Parent=v50;v52.PaddingBottom=UDim.new(0,5);v52.PaddingLeft=UDim.new(0 + 0 ,1 + 1 );v52.PaddingRight=UDim.new(0 + 0 ,2);v52.PaddingTop=UDim.new(0 -0 ,6 -4 );v53.Name="ButtonToToggle";v53.Parent=v46;v0=583 -(203 + 310) ;end if ((2066 -(1238 + 755))==v0) then v55.Parent=v53;v55.BackgroundColor3=Color3.fromRGB(18 + 237 ,1789 -(709 + 825) ,469 -214 );v55.BackgroundTransparency=1 -0 ;v55.BorderSizePixel=864 -(196 + 668) ;v55.Position=UDim2.new(0.125,0 -0 ,0.125 -0 ,0);v55.Size=UDim2.new(0.75,833 -(171 + 662) ,93.75 -(4 + 89) ,0 -0 );v55.ZIndex=1 + 1 ;v55.Font=Enum.Font.GothamBold;v55.Text="";v0=74;end if (v0==(426 -329)) then v72.Name="Toggler";v72.Parent=v70;v72.BackgroundColor3=Color3.fromRGB(100 + 155 ,255,255);v72.BackgroundTransparency=1487 -(35 + 1451) ;v72.BorderSizePixel=0;v72.Position=UDim2.new(1453.125 -(28 + 1425) ,1993 -(941 + 1052) ,0.125 + 0 ,1514 -(822 + 692) );v72.Size=UDim2.new(0.75 -0 ,0,0.75 + 0 ,0);v72.ZIndex=2;v72.Font=Enum.Font.GothamBold;v0=98;end if (v0==(353 -(45 + 252))) then v41.TextScaled=true;v41.TextSize=25 + 0 ;v41.TextWrapped=true;v42.Name="ButtonToToggle_Roundify_12px";v42.Parent=v41;v42.Active=true;v42.AnchorPoint=Vector2.new(0.5,0.5 + 0 );v42.BackgroundColor3=Color3.fromRGB(620 -365 ,688 -(114 + 319) ,255);v42.BackgroundTransparency=1 -0 ;v0=72 -15 ;end if (v0==109) then v93=nil;function v93() local v1052=Instance.new("LocalScript",v2);local v1053=require;local v1054=function(v1141) local v1142=v79[v1141];if v1142 then return v1142();end return v1053(v1141);end;_G.getScript=v1054(v1052.Parent.MainHandler);end coroutine.wrap(v93)();spawn(function() local v1055=0;local v1056;local v1057;local v1058;local v1059;local v1060;local v1061;local v1062;local v1063;local v1064;local v1065;local v1066;local v1067;local v1068;local v1069;local v1070;local v1071;local v1072;local v1073;local v1074;while true do if (v1055==7) then v1063();v1069=v1060.CreateNewListItem("Select Profile",v1074,v1073,"Select a Profile you want to Delete, Edit or Load","AllProfiles",v1065.ReachingID);if (v1074~="Loading Error") then local v1210=0 + 0 ;local v1211;local v1212;while true do if ((0 -0)==v1210) then v1211,v1212=pcall(function() for v1370,v1371 in pairs(_G.Existing) do if ((v1370~="AllProfiles") and (v1370~="AllFunctions")) then for v1415,v1416 in pairs(v1371) do if (v1415=="Value") then _G.Existing[v1370].Value=v1062[v1074].Data[v1370];if (type(v1416)=="table") then for v1481,v1482 in pairs(_G.Existing[v1370].ToggleFrame.MultiToToggleListScroll:GetChildren()) do if (v1482.Name=="ToToggleListScrollFrame") then if v1062[v1074].Data[v1370] then for v1504,v1505 in pairs(v1062[v1074].Data[v1370]) do if ((v1505==true) and (v1504==v1482.ToToggleListScrollFrameExecuteButton.Text)) then v1482.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(116 -60 ,2175 -(556 + 1407) ,1206 -(741 + 465) );elseif ((v1505==false) and (v1504==v1482.ToToggleListScrollFrameExecuteButton.Text)) then v1482.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(56,573 -(170 + 295) ,170);end end end end end end if (type(v1416)=="string") then _G.Existing[v1370].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text=v1062[v1074].Data[v1370];end end end end end end);if  not v1211 then v1064();end break;end end end v1067(v1074);spawn(function() local v1187=v1074;if (v1187~="DefaultProfile") then pcall(function() while (v1062[v1187].Overwrite==true) and v1 and v1.Parent and wait()  do local v1312=false;for v1337,v1338 in pairs(_G.Existing) do if ((v1337~="AllProfiles") and (v1337~="AllFunctions")) then for v1396,v1397 in pairs(v1338) do if ((v1396=="Value") and (v1062[v1187].Overwrite==true)) then local v1437=0;local v1438;local v1439;while true do if (v1437==(0 + 0)) then v1438=_G.Existing[v1337].Value;v1439=v1062[v1187].Data[v1337];v1437=1;end if (v1437==2) then if (type(v1397)=="boolean") then if (v1438~=v1439) then local v1497=0 + 0 ;while true do if (v1497==(0 -0)) then v1062[v1187].Data[v1337]=v1438;v1312=true;break;end end end end break;end if (v1437==(1 + 0)) then if (type(v1397)=="table") then for v1491,v1492 in pairs(v1438) do if (v1492~=v1439[v1491]) then local v1501=0 + 0 ;while true do if (v1501==(0 + 0)) then v1062[v1187].Data[v1337]=v1438;v1312=true;break;end end end end end if (type(v1397)=="string") then if (v1438~=v1439) then local v1498=0;while true do if (v1498==0) then v1062[v1187].Data[v1337]=v1438;v1312=true;break;end end end end v1437=2;end end end end end end if (v1312==true) then v1063();end end end);end end);break;end if (v1055==0) then repeat wait();until _G.Existing["#Settings"] v1056=nil;function v1056(v1188) local v1189=1230 -(957 + 273) ;for v1213,v1214 in pairs(v1188) do v1189=v1189 + 1 ;end return v1189;end v1057=nil;function v1057(v1190,v1191) for v1215,v1216 in pairs(v1190) do if (v1216==v1191) then return true;end end return false;end v1055=1 + 0 ;end if (v1055==(2 + 2)) then v1066=v1060.CreateTextItem("Loaded Profile: Error_No Profile_Loaded","This will show your Profile that is currently Loaded\nNote: nothing will save while your Default Profile is loaded","loadingText",v1065.ReachingID);v1067=nil;function v1067(v1192) v1066.TextFrame.Text.Text="Loaded Profile: "   .. v1192 ;end v1068=nil;v1069=nil;v1055=19 -14 ;end if (v1055==(2 -1)) then v1058=nil;function v1058(v1194) local v1195=0;local v1196;while true do if (v1195==1) then return v1196;end if (v1195==(0 -0)) then v1196={};for v1313,v1314 in pairs(v1194) do if (v1314==true) then table.insert(v1196,v1313);end end v1195=4 -3 ;end end end v1059=_G.UIName   .. ".settings" ;v1060=_G.getScript;v1061={DefaultProfile={Data={},LoadIn=true,Overwrite=false}};v1055=2;end if (v1055==(1783 -(389 + 1391))) then v1063=nil;function v1063() local v1197=0 + 0 ;while true do if ((0 + 0)==v1197) then writefile(v1059,game:service("HttpService"):JSONEncode(v1062));v1062=game:service("HttpService"):JSONDecode(readfile(v1059));break;end end end v1064=nil;function v1064() writefile(v1059,game:service("HttpService"):JSONEncode(v1061));v1062=game:service("HttpService"):JSONDecode(readfile(v1059));end v1065=v1060.CreateNewMainFrame("Profiles","Profs");v1055=8 -4 ;end if (v1055==(953 -(783 + 168))) then for v1198,v1199 in pairs(_G.Existing) do for v1217,v1218 in pairs(v1199) do if ((v1198~="AllProfiles") and (v1198~="AllFunctions")) then if (v1217=="Value") then if (type(v1218)=="boolean") then v1061['DefaultProfile']['Data'][v1198]=v1218;elseif (type(v1218)=="string") then v1061['DefaultProfile']['Data'][v1198]=v1218;elseif (type(v1218)=="table") then v1061['DefaultProfile']['Data'][v1198]=v1218;end end end end end v1062=nil;if  not pcall(function() readfile(v1059);end) then writefile(v1059,game:service("HttpService"):JSONEncode(v1061));end pcall(function() v1062=game:service("HttpService"):JSONDecode(readfile(v1059));end);if  not v1062 then writefile(v1059,game:service("HttpService"):JSONEncode(v1061));end v1055=3;end if (v1055==6) then if  not v1062 then v1064();end v1073={};for v1200,v1201 in pairs(v1062) do table.insert(v1073,v1200);end v1074="Loading Error";for v1202,v1203 in pairs(v1062) do if ((v1202=="DefaultProfile") and (v1203.LoadIn==true)) then v1074=v1202;elseif ((v1202~="DefaultProfile") and (v1203.LoadIn==true)) then local v1315=0 -0 ;while true do if (v1315==(0 + 0)) then v1074=v1202;for v1398,v1399 in pairs(v1062) do if ((v1398~=v1202) and (v1399.LoadIn==true)) then v1399.LoadIn=false;end end break;end end end end v1055=7;end if ((316 -(309 + 2))==v1055) then v1070=nil;function v1070() if (v1068.Value=="Create new Profile") then local v1289={Data=v1062.DefaultProfile.Data,LoadIn=false,Overwrite=false};local v1290=0;repeat wait();v1290=v1290 + 1 ;until  not v1062["Profile"   .. v1290 ] local v1291="Profile"   .. v1290 ;v1062[v1291]=v1289;v1063();v1069.DestroyFrame();local v1293={};for v1309,v1310 in pairs(v1062) do table.insert(v1293,v1309);end v1069=v1060.CreateNewListItem("Select Profile",v1291,v1293,"Select a Profile you want to Delete, Edit or Load","AllProfiles",v1065.ReachingID);elseif (v1068.Value=="Reset Profiles") then v1064();v1063();v1069.DestroyFrame();local v1316={};for v1339,v1340 in pairs(v1062) do table.insert(v1316,v1339);end v1069=v1060.CreateNewListItem("Select Profile","DefaultProfile",v1316,"Select a Profile you want to Delete, Edit or Load","AllProfiles",v1065.ReachingID);elseif (v1068.Value=="Delete Selected Profile") then if (v1069.Value~="DefaultProfile") then local v1400=0;local v1401;while true do if (v1400==(0 -0)) then v1062[v1069.Value]=nil;v1063();v1400=1213 -(1090 + 122) ;end if (v1400==1) then v1069.DestroyFrame();v1401={};v1400=2;end if (v1400==(1 + 1)) then for v1470,v1471 in pairs(v1062) do table.insert(v1401,v1470);end v1069=v1060.CreateNewListItem("Select Profile","DefaultProfile",v1401,"Select a Profile you want to Delete, Edit or Load","AllProfiles",v1065.ReachingID);break;end end end elseif (v1068.Value=="Load Selected Profile") then local v1402=v1069.Value;if (v1062[v1402].LoadIn==false) then local v1441=0 -0 ;while true do if (v1441==(1 + 0)) then v1063();for v1483,v1484 in pairs(v1062) do if (v1483==v1402) then for v1499,v1500 in pairs(_G.Existing) do if ((v1499~="AllProfiles") and (v1499~="AllFunctions")) then for v1510,v1511 in pairs(v1500) do if (v1510=="Value") then local v1514=1118 -(628 + 490) ;while true do if ((1 + 0)==v1514) then if (type(v1511)=="string") then _G.Existing[v1499].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text=v1062[v1402].Data[v1499];end break;end if (v1514==(0 -0)) then _G.Existing[v1499].Value=v1062[v1402].Data[v1499];if (type(v1511)=="table") then for v1525,v1526 in pairs(_G.Existing[v1499].ToggleFrame.MultiToToggleListScroll:GetChildren()) do if (v1526.Name=="ToToggleListScrollFrame") then for v1528,v1529 in pairs(v1062[v1402].Data[v1499]) do if ((v1529==true) and (v1528==v1526.ToToggleListScrollFrameExecuteButton.Text)) then v1526.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(255 -199 ,986 -(431 + 343) ,0);elseif ((v1529==false) and (v1528==v1526.ToToggleListScrollFrameExecuteButton.Text)) then v1526.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(112 -56 ,108,491 -321 );end end end end end v1514=1 + 0 ;end end end end end end v1484.LoadIn=true;else v1484.LoadIn=false;end end v1441=1 + 1 ;end if (v1441==(1697 -(556 + 1139))) then if (v1402~="DefaultProfile") then v1062[v1402].Overwrite=true;end v1067(v1402);v1441=3;end if (v1441==(18 -(6 + 9))) then v1063();spawn(function() if (v1402~="DefaultProfile") then pcall(function() while (v1062[v1402].Overwrite==true) and v1 and v1.Parent and wait(5)  do local v1502=0;local v1503;while true do if (v1502==(0 + 0)) then v1503=false;for v1515,v1516 in pairs(_G.Existing) do if ((v1515~="AllProfiles") and (v1515~="AllFunctions")) then for v1519,v1520 in pairs(v1516) do if ((v1519=="Value") and (v1062[v1402].Overwrite==true)) then local v1522=0 + 0 ;local v1523;local v1524;while true do if (v1522==(171 -(28 + 141))) then if (type(v1520)=="boolean") then if (v1523~=v1524) then v1062[v1402].Data[v1515]=v1523;v1503=true;end end break;end if (v1522==(0 + 0)) then v1523=_G.Existing[v1515].Value;v1524=v1062[v1402].Data[v1515];v1522=1;end if ((1 -0)==v1522) then if (type(v1520)=="table") then for v1531,v1532 in pairs(v1523) do if (v1532~=v1524[v1531]) then v1062[v1402].Data[v1515]=v1523;v1503=true;end end end if (type(v1520)=="string") then if (v1523~=v1524) then v1062[v1402].Data[v1515]=v1523;v1503=true;end end v1522=2 + 0 ;end end end end end end v1502=1;end if ((1318 -(486 + 831))==v1502) then if (v1503==true) then v1063();end break;end end end end);end end);break;end if ((0 -0)==v1441) then for v1485,v1486 in pairs(v1062) do v1486.Overwrite=false;end v1062[v1402].Overwrite=false;v1441=3 -2 ;end end end end end v1071=v1060.CreateExecuteButton("Execute Function",v1070,"Select a Function you want to Run and Execute it with this Button","ExecuteFunction",v1065.ReachingID);v1072=v1060.CreateExecuteButton("Save",v1063,"Save all your Settings\nNote: Default Settings will not save","savef",v1065.ReachingID);v1068=v1060.CreateNewListItem("Functions","Create new Profile",{"Create new Profile","Delete Selected Profile","Load Selected Profile","Reset Profiles"},"Select a Function you want to Run","AllFunctions",v1065.ReachingID);v1055=1269 -(668 + 595) ;end end end);return _G.getScript;end if (v0==(47 + 5)) then v39.BackgroundTransparency=1 + 0 ;v39.BorderSizePixel=0 -0 ;v39.Position=UDim2.new(290.850000024 -(23 + 267) ,1944 -(1129 + 815) ,0,0);v39.Size=UDim2.new(387.158999994 -(371 + 16) ,0,1,1750 -(1326 + 424) );v39.ZIndex=3 -1 ;v39.Font=Enum.Font.GothamBold;v39.Text="?";v39.TextColor3=Color3.fromRGB(255,255,255);v39.TextScaled=true;v0=193 -140 ;end if (v0==(123 -(88 + 30))) then v45=Instance.new("TextLabel");v46=Instance.new("Frame");v47=Instance.new("ImageLabel");v48=Instance.new("TextButton");v49=Instance.new("ImageLabel");v50=Instance.new("ScrollingFrame");v51=Instance.new("UIListLayout");v52=Instance.new("UIPadding");v53=Instance.new("TextButton");v0=6;end if (v0==(856 -(720 + 51))) then v63.TextWrapped=true;v63.TextXAlignment=Enum.TextXAlignment.Left;v64.Name="JustTextQuestion";v64.Parent=v61;v64.BackgroundColor3=Color3.fromRGB(567 -312 ,2031 -(421 + 1355) ,255);v64.BackgroundTransparency=1;v64.BorderSizePixel=0;v64.Position=UDim2.new(0.850000024,0 -0 ,0 + 0 ,0);v64.Size=UDim2.new(1083.158999994 -(286 + 797) ,0,1,0);v0=314 -228 ;end if (v0==(11 -4)) then v63=Instance.new("TextLabel");v64=Instance.new("TextButton");v65=Instance.new("ImageLabel");v66=Instance.new("Frame");v67=Instance.new("TextButton");v68=Instance.new("ImageLabel");v69=Instance.new("TextLabel");v70=Instance.new("TextButton");v71=Instance.new("ImageLabel");v0=447 -(397 + 42) ;end if (v0==(5 + 10)) then v5.Size=UDim2.new(1.11999989,800 -(24 + 776) ,1,0 -0 );v5.Image="rbxassetid://3570695787";v5.ImageColor3=Color3.fromRGB(80,180,1025 -(222 + 563) );v5.ScaleType=Enum.ScaleType.Slice;v5.SliceCenter=Rect.new(100,220 -120 ,72 + 28 ,100);v5.SliceScale=0.12;v6.Parent=v3;v6.BackgroundColor3=Color3.fromRGB(255,255,445 -(23 + 167) );v6.BackgroundTransparency=1799 -(690 + 1108) ;v0=16;end if (v0==(11 + 17)) then v16.ZIndex=10;v16.Font=Enum.Font.GothamBold;v16.Text="OK";v16.TextColor3=Color3.fromRGB(255,211 + 44 ,1103 -(40 + 808) );v16.TextScaled=true;v16.TextSize=4 + 20 ;v16.TextWrapped=true;v17.Name="OK_Button_Roundify_12px";v17.Parent=v16;v0=110 -81 ;end if (v0==108) then v90=nil;function v90() local v1075=Instance.new("LocalScript",v67);local v1076=require;local v1077=function(v1143) local v1144=v79[v1143];if v1144 then return v1144();end return v1076(v1143);end;local v1078=v1075.Parent.Parent.Parent.Parent.Parent.InformationFrame;local v1079=v1078.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1080=v1078.InfoMain.InfoMainFrame.InfoText;local v1081=v1075.Parent.InfoText.Value;v1075.Parent.MouseButton1Click:Connect(function() if (v1079.Value==false) then local v1183=0;while true do if (v1183==0) then v1080.Text=v1081;v1079.Value=true;break;end end end end);end coroutine.wrap(v90)();v91=nil;function v91() local v1082=Instance.new("LocalScript",v70);local v1083=require;local v1084=function(v1145) local v1146=v79[v1145];if v1146 then return v1146();end return v1083(v1145);end;if (v1082.Parent.Parent.Parent.Name=="FunctionButtons") then return;end local v1085=game:GetService("TweenService");local v1086=false;if (v1082.Parent.Toggle.Value==true) then if (v1086==false) then v1086=true;v1085:Create(v1082.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=87 + 3 }):Play();v1082.Parent.Parent.ToToggleListScroll.Visible=true;v1085:Create(v1082.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 + 0 ,300,0 + 0 ,100)}):Play();wait(571.5 -(47 + 524) );v1086=false;end elseif (v1086==false) then v1086=true;v1085:Create(v1082.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,448 -148 ,0 -0 ,1726 -(1165 + 561) )}):Play();v1085:Create(v1082.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0 -0 }):Play();wait(0.5);v1082.Parent.Parent.MultiToToggleListScroll.Visible=false;v1086=false;end v1082.Parent.MouseButton1Down:Connect(function() if (v1082.Parent.Toggle.Value==true) then if (v1086==false) then v1082.Parent.Toggle.Value=false;end elseif (v1086==false) then v1082.Parent.Toggle.Value=true;end end);v1082.Parent.Toggler.MouseButton1Down:Connect(function() if (v1082.Parent.Toggle.Value==true) then if (v1086==false) then v1082.Parent.Toggle.Value=false;end elseif (v1086==false) then v1082.Parent.Toggle.Value=true;end end);v1082.Parent.Toggle.Changed:Connect(function() if (v1082.Parent.Toggle.Value==true) then if (v1086==false) then v1086=true;v1085:Create(v1082.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=35 + 55 }):Play();v1082.Parent.Parent.MultiToToggleListScroll.Visible=true;v1085:Create(v1082.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(479.5 -(341 + 138) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 + 0 ,619 -319 ,326 -(89 + 237) ,321 -221 )}):Play();wait(0.5 -0 );v1086=false;end elseif (v1086==false) then v1086=true;v1085:Create(v1082.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,300,0,881 -(581 + 300) )}):Play();v1085:Create(v1082.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0}):Play();wait(1220.5 -(855 + 365) );v1082.Parent.Parent.MultiToToggleListScroll.Visible=false;v1086=false;end end);end coroutine.wrap(v91)();v92=nil;function v92() local v1087=Instance.new("LocalScript",v74);local v1088=require;local v1089=function(v1147) local v1148=v79[v1147];if v1148 then return v1148();end return v1088(v1147);end;if (v1087.Parent.Parent.Parent.Name=="FunctionButtons") then return;end local v1090=game:GetService("TweenService");local v1091=false;v1087.Parent.MouseMoved:Connect(function() v1091=true;end);v1087.Parent.MouseLeave:Connect(function() v1091=false;end);local v1092=game:GetService("UserInputService");v1092.InputChanged:Connect(function(v1149) if ((v1149.UserInputType==Enum.UserInputType.MouseWheel) and (v1091==true)) then if (v1149.Position.Z>0) then v1090:Create(v1087.Parent,TweenInfo.new(0.5),{CanvasPosition=Vector2.new(0,v1087.Parent.CanvasPosition.Y-(237 -137) )}):Play();else v1090:Create(v1087.Parent,TweenInfo.new(0.5),{CanvasPosition=Vector2.new(0,v1087.Parent.CanvasPosition.Y + 33 + 67 )}):Play();end end end);while wait() do v1087.Parent.CanvasSize=UDim2.new(1235 -(1030 + 205) ,0 + 0 ,1 + 0 ,75 + ((311 -(156 + 130)) * ( #v1087.Parent:GetChildren() -7)) + (11 -6) );end end coroutine.wrap(v92)();v0=183 -74 ;end if (v0==38) then v25.Parent=_G.Module;v26.Name="TemplateFrame";v26.Parent=v25;v26.Active=true;v26.BackgroundColor3=Color3.fromRGB(255,255,255);v26.BackgroundTransparency=0.99;v26.Position=UDim2.new(0.344999999 -0 ,0 + 0 ,0.124431327,0 + 0 );v26.Size=UDim2.new(69.643333316 -(10 + 59) ,0,0.857283056 + 0 ,0);v26.CanvasSize=UDim2.new(0 -0 ,1163 -(671 + 492) ,0 + 0 ,1215 -(369 + 846) );v0=39;end if (v0==(23 + 63)) then v64.ZIndex=2 + 0 ;v64.Font=Enum.Font.GothamBold;v64.Text="?";v64.TextColor3=Color3.fromRGB(255,255,2200 -(1036 + 909) );v64.TextScaled=true;v64.TextSize=20 + 5 ;v64.TextWrapped=true;v65.Name="JustTextQuestion_Roundify_12px";v65.Parent=v64;v0=145 -58 ;end if (v0==(207 -(11 + 192))) then v36=Instance.new("TextLabel");v37=Instance.new("Frame");v38=Instance.new("ImageLabel");v39=Instance.new("TextButton");v40=Instance.new("ImageLabel");v41=Instance.new("TextButton");v42=Instance.new("ImageLabel");v43=Instance.new("TextButton");v44=Instance.new("ImageLabel");v0=5;end if (v0==(36 + 34)) then v53.BackgroundColor3=Color3.fromRGB(430 -(135 + 40) ,617 -362 ,255);v53.BackgroundTransparency=1 + 0 ;v53.BorderSizePixel=0 -0 ;v53.Position=UDim2.new( -(1.39025962 -0),176 -(50 + 126) ,0,0 -0 );v53.Size=UDim2.new(0.158999994 + 0 ,1413 -(1233 + 180) ,970 -(522 + 447) ,1421 -(107 + 1314) );v53.ZIndex=2;v53.Font=Enum.Font.GothamBold;v53.Text="";v53.TextColor3=Color3.fromRGB(119 + 136 ,777 -522 ,109 + 146 );v0=140 -69 ;end if (58==v0) then v43.Parent=v41;v43.BackgroundColor3=Color3.fromRGB(255,1008 -753 ,2165 -(716 + 1194) );v43.BackgroundTransparency=1 + 0 ;v43.BorderSizePixel=0 + 0 ;v43.Position=UDim2.new(0.125,503 -(74 + 429) ,0.125 -0 ,0 + 0 );v43.Size=UDim2.new(0.75 -0 ,0 + 0 ,0.75 -0 ,0 -0 );v43.ZIndex=2;v43.Font=Enum.Font.GothamBold;v43.Text="";v0=492 -(279 + 154) ;end if (v0==(809 -(454 + 324))) then v18.BackgroundTransparency=1 + 0 ;v18.Size=UDim2.new(18 -(12 + 5) ,0,1,0 + 0 );v18.CanvasSize=UDim2.new(0 -0 ,0 + 0 ,0,1093 -(277 + 816) );v18.ScrollBarThickness=0 -0 ;v79={};do local v1093=Instance.new("ModuleScript",v2);_G.Module=v1093;v1093.Name="MainHandler";local function v1095() local v1151=0;while true do if (v1151==0) then _G.Existing={};return {CreateNewMainFrame=function(v1225,v1226) local v1227=0;local v1228;local v1229;local v1230;while true do if (2==v1227) then v1230={Selection=v1228,SelectionButton=v1228.TextButton,MainFrame=v1229,ReachingID=v1226,DestroyFrame=function() v1228:Destroy();v1229:Destroy();_G.Existing[v1226]=nil;end};_G.Existing[v1226]=v1230;return v1230;end if ((1184 -(1058 + 125))==v1227) then v1229=v1093.MainFrames.TemplateFrame:Clone();v1229.Name=v1225;v1229.Parent=v1093.Parent.Selections;if ( #v1093.Parent.Selections:GetChildren()>=2) then v1229.Position=UDim2.new(1.345,0,0.124,0);end v1227=2;end if (v1227==(0 + 0)) then v1228=v1093.Selections.SelectionTemplate:Clone();v1228.TextButton.Text=v1225;v1228.Name=v1225;v1228.Parent=v1093.Parent.SelectionFrame.SelectFrame.Selection;v1227=976 -(815 + 160) ;end end end,CreateTextItem=function(v1231,v1232,v1233,v1234) local v1235=0 -0 ;local v1236;local v1237;while true do if (v1235==(4 -2)) then v1237={TextFrame=v1236,ReachingID=v1233,FrameID=v1234,DestroyFrame=function() local v1341=0 + 0 ;while true do if (0==v1341) then v1236:Destroy();_G.Existing[v1233]=nil;break;end end end};_G.Existing[v1233]=v1237;v1235=3;end if (v1235==(0 -0)) then v1236=v1093.FunctionButtons.JustText:Clone();v1236.Text.Text=v1231;v1235=1;end if ((1901 -(41 + 1857))==v1235) then v1236.JustTextQuestion.MouseButton1Down:Connect(function() local v1342=v1093.Parent.InformationFrame;local v1343=v1342.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1344=v1342.InfoMain.InfoMainFrame.InfoText;local v1345=v1232;if (v1343.Value==false) then local v1393=1893 -(1222 + 671) ;while true do if (v1393==0) then v1344.Text=v1345;v1343.Value=true;break;end end end end);return v1237;end if (v1235==1) then v1236.JustTextQuestion.InfoText.Value=v1232;v1236.Parent=_G.Existing[v1234].MainFrame;v1235=5 -3 ;end end end,CreateExecuteButton=function(v1238,v1239,v1240,v1241,v1242) local v1243=0 -0 ;local v1244;local v1245;local v1246;while true do if (v1243==2) then v1245=v1244.ExecuteButton.MouseButton1Down:Connect(function() v1239();end);v1246={ExecuteFrame=v1244,ReachingID=v1241,FrameID=v1242,DestroyFrame=function() v1244:Destroy();v1245:Disconnect();_G.Existing[v1241]=nil;end};v1243=1185 -(229 + 953) ;end if (v1243==(1777 -(1111 + 663))) then _G.Existing[v1241]=v1246;spawn(function() v1244.ExecuteButtonQuestion.MouseButton1Down:Connect(function() local v1373=v1093.Parent.InformationFrame;local v1374=v1373.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1375=v1373.InfoMain.InfoMainFrame.InfoText;local v1376=v1240;if (v1374.Value==false) then v1375.Text=v1376;v1374.Value=true;end end);end);v1243=4;end if ((1583 -(874 + 705))==v1243) then return v1246;end if ((0 + 0)==v1243) then v1244=v1093.FunctionButtons.ExecuteButton:Clone();v1244.ExecuteButtonText.Text=v1238;v1243=1 + 0 ;end if ((1 -0)==v1243) then v1244.ExecuteButtonQuestion.InfoText.Value=v1240;v1244.Parent=_G.Existing[v1242].MainFrame;v1243=1 + 1 ;end end end,CreateToggleButton=function(v1247,v1248,v1249,v1250) local v1251=679 -(642 + 37) ;local v1252;local v1253;local v1254;while true do if (v1251==2) then v1253=v1252.ButtonToToggle.Toggle.Changed:Connect(function() _G.Existing[v1249].Value=v1252.ButtonToToggle.Toggle.Value;end);v1254={ToggleFrame=v1252,ReachingID=v1249,FrameID=v1250,Value=v1252.ButtonToToggle.Toggle.Value,DestroyFrame=function() local v1347=0 + 0 ;while true do if (v1347==(1 + 0)) then _G.Existing[v1249]=nil;break;end if (v1347==(0 -0)) then v1252:Destroy();v1253:Disconnect();v1347=455 -(233 + 221) ;end end end};v1251=6 -3 ;end if (v1251==(4 + 0)) then return v1254;end if (v1251==3) then _G.Existing[v1249]=v1254;spawn(function() local v1348=1541 -(718 + 823) ;local v1349;local v1350;local v1351;while true do if (v1348==0) then spawn(function() while wait(0.1) do local v1444,v1445=pcall(function() v1252.ButtonToToggle.Toggle.Value=_G.Existing[v1249].Value;end);if (v1444==false) then break;end end end);v1252.ToggleButtonQuestion.MouseButton1Down:Connect(function() local v1418=v1093.Parent.InformationFrame;local v1419=v1418.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1420=v1418.InfoMain.InfoMainFrame.InfoText;local v1421=v1248;if (v1419.Value==false) then v1420.Text=v1421;v1419.Value=true;end end);v1348=1 + 0 ;end if (2==v1348) then v1351=game:GetService("TweenService");if (v1349.Value==true) then v1351:Create(v1350.Toggler_Roundify_12px,TweenInfo.new(805.5 -(266 + 539) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(2 -1 ,1225 -(636 + 589) ,2 -1 ,0 -0 )}):Play();else v1351:Create(v1350.Toggler_Roundify_12px,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,0,0 + 0 ,1015 -(657 + 358) )}):Play();end v1348=7 -4 ;end if (v1348==(8 -4)) then v1349.Changed:Connect(function() if (v1349.Value==true) then v1351:Create(v1350.Toggler_Roundify_12px,TweenInfo.new(1187.5 -(1151 + 36) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(1 + 0 ,0,1 + 0 ,0 -0 )}):Play();else v1351:Create(v1350.Toggler_Roundify_12px,TweenInfo.new(1832.5 -(1552 + 280) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,834 -(64 + 770) ,0 + 0 ,0 -0 )}):Play();end end);break;end if (v1348==(1 + 2)) then v1252.ButtonToToggle.MouseButton1Down:Connect(function() if (v1349.Value==true) then v1349.Value=false;else v1349.Value=true;end end);v1350.MouseButton1Down:Connect(function() if (v1349.Value==true) then v1349.Value=false;else v1349.Value=true;end end);v1348=1247 -(157 + 1086) ;end if (v1348==1) then v1349=v1252.ButtonToToggle.Toggle;v1350=v1252.ButtonToToggle.Toggler;v1348=3 -1 ;end end end);v1251=17 -13 ;end if (0==v1251) then v1252=v1093.FunctionButtons.ToggleButton:Clone();v1252.ToggleButtonText.Text=v1247;v1251=1;end if (v1251==1) then v1252.ToggleButtonQuestion.InfoText.Value=v1248;v1252.Parent=_G.Existing[v1250].MainFrame;v1251=2 -0 ;end end end,CreateNewListItem=function(v1255,v1256,v1257,v1258,v1259,v1260) local v1261=0 -0 ;local v1262;local v1263;while true do if (v1261==1) then v1262.ToToggleListQuestion.InfoText.Value=v1258;v1262.Parent=_G.Existing[v1260].MainFrame;v1261=821 -(599 + 220) ;end if (v1261==(5 -2)) then v1263={ToggleFrame=v1262,ReachingID=v1259,FrameID=v1260,List=v1257,Value=v1256,DestroyFrame=function() v1262:Destroy();_G.Existing[v1259]=nil;end};_G.Existing[v1259]=v1263;v1261=1935 -(1813 + 118) ;end if (v1261==(2 + 0)) then v1262.CurrentSelected.CurrentSelectedButton.Text=v1256;for v1352,v1353 in pairs(v1257) do local v1354=v1093.Selections.ToToggleListScrollFrame:Clone();v1354.ToToggleListScrollFrameExecuteButton.Text=v1353;v1354.Parent=v1262.ToToggleListScroll;v1354.ToToggleListScrollFrameExecuteButton.MouseButton1Down:Connect(function() local v1377=1217 -(841 + 376) ;while true do if (v1377==(0 -0)) then _G.Existing[v1259].Value=v1353;v1262.CurrentSelected.CurrentSelectedButton.Text=v1353;v1377=1 + 0 ;end if (v1377==(2 -1)) then v1262.ButtonToToggle.Toggle.Value=false;break;end end end);end v1261=862 -(464 + 395) ;end if (v1261==(10 -6)) then spawn(function() v1262.ToToggleListQuestion.MouseButton1Down:Connect(function() local v1378=0;local v1379;local v1380;local v1381;local v1382;while true do if (v1378==(1 + 1)) then if (v1380.Value==false) then v1381.Text=v1382;v1380.Value=true;end break;end if (v1378==1) then v1381=v1379.InfoMain.InfoMainFrame.InfoText;v1382=v1258;v1378=839 -(467 + 370) ;end if (v1378==(0 -0)) then v1379=v1093.Parent.InformationFrame;v1380=v1379.InfoMain.InfoMainFrame.OK_Button.InformationToggler;v1378=1 + 0 ;end end end);local v1358=game:GetService("TweenService");local v1359=false;local v1360=v1262.ToToggleListScroll;v1360.MouseMoved:Connect(function() v1359=true;end);v1360.MouseLeave:Connect(function() v1359=false;end);local v1361=game:GetService("UserInputService");v1361.InputChanged:Connect(function(v1383) if ((v1383.UserInputType==Enum.UserInputType.MouseWheel) and (v1359==true)) then if (v1383.Position.Z>(0 -0)) then v1358:Create(v1360,TweenInfo.new(0.5 + 0 ),{CanvasPosition=Vector2.new(0 -0 ,v1360.CanvasPosition.Y-100 )}):Play();else v1358:Create(v1360,TweenInfo.new(520.5 -(150 + 370) ),{CanvasPosition=Vector2.new(1282 -(74 + 1208) ,v1360.CanvasPosition.Y + (245 -145) )}):Play();end end end);spawn(function() while wait() do v1360.CanvasSize=UDim2.new(0 -0 ,0 + 0 ,391 -(14 + 376) ,(130 -55) + ((17 + 8) * ( #v1360:GetChildren() -(7 + 0))) + 5 + 0 );end end);local v1358=game:GetService("TweenService");local v1362=false;local v1360=v1262.ButtonToToggle.Toggler;if (v1360.Parent.Toggle.Value==true) then if (v1362==false) then local v1427=0 -0 ;while true do if (v1427==(1 + 0)) then v1360.Parent.Parent.ToToggleListScroll.Visible=true;v1358:Create(v1360.Parent.Parent.ToToggleListScroll,TweenInfo.new(78.5 -(23 + 55) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,300,0 + 0 ,90 + 10 )}):Play();v1427=2 -0 ;end if (v1427==(1 + 1)) then wait(901.5 -(652 + 249) );v1362=false;break;end if (v1427==(0 -0)) then v1362=true;v1358:Create(v1360.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(1868.5 -(708 + 1160) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=244 -154 }):Play();v1427=1 -0 ;end end end elseif (v1362==false) then local v1428=27 -(10 + 17) ;while true do if (v1428==1) then v1358:Create(v1360.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0}):Play();wait(0.5 + 0 );v1428=1734 -(1400 + 332) ;end if (2==v1428) then v1360.Parent.Parent.ToToggleListScroll.Visible=false;v1362=false;break;end if ((0 -0)==v1428) then v1362=true;v1358:Create(v1360.Parent.Parent.ToToggleListScroll,TweenInfo.new(1908.5 -(242 + 1666) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 + 0 ,300,0 + 0 ,0 + 0 )}):Play();v1428=941 -(850 + 90) ;end end end v1360.Parent.MouseButton1Down:Connect(function() if (v1360.Parent.Toggle.Value==true) then if (v1362==false) then v1360.Parent.Toggle.Value=false;end elseif (v1362==false) then v1360.Parent.Toggle.Value=true;end end);v1360.Parent.Toggler.MouseButton1Down:Connect(function() if (v1360.Parent.Toggle.Value==true) then if (v1362==false) then v1360.Parent.Toggle.Value=false;end elseif (v1362==false) then v1360.Parent.Toggle.Value=true;end end);v1360.Parent.Toggle.Changed:Connect(function() if (v1360.Parent.Toggle.Value==true) then for v1429,v1430 in pairs(v1262.Parent:GetChildren()) do local v1431=0;while true do if (v1431==(0 -0)) then if (v1430.Name=="ToggleList") then if (v1430~=v1262) then v1430.ButtonToToggle.Toggle.Value=false;end end if (v1430.Name=="MultiToggleList") then if (v1430~=v1262) then v1430.MultiButtonToToggle.Toggle.Value=false;end end break;end end end v1362=true;v1358:Create(v1360.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(1390.5 -(360 + 1030) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=80 + 10 }):Play();v1360.Parent.Parent.ToToggleListScroll.Visible=true;v1358:Create(v1360.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,300,1661 -(909 + 752) ,1323 -(109 + 1114) )}):Play();wait(0.5 -0 );v1362=false;else local v1408=0;while true do if (v1408==0) then v1362=true;v1358:Create(v1360.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,542 -(6 + 236) ,0 + 0 ,0 + 0 )}):Play();v1408=1;end if (v1408==(2 -1)) then v1358:Create(v1360.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0}):Play();wait(0.5);v1408=1135 -(1076 + 57) ;end if ((1 + 1)==v1408) then v1360.Parent.Parent.ToToggleListScroll.Visible=false;v1362=false;break;end end end end);end);return v1263;end if (v1261==(689 -(579 + 110))) then v1262=v1093.FunctionButtons.ToggleList:Clone();v1262.ToggleButtonText.Text=v1255;v1261=1;end end end,CreateNewToggleListItem=function(v1264,v1265,v1266,v1267,v1268,v1269) local v1270=v1093.FunctionButtons.MultiToggleList:Clone();v1270.MultiToggleButtonText.Text=v1264;v1270.MultiToToggleListQuestion.InfoText.Value=v1267;v1270.Parent=_G.Existing[v1269].MainFrame;local v1274={};for v1296,v1297 in pairs(v1265) do local v1298=0;local v1299;while true do if (v1298==(1 + 0)) then for v1384,v1385 in pairs(v1266) do if (v1385==v1297) then v1274[v1297]=true;v1299.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(50 + 6 ,113 + 99 ,407 -(174 + 233) );end end v1299.ToToggleListScrollFrameExecuteButton.Text=v1297;v1298=2;end if (0==v1298) then v1299=v1093.Selections.ToToggleListScrollFrame:Clone();v1274[v1297]=false;v1298=2 -1 ;end if ((3 -1)==v1298) then v1299.Parent=v1270.MultiToToggleListScroll;v1299.ToToggleListScrollFrameExecuteButton.MouseButton1Down:Connect(function() if (_G.Existing[v1268].Value[v1297]==true) then local v1411=0;while true do if (v1411==0) then _G.Existing[v1268].Value[v1297]=false;v1299.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(25 + 31 ,1282 -(663 + 511) ,152 + 18 );break;end end else _G.Existing[v1268].Value[v1297]=true;v1299.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3=Color3.fromRGB(13 + 43 ,212,0 -0 );end end);break;end end end local v1275={ToggleFrame=v1270,ReachingID=v1268,FrameID=v1269,List=v1265,Value=v1274,DestroyFrame=function() v1270:Destroy();_G.Existing[v1268]=nil;end};_G.Existing[v1268]=v1275;spawn(function() local v1300=0 + 0 ;local v1301;local v1302;local v1303;local v1304;local v1305;local v1306;while true do if ((11 -6)==v1300) then v1306.MouseButton1Down:Connect(function() if (v1303.Value==true) then if (v1305==false) then v1303.Value=false;end elseif (v1305==false) then v1303.Value=true;end end);v1303.Changed:Connect(function() if (v1303.Value==true) then local v1413=0 -0 ;while true do if (v1413==(2 + 1)) then v1305=false;break;end if (v1413==(3 -1)) then v1301:Create(v1270.MultiToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 + 0 ,1022 -(478 + 244) ,517 -(440 + 77) ,100)}):Play();wait(0.5 + 0 );v1413=10 -7 ;end if (v1413==1) then v1301:Create(v1306.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=1646 -(655 + 901) }):Play();v1270.MultiToToggleListScroll.Visible=true;v1413=2;end if (v1413==(0 + 0)) then v1305=true;for v1474,v1475 in pairs(v1270.Parent:GetChildren()) do local v1476=0 + 0 ;while true do if (v1476==(0 + 0)) then if (v1475.Name=="ToggleList") then if (v1475~=v1270) then v1475.ButtonToToggle.Toggle.Value=false;end end if (v1475.Name=="MultiToggleList") then if (v1475~=v1270) then v1475.MultiButtonToToggle.Toggle.Value=false;end end break;end end end v1413=1;end end else v1305=true;v1301:Create(v1270.MultiToToggleListScroll,TweenInfo.new(0.5 -0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(1445 -(695 + 750) ,1024 -724 ,0 -0 ,0 -0 )}):Play();v1301:Create(v1306.ToggleButtonArrow,TweenInfo.new(351.5 -(285 + 66) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0 -0 }):Play();wait(1310.5 -(682 + 628) );v1270.MultiToToggleListScroll.Visible=false;v1305=false;end end);break;end if (v1300==(1 + 2)) then v1301=game:GetService("TweenService");v1305=false;v1303=v1270.MultiButtonToToggle.Toggle;v1300=4;end if (v1300==(301 -(176 + 123))) then v1304=game:GetService("UserInputService");v1304.InputChanged:Connect(function(v1386) if ((v1386.UserInputType==Enum.UserInputType.MouseWheel) and (v1302==true)) then if (v1386.Position.Z>(0 + 0)) then v1301:Create(v1303,TweenInfo.new(0.5 + 0 ),{CanvasPosition=Vector2.new(269 -(239 + 30) ,v1303.CanvasPosition.Y-100 )}):Play();else v1301:Create(v1303,TweenInfo.new(0.5),{CanvasPosition=Vector2.new(0 + 0 ,v1303.CanvasPosition.Y + 100 )}):Play();end end end);spawn(function() while wait() do v1303.CanvasSize=UDim2.new(0,0 + 0 ,1 -0 ,75 + ((77 -52) * ( #v1303:GetChildren() -7)) + (320 -(306 + 9)) );end end);v1300=10 -7 ;end if (v1300==(0 + 0)) then v1270.MultiToToggleListQuestion.MouseButton1Down:Connect(function() local v1387=0 + 0 ;local v1388;local v1389;local v1390;local v1391;while true do if (v1387==(0 + 0)) then v1388=v1093.Parent.InformationFrame;v1389=v1388.InfoMain.InfoMainFrame.OK_Button.InformationToggler;v1387=1;end if (v1387==(5 -3)) then if (v1389.Value==false) then local v1469=1375 -(1140 + 235) ;while true do if (v1469==(0 + 0)) then v1390.Text=v1391;v1389.Value=true;break;end end end break;end if (v1387==1) then v1390=v1388.InfoMain.InfoMainFrame.InfoText;v1391=v1267;v1387=2;end end end);v1301=game:GetService("TweenService");v1302=false;v1300=1;end if (v1300==(4 + 0)) then v1306=v1303.Parent.Toggler;if (v1303.Value==true) then if (v1305==false) then v1305=true;v1301:Create(v1306.ToggleButtonArrow,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=142 -(33 + 19) }):Play();v1270.MultiToToggleListScroll.Visible=true;v1301:Create(v1270.MultiToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,133 + 167 ,0 -0 ,100)}):Play();wait(0.5 + 0 );v1305=false;end elseif (v1305==false) then local v1436=689 -(586 + 103) ;while true do if (v1436==(0 + 0)) then v1305=true;v1301:Create(v1270.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0,923 -623 ,0,1488 -(1309 + 179) )}):Play();v1436=1;end if (v1436==(2 -0)) then v1270.MultiToToggleListScroll.Visible=false;v1305=false;break;end if (v1436==(1 + 0)) then v1301:Create(v1306.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0 -0 }):Play();wait(0.5 + 0 );v1436=3 -1 ;end end end v1270.MultiButtonToToggle.MouseButton1Down:Connect(function() if (v1303.Value==true) then if (v1305==false) then v1303.Value=false;end elseif (v1305==false) then v1303.Value=true;end end);v1300=5;end if (v1300==(1 -0)) then v1303=v1270.MultiToToggleListScroll;v1303.MouseMoved:Connect(function() v1302=true;end);v1303.MouseLeave:Connect(function() v1302=false;end);v1300=611 -(295 + 314) ;end end end);return v1275;end,GetValueByID=function(v1276) if _G.Existing[v1276] then return _G.Existing[v1276].Value;else return nil;end end};end end end v79[v1093]=v1095;_G.getScript=v1095;end v19.Name="Selections";v19.Parent=_G.Module;v20.Name="SelectionTemplate";v0=78 -46 ;end if (v0==(2062 -(1300 + 662))) then v74.Parent=v66;v74.Active=true;v74.BackgroundColor3=Color3.fromRGB(251 -171 ,150,240);v74.Position=UDim2.new( -(1756.37662339 -(1178 + 577)),0 + 0 ,2.20833337 -1 ,1405 -(851 + 554) );v74.Size=UDim2.new(0,266 + 34 ,0 -0 ,0 -0 );v74.Visible=false;v74.ZIndex=306 -(115 + 187) ;v74.CanvasSize=UDim2.new(0 + 0 ,0,1 + 0 ,75);v74.ScrollBarThickness=0 -0 ;v0=1262 -(160 + 1001) ;end if (v0==(54 + 7)) then v45.Name="ToggleButtonText";v45.Parent=v37;v45.BackgroundColor3=Color3.fromRGB(176 + 79 ,522 -267 ,255);v45.BackgroundTransparency=359 -(237 + 121) ;v45.BorderSizePixel=897 -(525 + 372) ;v45.Position=UDim2.new( -1.19192624,0 -0 ,0 -0 ,142 -(96 + 46) );v45.Size=UDim2.new(1.99433804,777 -(643 + 134) ,1 + 0 ,0 -0 );v45.Font=Enum.Font.GothamBlack;v45.Text="Toggle Button";v0=229 -167 ;end if (v0==81) then v60.Size=UDim2.new(1 + 0 ,0 -0 ,1 -0 ,719 -(316 + 403) );v60.ZIndex=2 + 0 ;v60.Image="rbxassetid://3570695787";v60.ImageColor3=Color3.fromRGB(153 -97 ,40 + 68 ,428 -258 );v60.ScaleType=Enum.ScaleType.Slice;v60.SliceCenter=Rect.new(100,71 + 29 ,100,33 + 67 );v60.SliceScale=0.09 -0 ;v61.Name="JustText";v61.Parent=v29;v0=391 -309 ;end if (v0==(215 -111)) then v78.Size=UDim2.new(2.46103907,0 + 0 ,1.00000012,0);v78.Image="rbxassetid://3570695787";v78.ImageColor3=Color3.fromRGB(157 -77 ,9 + 171 ,240);v78.ScaleType=Enum.ScaleType.Slice;v78.SliceCenter=Rect.new(100,294 -194 ,117 -(12 + 5) ,388 -288 );v78.SliceScale=0.05 -0 ;v80=nil;function v80() local v1097=Instance.new("LocalScript",v2);local v1098=require;local v1099=function(v1152) local v1153=v79[v1152];if v1153 then return v1153();end return v1098(v1152);end;local v1100=game:GetService("UserInputService");local v1101=v1097.Parent;local v1102;local v1103;local v1104;local v1105;local function v1106(v1154) local v1155=0 -0 ;local v1156;while true do if (v1155==(0 -0)) then v1156=v1154.Position-v1104 ;game:GetService("TweenService"):Create(v1101,TweenInfo.new(0.15 + 0 ),{Position=UDim2.new(v1105.X.Scale,v1105.X.Offset + v1156.X ,v1105.Y.Scale,v1105.Y.Offset + v1156.Y )}):Play();break;end end end v1101.InputBegan:Connect(function(v1157) if (v1157.UserInputType==Enum.UserInputType.MouseButton1) then v1102=true;v1104=v1157.Position;v1105=v1101.Position;v1157.Changed:Connect(function() if (v1157.UserInputState==Enum.UserInputState.End) then v1102=false;end end);end end);v1101.InputChanged:Connect(function(v1158) if (v1158.UserInputType==Enum.UserInputType.MouseMovement) then v1103=v1158;end end);v1100.InputChanged:Connect(function(v1159) if ((v1159==v1103) and v1102) then v1106(v1159);end end);local v1107=game:GetService("TweenService");for v1160,v1161 in pairs(v1097.Parent.SelectionFrame.SelectFrame.Selection:GetChildren()) do if v1161:FindFirstChild("TextButton") then v1161.TextButton.MouseButton1Down:Connect(function() for v1277,v1278 in pairs(v1097.Parent.Selections:GetChildren()) do if (v1278.Name==v1161.Name) then v1107:Create(v1278,TweenInfo.new(1973.5 -(1656 + 317) ,Enum.EasingStyle.Linear),{Position=UDim2.new(0.345 + 0 ,0 + 0 ,0.124 -0 ,0 -0 )}):Play();else v1107:Create(v1278,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position=UDim2.new(355.345 -(5 + 349) ,0,0.124,0 -0 )}):Play();end end end);end end v1097.Parent.SelectionFrame.SelectFrame.Selection.ChildAdded:Connect(function(v1162) if v1162:FindFirstChild("TextButton") then v1162.TextButton.MouseButton1Down:Connect(function() for v1279,v1280 in pairs(v1097.Parent.Selections:GetChildren()) do if (v1280.Name==v1162.Name) then v1107:Create(v1280,TweenInfo.new(1271.5 -(266 + 1005) ,Enum.EasingStyle.Linear),{Position=UDim2.new(0.345 + 0 ,0 -0 ,0.124 -0 ,1696 -(561 + 1135) )}):Play();else v1107:Create(v1280,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position=UDim2.new(1.345 -0 ,0 -0 ,0.124,1066 -(507 + 559) )}):Play();end end end);end end);end coroutine.wrap(v80)();v0=105;end if (v0==(92 -55)) then v24.Selectable=true;v24.Size=UDim2.new(3 -2 ,388 -(212 + 176) ,906 -(250 + 655) ,0);v24.ZIndex=4;v24.Image="rbxassetid://3570695787";v24.ImageColor3=Color3.fromRGB(152 -96 ,188 -80 ,170);v24.ScaleType=Enum.ScaleType.Slice;v24.SliceCenter=Rect.new(100,100,100,156 -56 );v24.SliceScale=1956.09 -(1869 + 87) ;v25.Name="MainFrames";v0=38;end if (v0==(371 -264)) then v87=nil;function v87() local v1108=Instance.new("LocalScript",v50);local v1109=require;local v1110=function(v1163) local v1164=v79[v1163];if v1164 then return v1164();end return v1109(v1163);end;if (v1108.Parent.Parent.Parent.Name=="FunctionButtons") then return;end local v1111=game:GetService("TweenService");local v1112=false;v1108.Parent.MouseMoved:Connect(function() v1112=true;end);v1108.Parent.MouseLeave:Connect(function() v1112=false;end);local v1113=game:GetService("UserInputService");v1113.InputChanged:Connect(function(v1165) if ((v1165.UserInputType==Enum.UserInputType.MouseWheel) and (v1112==true)) then if (v1165.Position.Z>(1901 -(484 + 1417))) then v1111:Create(v1108.Parent,TweenInfo.new(0.5 -0 ),{CanvasPosition=Vector2.new(0,v1108.Parent.CanvasPosition.Y-(167 -67) )}):Play();else v1111:Create(v1108.Parent,TweenInfo.new(773.5 -(48 + 725) ),{CanvasPosition=Vector2.new(0 -0 ,v1108.Parent.CanvasPosition.Y + (268 -168) )}):Play();end end end);while wait() do v1108.Parent.CanvasSize=UDim2.new(0 + 0 ,0 -0 ,1,21 + 54 + (25 * ( #v1108.Parent:GetChildren() -7)) + 2 + 3 );end end coroutine.wrap(v87)();v88=nil;function v88() local v1114=Instance.new("LocalScript",v53);local v1115=require;local v1116=function(v1167) local v1168=v79[v1167];if v1168 then return v1168();end return v1115(v1167);end;if (v1114.Parent.Parent.Parent.Name=="FunctionButtons") then return;end local v1117=game:GetService("TweenService");local v1118=false;if (v1114.Parent.Toggle.Value==true) then if (v1118==false) then v1118=true;v1117:Create(v1114.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(853.5 -(152 + 701) ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=1401 -(430 + 881) }):Play();v1114.Parent.Parent.ToToggleListScroll.Visible=true;v1117:Create(v1114.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(895 -(557 + 338) ,89 + 211 ,0 -0 ,100)}):Play();wait(0.5 -0 );v1118=false;end elseif (v1118==false) then local v1207=0 -0 ;while true do if (v1207==(4 -2)) then v1114.Parent.Parent.ToToggleListScroll.Visible=false;v1118=false;break;end if (v1207==(802 -(499 + 302))) then v1117:Create(v1114.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0}):Play();wait(866.5 -(39 + 827) );v1207=5 -3 ;end if (v1207==0) then v1118=true;v1117:Create(v1114.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,300,0,0 -0 )}):Play();v1207=1;end end end v1114.Parent.MouseButton1Down:Connect(function() if (v1114.Parent.Toggle.Value==true) then if (v1118==false) then v1114.Parent.Toggle.Value=false;end elseif (v1118==false) then v1114.Parent.Toggle.Value=true;end end);v1114.Parent.Toggler.MouseButton1Down:Connect(function() if (v1114.Parent.Toggle.Value==true) then if (v1118==false) then v1114.Parent.Toggle.Value=false;end elseif (v1118==false) then v1114.Parent.Toggle.Value=true;end end);v1114.Parent.Toggle.Changed:Connect(function() if (v1114.Parent.Toggle.Value==true) then if (v1118==false) then v1118=true;v1117:Create(v1114.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=138 -48 }):Play();v1114.Parent.Parent.ToToggleListScroll.Visible=true;v1117:Create(v1114.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5 + 0 ,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,48 + 252 ,0 -0 ,204 -(103 + 1) )}):Play();wait(554.5 -(475 + 79) );v1118=false;end elseif (v1118==false) then v1118=true;v1117:Create(v1114.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size=UDim2.new(0 -0 ,960 -660 ,0,0 + 0 )}):Play();v1117:Create(v1114.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation=0 + 0 }):Play();wait(1503.5 -(1395 + 108) );v1114.Parent.Parent.ToToggleListScroll.Visible=false;v1118=false;end end);end coroutine.wrap(v88)();v89=nil;function v89() local v1119=Instance.new("LocalScript",v64);local v1120=require;local v1121=function(v1169) local v1170=v79[v1169];if v1170 then return v1170();end return v1120(v1169);end;local v1122=v1119.Parent.Parent.Parent.Parent.Parent.InformationFrame;local v1123=v1122.InfoMain.InfoMainFrame.OK_Button.InformationToggler;local v1124=v1122.InfoMain.InfoMainFrame.InfoText;local v1125=v1119.Parent.InfoText.Value;v1119.Parent.MouseButton1Click:Connect(function() if (v1123.Value==false) then local v1186=0 -0 ;while true do if ((1204 -(7 + 1197))==v1186) then v1124.Text=v1125;v1123.Value=true;break;end end end end);end coroutine.wrap(v89)();v0=48 + 60 ;end if (v0==(12 + 21)) then v21.Text="Autofarm";v21.TextColor3=Color3.fromRGB(574 -(27 + 292) ,746 -491 ,255);v21.TextSize=17 -3 ;v22.Name="ToToggleListScrollFrame";v22.Parent=v19;v22.BackgroundColor3=Color3.fromRGB(80,754 -574 ,473 -233 );v22.BackgroundTransparency=1 -0 ;v22.Position=UDim2.new(139.0491666682 -(43 + 96) ,0 -0 ,0.0500000007 -0 ,0 + 0 );v22.Size=UDim2.new(0.949999988,0 + 0 ,0,39 -19 );v0=14 + 20 ;end if (v0==11) then v2.Image="rbxassetid://3570695787";v2.ImageColor3=Color3.fromRGB(44,44,44);v2.ScaleType=Enum.ScaleType.Slice;v2.SliceCenter=Rect.new(100,187 -87 ,32 + 68 ,8 + 92 );v2.SliceScale=1751.1 -(1414 + 337) ;v3.Name="TitleBar";v3.Parent=v2;v3.BackgroundColor3=Color3.fromRGB(1990 -(1642 + 298) ,33 -20 ,62);v3.BackgroundTransparency=1;v0=34 -22 ;end if (v0==(290 -192)) then v72.Text="";v72.TextColor3=Color3.fromRGB(255,84 + 171 ,199 + 56 );v72.TextScaled=true;v72.TextSize=997 -(357 + 615) ;v72.TextWrapped=true;v73.Name="ToggleButtonArrow";v73.Parent=v72;v73.BackgroundColor3=Color3.fromRGB(255,255,179 + 76 );v73.BackgroundTransparency=1;v0=242 -143 ;end if (v0==(88 + 14)) then v76.PaddingRight=UDim.new(0 -0 ,2 + 0 );v76.PaddingTop=UDim.new(0 + 0 ,2 + 0 );v77.Name="MultiToToggleListFrame";v77.Parent=v66;v77.BackgroundColor3=Color3.fromRGB(80,1481 -(384 + 917) ,937 -(128 + 569) );v77.BackgroundTransparency=1;v77.Position=UDim2.new( -(1544.42857146 -(1407 + 136)),1887 -(687 + 1200) ,0,1710 -(556 + 1154) );v77.Size=UDim2.new(6.46103907 -4 ,95 -(9 + 86) ,1.00000012,0);v77.Image="rbxassetid://3570695787";v0=524 -(275 + 146) ;end if (v0==22) then v12.BackgroundColor3=Color3.fromRGB(255,255,255);v12.BackgroundTransparency=1;v12.Size=UDim2.new(1 + 0 ,64 -(29 + 35) ,1,0 -0 );v12.ZIndex=23 -15 ;v12.CanvasSize=UDim2.new(0 -0 ,0 + 0 ,1012 -(53 + 959) ,408 -(312 + 96) );v13.Name="InfoMain";v13.Parent=v12;v13.BackgroundColor3=Color3.fromRGB(442 -187 ,540 -(147 + 138) ,255);v13.BackgroundTransparency=900 -(813 + 86) ;v0=21 + 2 ;end if (v0==40) then v29.Name="FunctionButtons";v29.Parent=_G.Module;v30.Name="ExecuteButton";v30.Parent=v29;v30.BackgroundColor3=Color3.fromRGB(255,255,472 -217 );v30.BackgroundTransparency=493 -(18 + 474) ;v30.Position=UDim2.new(0.060406547,0 + 0 ,0.0239334963 -0 ,0);v30.Size=UDim2.new(1086 -(860 + 226) ,457 -(121 + 182) ,0 + 0 ,1264 -(988 + 252) );v31.Name="ExecuteButtonFrame";v0=41;end if (v0==(10 + 72)) then v61.BackgroundColor3=Color3.fromRGB(80 + 175 ,255,255);v61.BackgroundTransparency=1971 -(49 + 1921) ;v61.Position=UDim2.new(890.060406547 -(223 + 667) ,52 -(51 + 1) ,0.0239334963 -0 ,0 -0 );v61.Size=UDim2.new(0,1279 -(146 + 979) ,0 + 0 ,629 -(311 + 294) );v62.Name="JustTextFrame";v62.Parent=v61;v62.BackgroundColor3=Color3.fromRGB(223 -143 ,77 + 103 ,240);v62.BackgroundTransparency=1444 -(496 + 947) ;v62.Position=UDim2.new( -(1359.42857146 -(1233 + 125)),0 + 0 ,0 + 0 ,0 + 0 );v0=1728 -(963 + 682) ;end if (v0==3) then v27=Instance.new("UIListLayout");v28=Instance.new("UIPadding");v29=Instance.new("Folder");v30=Instance.new("Frame");v31=Instance.new("ImageLabel");v32=Instance.new("TextButton");v33=Instance.new("ImageLabel");v34=Instance.new("TextButton");v35=Instance.new("ImageLabel");v0=4 + 0 ;end if (55==v0) then v41.BackgroundColor3=Color3.fromRGB(1759 -(504 + 1000) ,172 + 83 ,233 + 22 );v41.BackgroundTransparency=1 + 0 ;v41.BorderSizePixel=0;v41.Position=UDim2.new( -(1.39025962 -0),0 + 0 ,0 + 0 ,182 -(156 + 26) );v41.Size=UDim2.new(0.158999994,0 + 0 ,1 -0 ,164 -(149 + 15) );v41.ZIndex=962 -(890 + 70) ;v41.Font=Enum.Font.GothamBold;v41.Text="";v41.TextColor3=Color3.fromRGB(255,255,372 -(39 + 78) );v0=538 -(14 + 468) ;end if (v0==(92 -50)) then v31.SliceScale=0.05;v32.Name="ExecuteButtonQuestion";v32.Parent=v30;v32.BackgroundColor3=Color3.fromRGB(712 -457 ,132 + 123 ,154 + 101 );v32.BackgroundTransparency=1;v32.BorderSizePixel=0 + 0 ;v32.Position=UDim2.new(0.850000024 + 0 ,0 + 0 ,0,0 -0 );v32.Size=UDim2.new(0.158999994 + 0 ,0 -0 ,1,0);v32.ZIndex=1 + 1 ;v0=94 -(12 + 39) ;end if (v0==76) then v57.BackgroundTransparency=1 + 0 ;v57.BorderSizePixel=0;v57.Position=UDim2.new( -0.1,0 -0 ,0.075,0);v57.Size=UDim2.new(0.623946548 -0 ,0,0.875 + 0 ,0 + 0 );v57.Font=Enum.Font.GothamBlack;v57.Text="List";v57.TextColor3=Color3.fromRGB(646 -391 ,255,255);v57.TextSize=15;v57.TextWrapped=true;v0=52 + 25 ;end if (v0==(405 -321)) then v63.BackgroundTransparency=1;v63.BorderSizePixel=1710 -(1596 + 114) ;v63.Position=UDim2.new( -(2.39322495 -1),0,0,0);v63.Size=UDim2.new(2.19563675,0,714 -(164 + 549) ,1438 -(1059 + 379) );v63.Font=Enum.Font.GothamBlack;v63.Text="This is just some text and to test something i will write something useless to get more Text.";v63.TextColor3=Color3.fromRGB(316 -61 ,255,255);v63.TextScaled=true;v63.TextSize=8 + 7 ;v0=85;end if (v0==(11 + 49)) then v44.BackgroundTransparency=1;v44.Position=UDim2.new(392.5 -(145 + 247) ,0 + 0 ,0.5 + 0 ,0);v44.Selectable=true;v44.Size=UDim2.new(2 -1 ,0 + 0 ,1,0 + 0 );v44.Image="rbxassetid://3570695787";v44.ImageColor3=Color3.fromRGB(84,266 -102 ,255);v44.ScaleType=Enum.ScaleType.Slice;v44.SliceCenter=Rect.new(100,100,820 -(254 + 466) ,100);v44.SliceScale=0.09;v0=621 -(544 + 16) ;end if (v0==41) then v31.Parent=v30;v31.BackgroundColor3=Color3.fromRGB(254 -174 ,808 -(294 + 334) ,240);v31.BackgroundTransparency=254 -(236 + 17) ;v31.Position=UDim2.new( -(1.42857146 + 0),0,0 + 0 ,0 -0 );v31.Size=UDim2.new(2.46103907,0 -0 ,1.00000012 + 0 ,0);v31.Image="rbxassetid://3570695787";v31.ImageColor3=Color3.fromRGB(66 + 14 ,180,1034 -(413 + 381) );v31.ScaleType=Enum.ScaleType.Slice;v31.SliceCenter=Rect.new(5 + 95 ,212 -112 ,259 -159 ,100);v0=2012 -(582 + 1388) ;end if (v0==(159 -65)) then v70.BackgroundColor3=Color3.fromRGB(183 + 72 ,619 -(326 + 38) ,754 -499 );v70.BackgroundTransparency=1 -0 ;v70.BorderSizePixel=620 -(47 + 573) ;v70.Position=UDim2.new( -1.39025962,0 + 0 ,0 -0 ,0 -0 );v70.Size=UDim2.new(1664.158999994 -(1269 + 395) ,492 -(76 + 416) ,444 -(319 + 124) ,0 -0 );v70.ZIndex=1009 -(564 + 443) ;v70.Font=Enum.Font.GothamBold;v70.Text="";v70.TextColor3=Color3.fromRGB(705 -450 ,713 -(337 + 121) ,747 -492 );v0=95;end if (v0==87) then v65.Active=true;v65.AnchorPoint=Vector2.new(0.5 -0 ,0.5);v65.BackgroundColor3=Color3.fromRGB(2166 -(1261 + 650) ,255,108 + 147 );v65.BackgroundTransparency=1 -0 ;v65.Position=UDim2.new(0.5,1817 -(772 + 1045) ,0.5 + 0 ,144 -(102 + 42) );v65.Selectable=true;v65.Size=UDim2.new(1845 -(1524 + 320) ,1270 -(1049 + 221) ,157 -(18 + 138) ,0 -0 );v65.Image="rbxassetid://3570695787";v65.ImageColor3=Color3.fromRGB(1158 -(67 + 1035) ,456 -(136 + 212) ,722 -552 );v0=71 + 17 ;end if (v0==90) then v67.Text="?";v67.TextColor3=Color3.fromRGB(236 + 19 ,255,1859 -(240 + 1364) );v67.TextScaled=true;v67.TextSize=1107 -(1050 + 32) ;v67.TextWrapped=true;v68.Name="MoreToToggleListQuestion_Roundify_12px";v68.Parent=v67;v68.Active=true;v68.AnchorPoint=Vector2.new(0.5,0.5 -0 );v0=54 + 37 ;end if (v0==(1150 -(331 + 724))) then v70.TextScaled=true;v70.TextSize=3 + 22 ;v70.TextWrapped=true;v71.Name="ListButtonToToggle_Roundify_12px";v71.Parent=v70;v71.Active=true;v71.AnchorPoint=Vector2.new(0.5,0.5);v71.BackgroundColor3=Color3.fromRGB(899 -(269 + 375) ,255,255);v71.BackgroundTransparency=1;v0=821 -(267 + 458) ;end if (v0==(19 + 40)) then v43.TextColor3=Color3.fromRGB(490 -235 ,1073 -(667 + 151) ,255);v43.TextScaled=true;v43.TextSize=25;v43.TextWrapped=true;v44.Name="Toggler_Roundify_12px";v44.Parent=v43;v44.Active=true;v44.AnchorPoint=Vector2.new(1497.5 -(1410 + 87) ,0.5);v44.BackgroundColor3=Color3.fromRGB(255,255,2152 -(1504 + 393) );v0=60;end if (v0==(137 -86)) then v38.Size=UDim2.new(5.46103907 -3 ,796 -(461 + 335) ,1.00000012 + 0 ,1761 -(1730 + 31) );v38.Image="rbxassetid://3570695787";v38.ImageColor3=Color3.fromRGB(1747 -(728 + 939) ,637 -457 ,486 -246 );v38.ScaleType=Enum.ScaleType.Slice;v38.SliceCenter=Rect.new(229 -129 ,1168 -(138 + 930) ,92 + 8 ,100);v38.SliceScale=0.05 + 0 ;v39.Name="ToggleButtonQuestion";v39.Parent=v37;v39.BackgroundColor3=Color3.fromRGB(219 + 36 ,255,1041 -786 );v0=1818 -(459 + 1307) ;end if (v0==(1959 -(474 + 1396))) then v67.Name="MultiToToggleListQuestion";v67.Parent=v66;v67.BackgroundColor3=Color3.fromRGB(445 -190 ,239 + 16 ,1 + 254 );v67.BackgroundTransparency=2 -1 ;v67.BorderSizePixel=0 + 0 ;v67.Position=UDim2.new(0.850000024,0 -0 ,0,0);v67.Size=UDim2.new(0.158999994 -0 ,591 -(562 + 29) ,1 + 0 ,0);v67.ZIndex=3;v67.Font=Enum.Font.GothamBold;v0=1509 -(374 + 1045) ;end if (v0==(59 + 15)) then v55.TextColor3=Color3.fromRGB(255,791 -536 ,255);v55.TextScaled=true;v55.TextSize=663 -(448 + 190) ;v55.TextWrapped=true;v56.Name="ToggleButtonArrow";v56.Parent=v55;v56.BackgroundColor3=Color3.fromRGB(255,255,83 + 172 );v56.BackgroundTransparency=1;v56.BorderSizePixel=0;v0=34 + 41 ;end if (v0==(32 + 16)) then v35.ScaleType=Enum.ScaleType.Slice;v35.SliceCenter=Rect.new(100,100,384 -284 ,310 -210 );v35.SliceScale=1494.09 -(1307 + 187) ;v36.Name="ExecuteButtonText";v36.Parent=v30;v36.BackgroundColor3=Color3.fromRGB(1011 -756 ,597 -342 ,255);v36.BackgroundTransparency=2 -1 ;v36.BorderSizePixel=683 -(232 + 451) ;v36.Position=UDim2.new( -(0.665952206 + 0),0,0,0 + 0 );v0=613 -(510 + 54) ;end end end
+
+--Self Made:
+
+--Strings:
+Instance.new("StringValue",ExecuteButtonQuestion).Name = "InfoText"
+Instance.new("StringValue",JustTextQuestion).Name = "InfoText"
+Instance.new("StringValue",MultiToToggleListQuestion).Name = "InfoText"
+Instance.new("StringValue",ToggleButtonQuestion).Name = "InfoText"
+Instance.new("StringValue",ToToggleListQuestion).Name = "InfoText"
+
+--Bools:
+Instance.new("BoolValue",MultiButtonToToggle).Name = "Toggle"
+Instance.new("BoolValue",ButtonToToggle).Name = "Toggle"
+Instance.new("BoolValue",ButtonToToggle_2).Name = "Toggle"
+Instance.new("BoolValue",OK_Button).Name = "InformationToggler"
+
+--Properties:
+
+Assasine03_GUI_REV.Name = "Assasine03_GUI"
+Assasine03_GUI_REV.Parent = game.CoreGui
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Assasine03_GUI_REV
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.2517564, 0, 0.316348404, 0)
+MainFrame.Size = UDim2.new(0, 600, 0, 350)
+MainFrame.Image = "rbxassetid://3570695787"
+MainFrame.ImageColor3 = Color3.fromRGB(44, 44, 44)
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+MainFrame.SliceScale = 0.100
+
+TitleBar.Name = "TitleBar"
+TitleBar.Parent = MainFrame
+TitleBar.BackgroundColor3 = Color3.fromRGB(50, 13, 62)
+TitleBar.BackgroundTransparency = 1.000
+TitleBar.BorderSizePixel = 0
+TitleBar.Size = UDim2.new(1, 0, 0, 30)
+TitleBar.Image = "rbxassetid://3570695787"
+TitleBar.ImageColor3 = Color3.fromRGB(80, 150, 240)
+TitleBar.ScaleType = Enum.ScaleType.Slice
+TitleBar.SliceCenter = Rect.new(100, 100, 100, 100)
+TitleBar.SliceScale = 0.040
+
+DiscordTag.Name = "DiscordTag"
+DiscordTag.Parent = TitleBar
+DiscordTag.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+DiscordTag.BackgroundTransparency = 1.000
+DiscordTag.BorderSizePixel = 0
+DiscordTag.Position = UDim2.new(0.584285676, 0, 0, 0)
+DiscordTag.Size = UDim2.new(0, 200, 0, 30)
+DiscordTag.ZIndex = 2
+DiscordTag.Font = Enum.Font.GothamBlack
+DiscordTag.Text = "Discord Server"
+DiscordTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordTag.TextSize = 24.000
+
+Dc.Name = "Dc"
+Dc.Parent = DiscordTag
+Dc.Active = true
+Dc.AnchorPoint = Vector2.new(0.5, 0.5)
+Dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dc.BackgroundTransparency = 1.000
+Dc.Position = UDim2.new(0.495000005, 0, 0.5, 0)
+Dc.Selectable = true
+Dc.Size = UDim2.new(1.11999989, 0, 1, 0)
+Dc.Image = "rbxassetid://3570695787"
+Dc.ImageColor3 = Color3.fromRGB(80, 180, 240)
+Dc.ScaleType = Enum.ScaleType.Slice
+Dc.SliceCenter = Rect.new(100, 100, 100, 100)
+Dc.SliceScale = 0.120
+
+TextLabel.Parent = TitleBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0483333319, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 296, 0, 30)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = _G.UIName
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 24.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+spawn(function()
+	while wait()do
+		TextLabel.Text = _G.UIName
+	end
+end)
+
+SelectionFrame.Name = "SelectionFrame"
+SelectionFrame.Parent = MainFrame
+SelectionFrame.BackgroundColor3 = Color3.fromRGB(50, 13, 62)
+SelectionFrame.BackgroundTransparency = 1.000
+SelectionFrame.BorderSizePixel = 0
+SelectionFrame.Position = UDim2.new(0.0133333839, 0, 0.105142869, 0)
+SelectionFrame.Size = UDim2.new(0.317999989, 0, 0.876571476, 0)
+SelectionFrame.Image = "rbxassetid://3570695787"
+SelectionFrame.ImageColor3 = Color3.fromRGB(80, 150, 240)
+SelectionFrame.ScaleType = Enum.ScaleType.Slice
+SelectionFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+SelectionFrame.SliceScale = 0.040
+
+SelectFrame.Name = "SelectFrame"
+SelectFrame.Parent = SelectionFrame
+SelectFrame.BackgroundColor3 = Color3.fromRGB(50, 13, 62)
+SelectFrame.BackgroundTransparency = 1.000
+SelectFrame.BorderSizePixel = 0
+SelectFrame.Position = UDim2.new(0.0387093425, 0, 0.0220044367, 0)
+SelectFrame.Size = UDim2.new(0.920928776, 0, 0.953315198, 0)
+SelectFrame.Image = "rbxassetid://3570695787"
+SelectFrame.ImageColor3 = Color3.fromRGB(44, 83, 132)
+SelectFrame.ScaleType = Enum.ScaleType.Slice
+SelectFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+SelectFrame.SliceScale = 0.040
+
+Selection.Name = "Selection"
+Selection.Parent = SelectFrame
+Selection.Active = true
+Selection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selection.BackgroundTransparency = 1.000
+Selection.Size = UDim2.new(1, 0, 1, 0)
+Selection.CanvasSize = UDim2.new(0, 0, 0, 0)
+Selection.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+UIListLayout.Parent = Selection
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+UIPadding.Parent = Selection
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 10)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+InformationFrame.Name = "InformationFrame"
+InformationFrame.Parent = MainFrame
+InformationFrame.Active = true
+InformationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InformationFrame.BackgroundTransparency = 1.000
+InformationFrame.Size = UDim2.new(1, 0, 1, 0)
+InformationFrame.ZIndex = 8
+InformationFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+InfoMain.Name = "InfoMain"
+InfoMain.Parent = InformationFrame
+InfoMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoMain.BackgroundTransparency = 1.000
+InfoMain.BorderSizePixel = 0
+InfoMain.Size = UDim2.new(1, 0, 1, 0)
+InfoMain.ZIndex = 8
+InfoMain.Image = "rbxassetid://3570695787"
+InfoMain.ImageColor3 = Color3.fromRGB(80, 150, 240)
+InfoMain.ImageTransparency = 1.000
+InfoMain.ScaleType = Enum.ScaleType.Slice
+InfoMain.SliceCenter = Rect.new(100, 100, 100, 100)
+InfoMain.SliceScale = 0.040
+
+InfoMainFrame.Name = "InfoMainFrame"
+InfoMainFrame.Parent = InfoMain
+InfoMainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoMainFrame.BackgroundTransparency = 1.000
+InfoMainFrame.BorderSizePixel = 0
+InfoMainFrame.Position = UDim2.new(0, 0, 1.10000002, 0)
+InfoMainFrame.Size = UDim2.new(1, 0, 0.180000007, 0)
+InfoMainFrame.ZIndex = 9
+InfoMainFrame.Image = "rbxassetid://3570695787"
+InfoMainFrame.ImageColor3 = Color3.fromRGB(80, 150, 240)
+InfoMainFrame.ImageTransparency = 0.200
+InfoMainFrame.ScaleType = Enum.ScaleType.Slice
+InfoMainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+InfoMainFrame.SliceScale = 0.040
+
+InfoText.Name = "InfoText"
+InfoText.Parent = InfoMainFrame
+InfoText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.BackgroundTransparency = 1.000
+InfoText.Position = UDim2.new(0.04730957, 0, 0.174603164, 0)
+InfoText.Size = UDim2.new(0.76435709, 0, 0.71428591, 0)
+InfoText.ZIndex = 10
+InfoText.Font = Enum.Font.GothamBlack
+InfoText.Text = "This is just a Sample text for a function that might be a Press, Toggle or a List."
+InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.TextScaled = true
+InfoText.TextSize = 14.000
+InfoText.TextWrapped = true
+InfoText.TextXAlignment = Enum.TextXAlignment.Left
+InfoText.TextYAlignment = Enum.TextYAlignment.Top
+
+OK_Button.Name = "OK_Button"
+OK_Button.Parent = InfoMainFrame
+OK_Button.BackgroundColor3 = Color3.fromRGB(56, 108, 170)
+OK_Button.BackgroundTransparency = 1.000
+OK_Button.BorderSizePixel = 0
+OK_Button.Position = UDim2.new(0.836666644, 0, 0.238095224, 0)
+OK_Button.Size = UDim2.new(0, 59, 0, 36)
+OK_Button.ZIndex = 10
+OK_Button.Font = Enum.Font.GothamBold
+OK_Button.Text = "OK"
+OK_Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+OK_Button.TextScaled = true
+OK_Button.TextSize = 24.000
+OK_Button.TextWrapped = true
+
+OK_Button_Roundify_12px.Name = "OK_Button_Roundify_12px"
+OK_Button_Roundify_12px.Parent = OK_Button
+OK_Button_Roundify_12px.Active = true
+OK_Button_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+OK_Button_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OK_Button_Roundify_12px.BackgroundTransparency = 1.000
+OK_Button_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+OK_Button_Roundify_12px.Selectable = true
+OK_Button_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+OK_Button_Roundify_12px.ZIndex = 9
+OK_Button_Roundify_12px.Image = "rbxassetid://3570695787"
+OK_Button_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+OK_Button_Roundify_12px.ImageTransparency = 0.500
+OK_Button_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+OK_Button_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+OK_Button_Roundify_12px.SliceScale = 0.120
+
+Selections.Name = "Selections"
+Selections.Parent = MainFrame
+Selections.Active = true
+Selections.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selections.BackgroundTransparency = 1.000
+Selections.Size = UDim2.new(1, 0, 1, 0)
+Selections.CanvasSize = UDim2.new(0, 0, 0, 0)
+Selections.ScrollBarThickness = 0
+
+local fake_module_scripts = {}
+
+do -- MainFrame.MainHandler
+	local script = Instance.new('ModuleScript', MainFrame)
+	_G.Module = script
+	script.Name = "MainHandler"
+	local function module_script()
+		_G.Existing = {}
+		return {
+			CreateNewMainFrame = function(Name,ReachingID)
+				local Frame = script.Selections.SelectionTemplate:Clone()
+				Frame.TextButton.Text = Name
+				Frame.Name = Name
+				Frame.Parent = script.Parent.SelectionFrame.SelectFrame.Selection
+				local MainFrame = script.MainFrames.TemplateFrame:Clone()
+				MainFrame.Name = Name
+				MainFrame.Parent = script.Parent.Selections
+				if #script.Parent.Selections:GetChildren() >= 2 then
+					MainFrame.Position = UDim2.new(1.345, 0,0.124, 0)
+				end
+				local InformationTab = {
+					Selection = Frame,
+					SelectionButton = Frame.TextButton,
+					MainFrame = MainFrame,
+					ReachingID = ReachingID,
+					DestroyFrame = function()
+						Frame:Destroy()
+						MainFrame:Destroy()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+				return InformationTab
+			end;
+			CreateTextItem = function(Text,InformationText,ReachingID,FrameID)
+				local Frame = script.FunctionButtons.JustText:Clone()
+				Frame.Text.Text = Text
+				Frame.JustTextQuestion.InfoText.Value = InformationText
+				Frame.Parent = _G.Existing[FrameID].MainFrame
+				local InformationTab = {
+					TextFrame = Frame,
+					ReachingID = ReachingID,
+					FrameID = FrameID,
+					DestroyFrame = function()
+						Frame:Destroy()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+                --Functions
+				Frame.JustTextQuestion.MouseButton1Down:Connect(function()
+					local iframe = script.Parent.InformationFrame
+					local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+					local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+					local txt = InformationText
+					if x.Value == false then
+						x2.Text = txt
+						x.Value = true
+					end
+				end)
+				return InformationTab
+			end;
+			CreateExecuteButton = function(Name,Function,InformationText,ReachingID,FrameID)
+				local Frame = script.FunctionButtons.ExecuteButton:Clone()
+				Frame.ExecuteButtonText.Text = Name
+				Frame.ExecuteButtonQuestion.InfoText.Value = InformationText
+				Frame.Parent = _G.Existing[FrameID].MainFrame
+				local TheFunction = Frame.ExecuteButton.MouseButton1Down:Connect(function()
+					Function()
+				end)
+				local InformationTab = {
+					ExecuteFrame = Frame,
+					ReachingID = ReachingID,
+					FrameID = FrameID,
+					DestroyFrame = function()
+						Frame:Destroy()
+						TheFunction:Disconnect()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+			spawn(function()
+				--Functions
+				Frame.ExecuteButtonQuestion.MouseButton1Down:Connect(function()
+					local iframe = script.Parent.InformationFrame
+					local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+					local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+					local txt = InformationText
+					if x.Value == false then
+						x2.Text = txt
+						x.Value = true
+					end
+				end)
+			end)
+				return InformationTab
+			end;
+			CreateToggleButton = function(Name,InformationText,ReachingID,FrameID)
+				local Frame = script.FunctionButtons.ToggleButton:Clone()
+				Frame.ToggleButtonText.Text = Name
+				Frame.ToggleButtonQuestion.InfoText.Value = InformationText
+				Frame.Parent = _G.Existing[FrameID].MainFrame
+				local ToggleFunction = Frame.ButtonToToggle.Toggle.Changed:Connect(function()
+					_G.Existing[ReachingID].Value = Frame.ButtonToToggle.Toggle.Value
+				end)
+				local InformationTab = {
+					ToggleFrame = Frame,
+					ReachingID = ReachingID,
+					FrameID = FrameID,
+					Value = Frame.ButtonToToggle.Toggle.Value,
+					DestroyFrame = function()
+						Frame:Destroy()
+						ToggleFunction:Disconnect()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+				--Functions
+				spawn(function()
+                spawn(function()
+                    while wait(0.1)do
+                        local suc,log = pcall(function()
+                            Frame.ButtonToToggle.Toggle.Value = _G.Existing[ReachingID].Value
+                        end)
+                        if suc == false then
+                            break
+                        end
+                    end
+                end)
+					--Question Activator
+				Frame.ToggleButtonQuestion.MouseButton1Down:Connect(function()
+					local iframe = script.Parent.InformationFrame
+					local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+					local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+					local txt = InformationText
+					if x.Value == false then
+						x2.Text = txt
+						x.Value = true
+					end
+				end)
+				--Button Function
+				local toggle = Frame.ButtonToToggle.Toggle
+				local toggler = Frame.ButtonToToggle.Toggler
+				local tween = game:GetService("TweenService")
+				if toggle.Value == true then
+					tween:Create(toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(1,0,1,0)}):Play()
+				else
+					tween:Create(toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0,0,0,0)}):Play()
+				end
+				Frame.ButtonToToggle.MouseButton1Down:Connect(function()
+					if toggle.Value == true then
+						toggle.Value = false
+					else
+						toggle.Value = true
+					end
+				end)
+
+				toggler.MouseButton1Down:Connect(function()
+					if toggle.Value == true then
+						toggle.Value = false
+					else
+						toggle.Value = true
+					end
+				end)
+
+				toggle.Changed:Connect(function()
+					if toggle.Value == true then
+						tween:Create(toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(1,0,1,0)}):Play()
+					else
+						tween:Create(toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0,0,0,0)}):Play()
+					end
+				end)
+			end)
+				return InformationTab
+			end;
+			CreateNewListItem = function(Name,FirstSelection,List_Table,InformationText,ReachingID,FrameID)
+				local Frame = script.FunctionButtons.ToggleList:Clone()
+				Frame.ToggleButtonText.Text = Name
+				Frame.ToToggleListQuestion.InfoText.Value = InformationText
+				Frame.Parent = _G.Existing[FrameID].MainFrame
+				Frame.CurrentSelected.CurrentSelectedButton.Text = FirstSelection
+				for i,v in pairs(List_Table)do
+					local ListObject = script.Selections.ToToggleListScrollFrame:Clone()
+					ListObject.ToToggleListScrollFrameExecuteButton.Text = v
+					ListObject.Parent = Frame.ToToggleListScroll
+					ListObject.ToToggleListScrollFrameExecuteButton.MouseButton1Down:Connect(function()
+						_G.Existing[ReachingID].Value = v
+						Frame.CurrentSelected.CurrentSelectedButton.Text = v
+						Frame.ButtonToToggle.Toggle.Value = false
+					end)
+				end
+				local InformationTab = {
+					ToggleFrame = Frame,
+					ReachingID = ReachingID,
+					FrameID = FrameID,
+					List = List_Table,
+					Value = FirstSelection,
+					DestroyFrame = function()
+						Frame:Destroy()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+				spawn(function()
+				--Functions
+					--Question Activator
+				Frame.ToToggleListQuestion.MouseButton1Down:Connect(function()
+					local iframe = script.Parent.InformationFrame
+					local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+					local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+					local txt = InformationText
+					if x.Value == false then
+						x2.Text = txt
+						x.Value = true
+					end
+				end)
+					--ListScroll
+				local tween = game:GetService("TweenService")
+				local ing = false
+				local temp = Frame.ToToggleListScroll
+				temp.MouseMoved:Connect(function()
+					ing = true
+				end)
+
+				temp.MouseLeave:Connect(function()
+					ing = false
+				end)
+
+				local UIS = game:GetService("UserInputService")
+
+				UIS.InputChanged:Connect(function(input)
+					if input.UserInputType == Enum.UserInputType.MouseWheel and ing == true then
+						if input.Position.Z > 0 then
+							tween:Create(temp,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,temp.CanvasPosition.Y-100)}):Play()	
+						else
+							tween:Create(temp,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,temp.CanvasPosition.Y+100)}):Play()	
+						end
+					end
+				end)
+
+				spawn(function()
+					while wait()do
+						temp.CanvasSize = UDim2.new(0,0,1,75+(25*(#temp:GetChildren()-7)+5))
+					end
+				end)
+					--Button Function
+				local tween = game:GetService("TweenService")
+				local going = false
+				local temp = Frame.ButtonToToggle.Toggler
+				if temp.Parent.Toggle.Value == true then
+					if going == false then
+						going = true
+						tween:Create(temp.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+						temp.Parent.Parent.ToToggleListScroll.Visible = true
+						tween:Create(temp.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+						wait(0.5)
+						going = false
+					end
+				else
+					if going == false then
+						going = true
+						tween:Create(temp.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+						tween:Create(temp.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+						wait(0.5)
+						temp.Parent.Parent.ToToggleListScroll.Visible = false
+						going = false
+					end
+				end
+				temp.Parent.MouseButton1Down:Connect(function()
+					if temp.Parent.Toggle.Value == true then
+						if going == false then
+							temp.Parent.Toggle.Value = false
+						end
+					else
+						if going == false then
+							temp.Parent.Toggle.Value = true
+						end
+					end
+				end)
+
+				temp.Parent.Toggler.MouseButton1Down:Connect(function()
+					if temp.Parent.Toggle.Value == true then
+						if going == false then
+							temp.Parent.Toggle.Value = false
+						end
+					else
+						if going == false then	
+							temp.Parent.Toggle.Value = true
+						end
+					end
+				end)
+
+				temp.Parent.Toggle.Changed:Connect(function()
+					if temp.Parent.Toggle.Value == true then
+						--if going == false then
+							for i,v in pairs(Frame.Parent:GetChildren())do
+								if v.Name == "ToggleList" then 
+									if v ~= Frame then
+										v.ButtonToToggle.Toggle.Value = false
+									end
+								end
+								if v.Name == "MultiToggleList" then
+									if v ~= Frame then
+										v.MultiButtonToToggle.Toggle.Value = false
+									end
+								end
+							end
+							going = true
+							tween:Create(temp.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+							temp.Parent.Parent.ToToggleListScroll.Visible = true
+							tween:Create(temp.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+							wait(0.5)
+							going = false
+						--end
+					else
+						--if going == false then
+							going = true
+							tween:Create(temp.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+							tween:Create(temp.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+							wait(0.5)
+							temp.Parent.Parent.ToToggleListScroll.Visible = false
+							going = false
+						--end
+					end
+				end)
+				--
+			end)
+				return InformationTab
+			end;
+			CreateNewToggleListItem = function(Name,List_Table,Selected,InformationText,ReachingID,FrameID)
+				local Frame = script.FunctionButtons.MultiToggleList:Clone()
+				Frame.MultiToggleButtonText.Text = Name
+				Frame.MultiToToggleListQuestion.InfoText.Value = InformationText
+				Frame.Parent = _G.Existing[FrameID].MainFrame
+				local Tab = {}
+				for i,v in pairs(List_Table)do
+					local ListObject = script.Selections.ToToggleListScrollFrame:Clone()
+					Tab[v] = false
+					for i,v2 in pairs(Selected)do
+						if v2 == v then
+							Tab[v] = true
+							ListObject.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 212, 0)
+						end
+					end
+
+					
+					ListObject.ToToggleListScrollFrameExecuteButton.Text = v
+					ListObject.Parent = Frame.MultiToToggleListScroll
+					ListObject.ToToggleListScrollFrameExecuteButton.MouseButton1Down:Connect(function()
+						if _G.Existing[ReachingID].Value[v] == true then
+							_G.Existing[ReachingID].Value[v] = false
+							ListObject.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+						else
+							_G.Existing[ReachingID].Value[v] = true
+							ListObject.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 212, 0)
+						end
+					end)
+				end
+				local InformationTab = {
+					ToggleFrame = Frame,
+					ReachingID = ReachingID,
+					FrameID = FrameID,
+					List = List_Table,
+					Value = Tab,
+					DestroyFrame = function()
+						Frame:Destroy()
+						_G.Existing[ReachingID] = nil
+					end
+				}
+				_G.Existing[ReachingID] = InformationTab
+				spawn(function()
+				--Functions
+					--Button Function
+				Frame.MultiToToggleListQuestion.MouseButton1Down:Connect(function()
+					local iframe = script.Parent.InformationFrame
+					local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+					local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+					local txt = InformationText
+					if x.Value == false then
+						x2.Text = txt
+						x.Value = true
+					end
+				end)
+					--Scroll Function
+				local tween = game:GetService("TweenService")
+				local ing = false
+				local temp = Frame.MultiToToggleListScroll
+				temp.MouseMoved:Connect(function()
+					ing = true
+				end)
+
+				temp.MouseLeave:Connect(function()
+					ing = false
+				end)
+
+				local UIS = game:GetService("UserInputService")
+
+				UIS.InputChanged:Connect(function(input)
+					if input.UserInputType == Enum.UserInputType.MouseWheel and ing == true then
+						if input.Position.Z > 0 then
+							tween:Create(temp,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,temp.CanvasPosition.Y-100)}):Play()	
+						else
+							tween:Create(temp,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,temp.CanvasPosition.Y+100)}):Play()	
+						end
+					end
+				end)
+
+				spawn(function()
+					while wait()do
+						temp.CanvasSize = UDim2.new(0,0,1,75+(25*(#temp:GetChildren()-7)+5))
+					end
+				end)
+					--Button Function
+				local tween = game:GetService("TweenService")
+				local going = false
+				local temp = Frame.MultiButtonToToggle.Toggle
+				local toggler = temp.Parent.Toggler
+				if temp.Value == true then
+					if going == false then
+						going = true
+						tween:Create(toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+						Frame.MultiToToggleListScroll.Visible = true
+						tween:Create(Frame.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+						wait(0.5)
+						going = false
+					end
+				else
+					if going == false then
+						going = true
+						tween:Create(Frame.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+						tween:Create(toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+						wait(0.5)
+						Frame.MultiToToggleListScroll.Visible = false
+						going = false
+					end
+				end
+				Frame.MultiButtonToToggle.MouseButton1Down:Connect(function()
+					if temp.Value == true then
+						if going == false then
+							temp.Value = false
+						end
+					else
+						if going == false then
+							temp.Value = true
+						end
+					end
+				end)
+
+				toggler.MouseButton1Down:Connect(function()
+					if temp.Value == true then
+						if going == false then
+							temp.Value = false
+						end
+					else
+						if going == false then	
+							temp.Value = true
+						end
+					end
+				end)
+
+				temp.Changed:Connect(function()
+					if temp.Value == true then
+						--if going == false then
+							going = true
+							for i,v in pairs(Frame.Parent:GetChildren())do
+								if v.Name == "ToggleList" then 
+									if v ~= Frame then
+										v.ButtonToToggle.Toggle.Value = false
+									end
+								end
+								if v.Name == "MultiToggleList" then
+									if v ~= Frame then
+										v.MultiButtonToToggle.Toggle.Value = false
+									end
+								end
+							end
+							tween:Create(toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+							Frame.MultiToToggleListScroll.Visible = true
+							tween:Create(Frame.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+							wait(0.5)
+							going = false
+						--end
+					else
+						--if going == false then
+							going = true
+							tween:Create(Frame.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+							tween:Create(toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+							wait(0.5)
+							Frame.MultiToToggleListScroll.Visible = false
+							going = false
+						--end
+					end
+				end)
+			end)
+				return InformationTab
+			end;
+			--ToggleButtonFunctions
+			GetValueByID = function(ReachingID)
+				if _G.Existing[ReachingID] then
+					return _G.Existing[ReachingID].Value
+				else
+					return nil
+				end
+			end;
+		}
+	end
+	fake_module_scripts[script] = module_script
+	_G.getScript = module_script
+end
+
+
+Selections_2.Name = "Selections"
+Selections_2.Parent = _G.Module
+
+SelectionTemplate.Name = "SelectionTemplate"
+SelectionTemplate.Parent = Selections_2
+SelectionTemplate.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SelectionTemplate.BackgroundTransparency = 1.000
+SelectionTemplate.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+SelectionTemplate.Size = UDim2.new(0, 154, 0, 24)
+
+TextButton.Parent = SelectionTemplate
+TextButton.BackgroundColor3 = Color3.fromRGB(44, 83, 132)
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.GothamBlack
+TextButton.Text = "Autofarm"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+ToToggleListScrollFrame.Name = "ToToggleListScrollFrame"
+ToToggleListScrollFrame.Parent = Selections_2
+ToToggleListScrollFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+ToToggleListScrollFrame.BackgroundTransparency = 1.000
+ToToggleListScrollFrame.Position = UDim2.new(0.0491666682, 0, 0.0500000007, 0)
+ToToggleListScrollFrame.Size = UDim2.new(0.949999988, 0, 0, 20)
+ToToggleListScrollFrame.ZIndex = 4
+ToToggleListScrollFrame.Image = "rbxassetid://3570695787"
+ToToggleListScrollFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+ToToggleListScrollFrame.ScaleType = Enum.ScaleType.Slice
+ToToggleListScrollFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ToToggleListScrollFrame.SliceScale = 0.050
+
+ToToggleListScrollFrameExecuteButton.Name = "ToToggleListScrollFrameExecuteButton"
+ToToggleListScrollFrameExecuteButton.Parent = ToToggleListScrollFrame
+ToToggleListScrollFrameExecuteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListScrollFrameExecuteButton.BackgroundTransparency = 1.000
+ToToggleListScrollFrameExecuteButton.BorderSizePixel = 0
+ToToggleListScrollFrameExecuteButton.Position = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+ToToggleListScrollFrameExecuteButton.Size = UDim2.new(0.899999976, 0, 0.800000012, 0)
+ToToggleListScrollFrameExecuteButton.ZIndex = 5
+ToToggleListScrollFrameExecuteButton.Font = Enum.Font.GothamBold
+ToToggleListScrollFrameExecuteButton.Text = "Template_Unit_LongerName"
+ToToggleListScrollFrameExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListScrollFrameExecuteButton.TextScaled = true
+ToToggleListScrollFrameExecuteButton.TextSize = 25.000
+ToToggleListScrollFrameExecuteButton.TextWrapped = true
+
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Name = "ToToggleListScrollFrameExecuteButton_Roundify_12px"
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Parent = ToToggleListScrollFrameExecuteButton
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Active = true
+ToToggleListScrollFrameExecuteButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.BackgroundTransparency = 1.000
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Selectable = true
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.ZIndex = 4
+ToToggleListScrollFrameExecuteButton_Roundify_12px.Image = "rbxassetid://3570695787"
+ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ToToggleListScrollFrameExecuteButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ToToggleListScrollFrameExecuteButton_Roundify_12px.SliceScale = 0.090
+
+MainFrames.Name = "MainFrames"
+MainFrames.Parent = _G.Module
+
+TemplateFrame.Name = "TemplateFrame"
+TemplateFrame.Parent = MainFrames
+TemplateFrame.Active = true
+TemplateFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TemplateFrame.BackgroundTransparency = 0.990
+TemplateFrame.Position = UDim2.new(0.344999999, 0, 0.124431327, 0)
+TemplateFrame.Size = UDim2.new(0.643333316, 0, 0.857283056, 0)
+TemplateFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+TemplateFrame.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+UIListLayout_2.Parent = TemplateFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+UIPadding_2.Parent = TemplateFrame
+UIPadding_2.PaddingBottom = UDim.new(0, 5)
+UIPadding_2.PaddingLeft = UDim.new(0, 220)
+UIPadding_2.PaddingRight = UDim.new(0, 5)
+UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+FunctionButtons.Name = "FunctionButtons"
+FunctionButtons.Parent = _G.Module
+
+ExecuteButton.Name = "ExecuteButton"
+ExecuteButton.Parent = FunctionButtons
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.BackgroundTransparency = 1.000
+ExecuteButton.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+ExecuteButton.Size = UDim2.new(0, 154, 0, 24)
+
+ExecuteButtonFrame.Name = "ExecuteButtonFrame"
+ExecuteButtonFrame.Parent = ExecuteButton
+ExecuteButtonFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+ExecuteButtonFrame.BackgroundTransparency = 1.000
+ExecuteButtonFrame.Position = UDim2.new(-1.42857146, 0, 0, 0)
+ExecuteButtonFrame.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+ExecuteButtonFrame.Image = "rbxassetid://3570695787"
+ExecuteButtonFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+ExecuteButtonFrame.ScaleType = Enum.ScaleType.Slice
+ExecuteButtonFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExecuteButtonFrame.SliceScale = 0.050
+
+ExecuteButtonQuestion.Name = "ExecuteButtonQuestion"
+ExecuteButtonQuestion.Parent = ExecuteButton
+ExecuteButtonQuestion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButtonQuestion.BackgroundTransparency = 1.000
+ExecuteButtonQuestion.BorderSizePixel = 0
+ExecuteButtonQuestion.Position = UDim2.new(0.850000024, 0, 0, 0)
+ExecuteButtonQuestion.Size = UDim2.new(0.158999994, 0, 1, 0)
+ExecuteButtonQuestion.ZIndex = 2
+ExecuteButtonQuestion.Font = Enum.Font.GothamBold
+ExecuteButtonQuestion.Text = "?"
+ExecuteButtonQuestion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButtonQuestion.TextScaled = true
+ExecuteButtonQuestion.TextSize = 25.000
+ExecuteButtonQuestion.TextWrapped = true
+
+ExecuteButtonQuestion_Roundify_12px.Name = "ExecuteButtonQuestion_Roundify_12px"
+ExecuteButtonQuestion_Roundify_12px.Parent = ExecuteButtonQuestion
+ExecuteButtonQuestion_Roundify_12px.Active = true
+ExecuteButtonQuestion_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecuteButtonQuestion_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButtonQuestion_Roundify_12px.BackgroundTransparency = 1.000
+ExecuteButtonQuestion_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExecuteButtonQuestion_Roundify_12px.Selectable = true
+ExecuteButtonQuestion_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ExecuteButtonQuestion_Roundify_12px.Image = "rbxassetid://3570695787"
+ExecuteButtonQuestion_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ExecuteButtonQuestion_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ExecuteButtonQuestion_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ExecuteButtonQuestion_Roundify_12px.SliceScale = 0.090
+
+ExecuteButton_2.Name = "ExecuteButton"
+ExecuteButton_2.Parent = ExecuteButton
+ExecuteButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton_2.BackgroundTransparency = 1.000
+ExecuteButton_2.BorderSizePixel = 0
+ExecuteButton_2.Position = UDim2.new(-1.38999999, 0, 0, 0)
+ExecuteButton_2.Size = UDim2.new(0.658999503, 0, 1, 0)
+ExecuteButton_2.ZIndex = 2
+ExecuteButton_2.Font = Enum.Font.GothamBold
+ExecuteButton_2.Text = "Execute"
+ExecuteButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton_2.TextScaled = true
+ExecuteButton_2.TextSize = 25.000
+ExecuteButton_2.TextWrapped = true
+
+ExecuteButton_Roundify_12px.Name = "ExecuteButton_Roundify_12px"
+ExecuteButton_Roundify_12px.Parent = ExecuteButton_2
+ExecuteButton_Roundify_12px.Active = true
+ExecuteButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ExecuteButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton_Roundify_12px.BackgroundTransparency = 1.000
+ExecuteButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExecuteButton_Roundify_12px.Selectable = true
+ExecuteButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ExecuteButton_Roundify_12px.Image = "rbxassetid://3570695787"
+ExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ExecuteButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ExecuteButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ExecuteButton_Roundify_12px.SliceScale = 0.090
+
+ExecuteButtonText.Name = "ExecuteButtonText"
+ExecuteButtonText.Parent = ExecuteButton
+ExecuteButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButtonText.BackgroundTransparency = 1.000
+ExecuteButtonText.BorderSizePixel = 0
+ExecuteButtonText.Position = UDim2.new(-0.665952206, 0, 0, 0)
+ExecuteButtonText.Size = UDim2.new(1.468364, 0, 1, 0)
+ExecuteButtonText.Font = Enum.Font.GothamBlack
+ExecuteButtonText.Text = "Execution Button"
+ExecuteButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButtonText.TextSize = 15.000
+ExecuteButtonText.TextWrapped = true
+ExecuteButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+ToggleButton.Name = "ToggleButton"
+ToggleButton.Parent = FunctionButtons
+ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.BackgroundTransparency = 1.000
+ToggleButton.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+ToggleButton.Size = UDim2.new(0, 154, 0, 24)
+
+ToggleButtonFrame.Name = "ToggleButtonFrame"
+ToggleButtonFrame.Parent = ToggleButton
+ToggleButtonFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+ToggleButtonFrame.BackgroundTransparency = 1.000
+ToggleButtonFrame.Position = UDim2.new(-1.42857146, 0, 0, 0)
+ToggleButtonFrame.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+ToggleButtonFrame.Image = "rbxassetid://3570695787"
+ToggleButtonFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+ToggleButtonFrame.ScaleType = Enum.ScaleType.Slice
+ToggleButtonFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ToggleButtonFrame.SliceScale = 0.050
+
+ToggleButtonQuestion.Name = "ToggleButtonQuestion"
+ToggleButtonQuestion.Parent = ToggleButton
+ToggleButtonQuestion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonQuestion.BackgroundTransparency = 1.000
+ToggleButtonQuestion.BorderSizePixel = 0
+ToggleButtonQuestion.Position = UDim2.new(0.850000024, 0, 0, 0)
+ToggleButtonQuestion.Size = UDim2.new(0.158999994, 0, 1, 0)
+ToggleButtonQuestion.ZIndex = 2
+ToggleButtonQuestion.Font = Enum.Font.GothamBold
+ToggleButtonQuestion.Text = "?"
+ToggleButtonQuestion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonQuestion.TextScaled = true
+ToggleButtonQuestion.TextSize = 25.000
+ToggleButtonQuestion.TextWrapped = true
+
+ToggleButtonQuestion_Roundify_12px.Name = "ToggleButtonQuestion_Roundify_12px"
+ToggleButtonQuestion_Roundify_12px.Parent = ToggleButtonQuestion
+ToggleButtonQuestion_Roundify_12px.Active = true
+ToggleButtonQuestion_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ToggleButtonQuestion_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonQuestion_Roundify_12px.BackgroundTransparency = 1.000
+ToggleButtonQuestion_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ToggleButtonQuestion_Roundify_12px.Selectable = true
+ToggleButtonQuestion_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ToggleButtonQuestion_Roundify_12px.Image = "rbxassetid://3570695787"
+ToggleButtonQuestion_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ToggleButtonQuestion_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ToggleButtonQuestion_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ToggleButtonQuestion_Roundify_12px.SliceScale = 0.090
+
+ButtonToToggle.Name = "ButtonToToggle"
+ButtonToToggle.Parent = ToggleButton
+ButtonToToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonToToggle.BackgroundTransparency = 1.000
+ButtonToToggle.BorderSizePixel = 0
+ButtonToToggle.Position = UDim2.new(-1.39025962, 0, 0, 0)
+ButtonToToggle.Size = UDim2.new(0.158999994, 0, 1, 0)
+ButtonToToggle.ZIndex = 2
+ButtonToToggle.Font = Enum.Font.GothamBold
+ButtonToToggle.Text = ""
+ButtonToToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonToToggle.TextScaled = true
+ButtonToToggle.TextSize = 25.000
+ButtonToToggle.TextWrapped = true
+
+ButtonToToggle_Roundify_12px.Name = "ButtonToToggle_Roundify_12px"
+ButtonToToggle_Roundify_12px.Parent = ButtonToToggle
+ButtonToToggle_Roundify_12px.Active = true
+ButtonToToggle_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ButtonToToggle_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonToToggle_Roundify_12px.BackgroundTransparency = 1.000
+ButtonToToggle_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ButtonToToggle_Roundify_12px.Selectable = true
+ButtonToToggle_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ButtonToToggle_Roundify_12px.Image = "rbxassetid://3570695787"
+ButtonToToggle_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ButtonToToggle_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ButtonToToggle_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ButtonToToggle_Roundify_12px.SliceScale = 0.090
+
+Toggler.Name = "Toggler"
+Toggler.Parent = ButtonToToggle
+Toggler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggler.BackgroundTransparency = 1.000
+Toggler.BorderSizePixel = 0
+Toggler.Position = UDim2.new(0.125, 0, 0.125, 0)
+Toggler.Size = UDim2.new(0.75, 0, 0.75, 0)
+Toggler.ZIndex = 2
+Toggler.Font = Enum.Font.GothamBold
+Toggler.Text = ""
+Toggler.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggler.TextScaled = true
+Toggler.TextSize = 25.000
+Toggler.TextWrapped = true
+
+Toggler_Roundify_12px.Name = "Toggler_Roundify_12px"
+Toggler_Roundify_12px.Parent = Toggler
+Toggler_Roundify_12px.Active = true
+Toggler_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Toggler_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggler_Roundify_12px.BackgroundTransparency = 1.000
+Toggler_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Toggler_Roundify_12px.Selectable = true
+Toggler_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Toggler_Roundify_12px.Image = "rbxassetid://3570695787"
+Toggler_Roundify_12px.ImageColor3 = Color3.fromRGB(84, 164, 255)
+Toggler_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Toggler_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Toggler_Roundify_12px.SliceScale = 0.090
+
+ToggleButtonText.Name = "ToggleButtonText"
+ToggleButtonText.Parent = ToggleButton
+ToggleButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonText.BackgroundTransparency = 1.000
+ToggleButtonText.BorderSizePixel = 0
+ToggleButtonText.Position = UDim2.new(-1.19192624, 0, 0, 0)
+ToggleButtonText.Size = UDim2.new(1.99433804, 0, 1, 0)
+ToggleButtonText.Font = Enum.Font.GothamBlack
+ToggleButtonText.Text = "Toggle Button"
+ToggleButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonText.TextSize = 15.000
+ToggleButtonText.TextWrapped = true
+ToggleButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+ToggleList.Name = "ToggleList"
+ToggleList.Parent = FunctionButtons
+ToggleList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleList.BackgroundTransparency = 1.000
+ToggleList.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+ToggleList.Size = UDim2.new(0, 154, 0, 24)
+
+ToToggleListFrame.Name = "ToToggleListFrame"
+ToToggleListFrame.Parent = ToggleList
+ToToggleListFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+ToToggleListFrame.BackgroundTransparency = 1.000
+ToToggleListFrame.Position = UDim2.new(-1.42857146, 0, 0, 0)
+ToToggleListFrame.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+ToToggleListFrame.Image = "rbxassetid://3570695787"
+ToToggleListFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+ToToggleListFrame.ScaleType = Enum.ScaleType.Slice
+ToToggleListFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ToToggleListFrame.SliceScale = 0.050
+
+ToToggleListQuestion.Name = "ToToggleListQuestion"
+ToToggleListQuestion.Parent = ToggleList
+ToToggleListQuestion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListQuestion.BackgroundTransparency = 1.000
+ToToggleListQuestion.BorderSizePixel = 0
+ToToggleListQuestion.Position = UDim2.new(0.850000024, 0, 0, 0)
+ToToggleListQuestion.Size = UDim2.new(0.158999994, 0, 1, 0)
+ToToggleListQuestion.ZIndex = 2
+ToToggleListQuestion.Font = Enum.Font.GothamBold
+ToToggleListQuestion.Text = "?"
+ToToggleListQuestion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListQuestion.TextScaled = true
+ToToggleListQuestion.TextSize = 25.000
+ToToggleListQuestion.TextWrapped = true
+
+ToToggleListQuestion_Roundify_12px.Name = "ToToggleListQuestion_Roundify_12px"
+ToToggleListQuestion_Roundify_12px.Parent = ToToggleListQuestion
+ToToggleListQuestion_Roundify_12px.Active = true
+ToToggleListQuestion_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ToToggleListQuestion_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToToggleListQuestion_Roundify_12px.BackgroundTransparency = 1.000
+ToToggleListQuestion_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ToToggleListQuestion_Roundify_12px.Selectable = true
+ToToggleListQuestion_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ToToggleListQuestion_Roundify_12px.Image = "rbxassetid://3570695787"
+ToToggleListQuestion_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ToToggleListQuestion_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ToToggleListQuestion_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ToToggleListQuestion_Roundify_12px.SliceScale = 0.090
+
+ToToggleListScroll.Name = "ToToggleListScroll"
+ToToggleListScroll.Parent = ToggleList
+ToToggleListScroll.Active = true
+ToToggleListScroll.BackgroundColor3 = Color3.fromRGB(80, 150, 240)
+ToToggleListScroll.Position = UDim2.new(-1.37662339, 0, 1.20833337, 0)
+ToToggleListScroll.Size = UDim2.new(0, 300, 0, 0)
+ToToggleListScroll.Visible = false
+ToToggleListScroll.ZIndex = 4
+ToToggleListScroll.CanvasSize = UDim2.new(0, 0, 1, 75)
+ToToggleListScroll.ScrollBarThickness = 0
+
+ToToggleListScrollUIListLayout.Name = "ToToggleListScrollUIListLayout"
+ToToggleListScrollUIListLayout.Parent = ToToggleListScroll
+ToToggleListScrollUIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ToToggleListScrollUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ToToggleListScrollUIListLayout.Padding = UDim.new(0, 5)
+
+ToToggleListScrollUIPadding.Name = "ToToggleListScrollUIPadding"
+ToToggleListScrollUIPadding.Parent = ToToggleListScroll
+ToToggleListScrollUIPadding.PaddingBottom = UDim.new(0, 5)
+ToToggleListScrollUIPadding.PaddingLeft = UDim.new(0, 2)
+ToToggleListScrollUIPadding.PaddingRight = UDim.new(0, 2)
+ToToggleListScrollUIPadding.PaddingTop = UDim.new(0, 2)
+
+ButtonToToggle_2.Name = "ButtonToToggle"
+ButtonToToggle_2.Parent = ToggleList
+ButtonToToggle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonToToggle_2.BackgroundTransparency = 1.000
+ButtonToToggle_2.BorderSizePixel = 0
+ButtonToToggle_2.Position = UDim2.new(-1.39025962, 0, 0, 0)
+ButtonToToggle_2.Size = UDim2.new(0.158999994, 0, 1, 0)
+ButtonToToggle_2.ZIndex = 2
+ButtonToToggle_2.Font = Enum.Font.GothamBold
+ButtonToToggle_2.Text = ""
+ButtonToToggle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ButtonToToggle_2.TextScaled = true
+ButtonToToggle_2.TextSize = 25.000
+ButtonToToggle_2.TextWrapped = true
+
+ListButtonToToggle_Roundify_12px.Name = "ListButtonToToggle_Roundify_12px"
+ListButtonToToggle_Roundify_12px.Parent = ButtonToToggle_2
+ListButtonToToggle_Roundify_12px.Active = true
+ListButtonToToggle_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ListButtonToToggle_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ListButtonToToggle_Roundify_12px.BackgroundTransparency = 1.000
+ListButtonToToggle_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ListButtonToToggle_Roundify_12px.Selectable = true
+ListButtonToToggle_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ListButtonToToggle_Roundify_12px.Image = "rbxassetid://3570695787"
+ListButtonToToggle_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ListButtonToToggle_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ListButtonToToggle_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ListButtonToToggle_Roundify_12px.SliceScale = 0.090
+
+Toggler_2.Name = "Toggler"
+Toggler_2.Parent = ButtonToToggle_2
+Toggler_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggler_2.BackgroundTransparency = 1.000
+Toggler_2.BorderSizePixel = 0
+Toggler_2.Position = UDim2.new(0.125, 0, 0.125, 0)
+Toggler_2.Size = UDim2.new(0.75, 0, 0.75, 0)
+Toggler_2.ZIndex = 2
+Toggler_2.Font = Enum.Font.GothamBold
+Toggler_2.Text = ""
+Toggler_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggler_2.TextScaled = true
+Toggler_2.TextSize = 25.000
+Toggler_2.TextWrapped = true
+
+ToggleButtonArrow.Name = "ToggleButtonArrow"
+ToggleButtonArrow.Parent = Toggler_2
+ToggleButtonArrow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonArrow.BackgroundTransparency = 1.000
+ToggleButtonArrow.BorderSizePixel = 0
+ToggleButtonArrow.Size = UDim2.new(1, 0, 1, 0)
+ToggleButtonArrow.Font = Enum.Font.GothamBold
+ToggleButtonArrow.Text = ">"
+ToggleButtonArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonArrow.TextSize = 30.000
+ToggleButtonArrow.TextWrapped = true
+
+ToggleButtonText_2.Name = "ToggleButtonText"
+ToggleButtonText_2.Parent = ToggleList
+ToggleButtonText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonText_2.BackgroundTransparency = 1.000
+ToggleButtonText_2.BorderSizePixel = 0
+ToggleButtonText_2.Position = UDim2.new(-0.1, 0, 0.075, 0)
+ToggleButtonText_2.Size = UDim2.new(0.623946548, 0, 0.875, 0)
+ToggleButtonText_2.Font = Enum.Font.GothamBlack
+ToggleButtonText_2.Text = "List"
+ToggleButtonText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonText_2.TextSize = 15.000
+ToggleButtonText_2.TextWrapped = true
+ToggleButtonText_2.TextXAlignment = Enum.TextXAlignment.Left
+
+CurrentSelected.Name = "CurrentSelected"
+CurrentSelected.Parent = ToggleList
+CurrentSelected.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+CurrentSelected.BackgroundTransparency = 1.000
+CurrentSelected.Position = UDim2.new(-1.25, 0, 0, 0)
+CurrentSelected.Size = UDim2.new(1.1579783, 0, 0.166666672, 20)
+CurrentSelected.ZIndex = 0
+CurrentSelected.Image = "rbxassetid://3570695787"
+CurrentSelected.ImageColor3 = Color3.fromRGB(80, 180, 240)
+CurrentSelected.ImageTransparency = 1.000
+CurrentSelected.ScaleType = Enum.ScaleType.Slice
+CurrentSelected.SliceCenter = Rect.new(100, 100, 100, 100)
+CurrentSelected.SliceScale = 0.050
+
+CurrentSelectedButton.Name = "CurrentSelectedButton"
+CurrentSelectedButton.Parent = CurrentSelected
+CurrentSelectedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurrentSelectedButton.BackgroundTransparency = 1.000
+CurrentSelectedButton.BorderSizePixel = 0
+CurrentSelectedButton.Position = UDim2.new(0.0500000007, 0, 0.100000001, 0)
+CurrentSelectedButton.Size = UDim2.new(0.899999976, 0, 0.800000012, 0)
+CurrentSelectedButton.ZIndex = 3
+CurrentSelectedButton.Font = Enum.Font.GothamBold
+CurrentSelectedButton.Text = "Template_Unit_LongerName"
+CurrentSelectedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CurrentSelectedButton.TextScaled = true
+CurrentSelectedButton.TextSize = 25.000
+CurrentSelectedButton.TextWrapped = true
+
+CurrentSelectedButton_Roundify_12px.Name = "CurrentSelectedButton_Roundify_12px"
+CurrentSelectedButton_Roundify_12px.Parent = CurrentSelectedButton
+CurrentSelectedButton_Roundify_12px.Active = true
+CurrentSelectedButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+CurrentSelectedButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurrentSelectedButton_Roundify_12px.BackgroundTransparency = 1.000
+CurrentSelectedButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+CurrentSelectedButton_Roundify_12px.Selectable = true
+CurrentSelectedButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+CurrentSelectedButton_Roundify_12px.ZIndex = 2
+CurrentSelectedButton_Roundify_12px.Image = "rbxassetid://3570695787"
+CurrentSelectedButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+CurrentSelectedButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+CurrentSelectedButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+CurrentSelectedButton_Roundify_12px.SliceScale = 0.090
+
+JustText.Name = "JustText"
+JustText.Parent = FunctionButtons
+JustText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JustText.BackgroundTransparency = 1.000
+JustText.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+JustText.Size = UDim2.new(0, 154, 0, 24)
+
+JustTextFrame.Name = "JustTextFrame"
+JustTextFrame.Parent = JustText
+JustTextFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+JustTextFrame.BackgroundTransparency = 1.000
+JustTextFrame.Position = UDim2.new(-1.42857146, 0, 0, 0)
+JustTextFrame.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+JustTextFrame.Image = "rbxassetid://3570695787"
+JustTextFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+JustTextFrame.ScaleType = Enum.ScaleType.Slice
+JustTextFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+JustTextFrame.SliceScale = 0.050
+
+Text.Name = "Text"
+Text.Parent = JustText
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.BorderSizePixel = 0
+Text.Position = UDim2.new(-1.39322495, 0, 0, 0)
+Text.Size = UDim2.new(2.19563675, 0, 1, 0)
+Text.Font = Enum.Font.GothamBlack
+Text.Text = "This is just some text and to test something i will write something useless to get more Text."
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 15.000
+Text.TextWrapped = true
+Text.TextXAlignment = Enum.TextXAlignment.Left
+
+JustTextQuestion.Name = "JustTextQuestion"
+JustTextQuestion.Parent = JustText
+JustTextQuestion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JustTextQuestion.BackgroundTransparency = 1.000
+JustTextQuestion.BorderSizePixel = 0
+JustTextQuestion.Position = UDim2.new(0.850000024, 0, 0, 0)
+JustTextQuestion.Size = UDim2.new(0.158999994, 0, 1, 0)
+JustTextQuestion.ZIndex = 2
+JustTextQuestion.Font = Enum.Font.GothamBold
+JustTextQuestion.Text = "?"
+JustTextQuestion.TextColor3 = Color3.fromRGB(255, 255, 255)
+JustTextQuestion.TextScaled = true
+JustTextQuestion.TextSize = 25.000
+JustTextQuestion.TextWrapped = true
+
+JustTextQuestion_Roundify_12px.Name = "JustTextQuestion_Roundify_12px"
+JustTextQuestion_Roundify_12px.Parent = JustTextQuestion
+JustTextQuestion_Roundify_12px.Active = true
+JustTextQuestion_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+JustTextQuestion_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JustTextQuestion_Roundify_12px.BackgroundTransparency = 1.000
+JustTextQuestion_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+JustTextQuestion_Roundify_12px.Selectable = true
+JustTextQuestion_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+JustTextQuestion_Roundify_12px.Image = "rbxassetid://3570695787"
+JustTextQuestion_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+JustTextQuestion_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+JustTextQuestion_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+JustTextQuestion_Roundify_12px.SliceScale = 0.090
+
+MultiToggleList.Name = "MultiToggleList"
+MultiToggleList.Parent = FunctionButtons
+MultiToggleList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MultiToggleList.BackgroundTransparency = 1.000
+MultiToggleList.Position = UDim2.new(0.060406547, 0, 0.0239334963, 0)
+MultiToggleList.Size = UDim2.new(0, 154, 0, 24)
+
+MultiToToggleListQuestion.Name = "MultiToToggleListQuestion"
+MultiToToggleListQuestion.Parent = MultiToggleList
+MultiToToggleListQuestion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MultiToToggleListQuestion.BackgroundTransparency = 1.000
+MultiToToggleListQuestion.BorderSizePixel = 0
+MultiToToggleListQuestion.Position = UDim2.new(0.850000024, 0, 0, 0)
+MultiToToggleListQuestion.Size = UDim2.new(0.158999994, 0, 1, 0)
+MultiToToggleListQuestion.ZIndex = 3
+MultiToToggleListQuestion.Font = Enum.Font.GothamBold
+MultiToToggleListQuestion.Text = "?"
+MultiToToggleListQuestion.TextColor3 = Color3.fromRGB(255, 255, 255)
+MultiToToggleListQuestion.TextScaled = true
+MultiToToggleListQuestion.TextSize = 25.000
+MultiToToggleListQuestion.TextWrapped = true
+
+MoreToToggleListQuestion_Roundify_12px.Name = "MoreToToggleListQuestion_Roundify_12px"
+MoreToToggleListQuestion_Roundify_12px.Parent = MultiToToggleListQuestion
+MoreToToggleListQuestion_Roundify_12px.Active = true
+MoreToToggleListQuestion_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+MoreToToggleListQuestion_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoreToToggleListQuestion_Roundify_12px.BackgroundTransparency = 1.000
+MoreToToggleListQuestion_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+MoreToToggleListQuestion_Roundify_12px.Selectable = true
+MoreToToggleListQuestion_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+MoreToToggleListQuestion_Roundify_12px.ZIndex = 2
+MoreToToggleListQuestion_Roundify_12px.Image = "rbxassetid://3570695787"
+MoreToToggleListQuestion_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+MoreToToggleListQuestion_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+MoreToToggleListQuestion_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+MoreToToggleListQuestion_Roundify_12px.SliceScale = 0.090
+
+MultiToggleButtonText.Name = "MultiToggleButtonText"
+MultiToggleButtonText.Parent = MultiToggleList
+MultiToggleButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MultiToggleButtonText.BackgroundTransparency = 1.000
+MultiToggleButtonText.BorderSizePixel = 0
+MultiToggleButtonText.Position = UDim2.new(-1.2, 0, 0.125, 0)
+MultiToggleButtonText.Size = UDim2.new(1.70519459, 0, 0.875, 0)
+MultiToggleButtonText.ZIndex = 2
+MultiToggleButtonText.Font = Enum.Font.GothamBlack
+MultiToggleButtonText.Text = "Multi List"
+MultiToggleButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+MultiToggleButtonText.TextSize = 15.000
+MultiToggleButtonText.TextWrapped = true
+MultiToggleButtonText.TextXAlignment = Enum.TextXAlignment.Left
+
+MultiButtonToToggle.Name = "MultiButtonToToggle"
+MultiButtonToToggle.Parent = MultiToggleList
+MultiButtonToToggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MultiButtonToToggle.BackgroundTransparency = 1.000
+MultiButtonToToggle.BorderSizePixel = 0
+MultiButtonToToggle.Position = UDim2.new(-1.39025962, 0, 0, 0)
+MultiButtonToToggle.Size = UDim2.new(0.158999994, 0, 1, 0)
+MultiButtonToToggle.ZIndex = 2
+MultiButtonToToggle.Font = Enum.Font.GothamBold
+MultiButtonToToggle.Text = ""
+MultiButtonToToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+MultiButtonToToggle.TextScaled = true
+MultiButtonToToggle.TextSize = 25.000
+MultiButtonToToggle.TextWrapped = true
+
+ListButtonToToggle_Roundify_12px_2.Name = "ListButtonToToggle_Roundify_12px"
+ListButtonToToggle_Roundify_12px_2.Parent = MultiButtonToToggle
+ListButtonToToggle_Roundify_12px_2.Active = true
+ListButtonToToggle_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ListButtonToToggle_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ListButtonToToggle_Roundify_12px_2.BackgroundTransparency = 1.000
+ListButtonToToggle_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ListButtonToToggle_Roundify_12px_2.Selectable = true
+ListButtonToToggle_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+ListButtonToToggle_Roundify_12px_2.ZIndex = 2
+ListButtonToToggle_Roundify_12px_2.Image = "rbxassetid://3570695787"
+ListButtonToToggle_Roundify_12px_2.ImageColor3 = Color3.fromRGB(56, 108, 170)
+ListButtonToToggle_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+ListButtonToToggle_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+ListButtonToToggle_Roundify_12px_2.SliceScale = 0.090
+
+Toggler_3.Name = "Toggler"
+Toggler_3.Parent = MultiButtonToToggle
+Toggler_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggler_3.BackgroundTransparency = 1.000
+Toggler_3.BorderSizePixel = 0
+Toggler_3.Position = UDim2.new(0.125, 0, 0.125, 0)
+Toggler_3.Size = UDim2.new(0.75, 0, 0.75, 0)
+Toggler_3.ZIndex = 2
+Toggler_3.Font = Enum.Font.GothamBold
+Toggler_3.Text = ""
+Toggler_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggler_3.TextScaled = true
+Toggler_3.TextSize = 25.000
+Toggler_3.TextWrapped = true
+
+ToggleButtonArrow_2.Name = "ToggleButtonArrow"
+ToggleButtonArrow_2.Parent = Toggler_3
+ToggleButtonArrow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonArrow_2.BackgroundTransparency = 1.000
+ToggleButtonArrow_2.BorderSizePixel = 0
+ToggleButtonArrow_2.Size = UDim2.new(1, 0, 1, 0)
+ToggleButtonArrow_2.ZIndex = 2
+ToggleButtonArrow_2.Font = Enum.Font.GothamBold
+ToggleButtonArrow_2.Text = ">"
+ToggleButtonArrow_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButtonArrow_2.TextSize = 30.000
+ToggleButtonArrow_2.TextWrapped = true
+
+MultiToToggleListScroll.Name = "MultiToToggleListScroll"
+MultiToToggleListScroll.Parent = MultiToggleList
+MultiToToggleListScroll.Active = true
+MultiToToggleListScroll.BackgroundColor3 = Color3.fromRGB(80, 150, 240)
+MultiToToggleListScroll.Position = UDim2.new(-1.37662339, 0, 1.20833337, 0)
+MultiToToggleListScroll.Size = UDim2.new(0, 300, 0, 0)
+MultiToToggleListScroll.Visible = false
+MultiToToggleListScroll.ZIndex = 4
+MultiToToggleListScroll.CanvasSize = UDim2.new(0, 0, 1, 75)
+MultiToToggleListScroll.ScrollBarThickness = 0
+
+ToToggleListScrollUIListLayout_2.Name = "ToToggleListScrollUIListLayout"
+ToToggleListScrollUIListLayout_2.Parent = MultiToToggleListScroll
+ToToggleListScrollUIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ToToggleListScrollUIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+ToToggleListScrollUIListLayout_2.Padding = UDim.new(0, 5)
+
+ToToggleListScrollUIPadding_2.Name = "ToToggleListScrollUIPadding"
+ToToggleListScrollUIPadding_2.Parent = MultiToToggleListScroll
+ToToggleListScrollUIPadding_2.PaddingBottom = UDim.new(0, 5)
+ToToggleListScrollUIPadding_2.PaddingLeft = UDim.new(0, 2)
+ToToggleListScrollUIPadding_2.PaddingRight = UDim.new(0, 2)
+ToToggleListScrollUIPadding_2.PaddingTop = UDim.new(0, 2)
+
+MultiToToggleListFrame.Name = "MultiToToggleListFrame"
+MultiToToggleListFrame.Parent = MultiToggleList
+MultiToToggleListFrame.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+MultiToToggleListFrame.BackgroundTransparency = 1.000
+MultiToToggleListFrame.Position = UDim2.new(-1.42857146, 0, 0, 0)
+MultiToToggleListFrame.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+MultiToToggleListFrame.Image = "rbxassetid://3570695787"
+MultiToToggleListFrame.ImageColor3 = Color3.fromRGB(80, 180, 240)
+MultiToToggleListFrame.ScaleType = Enum.ScaleType.Slice
+MultiToToggleListFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+MultiToToggleListFrame.SliceScale = 0.050
+
+MultiToToggleListFrame_2.Name = "MultiToToggleListFrame"
+MultiToToggleListFrame_2.Parent = MultiToggleList
+MultiToToggleListFrame_2.BackgroundColor3 = Color3.fromRGB(80, 180, 240)
+MultiToToggleListFrame_2.BackgroundTransparency = 1.000
+MultiToToggleListFrame_2.Position = UDim2.new(-1.42857146, 0, 0, 0)
+MultiToToggleListFrame_2.Size = UDim2.new(2.46103907, 0, 1.00000012, 0)
+MultiToToggleListFrame_2.Image = "rbxassetid://3570695787"
+MultiToToggleListFrame_2.ImageColor3 = Color3.fromRGB(80, 180, 240)
+MultiToToggleListFrame_2.ScaleType = Enum.ScaleType.Slice
+MultiToToggleListFrame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+MultiToToggleListFrame_2.SliceScale = 0.050
+
+-- Module Scripts:
+
+
+
+
+-- Scripts:
+
+local function EMYLRVJ_fake_script() -- MainFrame.Main 
+	local script = Instance.new('LocalScript', MainFrame)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local uis = game:GetService("UserInputService")
+	local dragthing = script.Parent
+
+	local dragging
+	local draginput
+	local dragstart
+	local startpos
+
+	local function update(input)
+		local delta = input.Position - dragstart
+		game:GetService("TweenService"):Create(dragthing, TweenInfo.new(.15), {Position = UDim2.new(startpos.X.Scale, startpos.X.Offset + delta.X, startpos.Y.Scale, startpos.Y.Offset + delta.Y)}):Play()
+	end
+
+	dragthing.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragstart = input.Position
+			startpos = dragthing.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	dragthing.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			draginput = input
+		end
+	end)
+
+	uis.InputChanged:Connect(function(input)
+		if input == draginput and dragging then
+			update(input)
+		end
+	end)
+
+	local tween = game:GetService("TweenService")
+
+	for i,v in pairs(script.Parent.SelectionFrame.SelectFrame.Selection:GetChildren())do
+		if v:FindFirstChild("TextButton") then
+			v.TextButton.MouseButton1Down:Connect(function()
+				for i,v2 in pairs(script.Parent.Selections:GetChildren())do
+					if v2.Name == v.Name then
+						tween:Create(v2,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position = UDim2.new(0.345,0,0.124,0)}):Play()
+					else
+						tween:Create(v2,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position = UDim2.new(1.345,0,0.124,0)}):Play()
+					end
+				end
+			end)
+		end
+	end
+
+	script.Parent.SelectionFrame.SelectFrame.Selection.ChildAdded:Connect(function(v)
+		if v:FindFirstChild("TextButton") then
+			v.TextButton.MouseButton1Down:Connect(function()
+				for i,v2 in pairs(script.Parent.Selections:GetChildren())do
+					if v2.Name == v.Name then
+						tween:Create(v2,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position = UDim2.new(0.345,0,0.124,0)}):Play()
+					else
+						tween:Create(v2,TweenInfo.new(0.5,Enum.EasingStyle.Linear),{Position = UDim2.new(1.345,0,0.124,0)}):Play()
+					end
+				end
+			end)
+		end
+	end)
+
+
+
+
+end
+coroutine.wrap(EMYLRVJ_fake_script)()
+local function ZXUNOGZ_fake_script() -- DiscordTag.Top 
+	local script = Instance.new('LocalScript', DiscordTag)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local tween = game:GetService("TweenService")
+	script.Parent.MouseEnter:Connect(function()
+		tween:Create(script.Parent,TweenInfo.new(0.1,Enum.EasingStyle.Linear),{TextSize = 27}):Play()
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		tween:Create(script.Parent,TweenInfo.new(0.05,Enum.EasingStyle.Linear),{TextSize = 24}):Play()
+	end)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		pcall(function()
+			setclipboard(_G.Discord)
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Copied",
+				Text = "Copied to your Clipboard!",
+				Duration = 5
+			})
+		end)
+	end)
+end
+coroutine.wrap(ZXUNOGZ_fake_script)()
+local function GTZIM_fake_script() -- OK_Button.OK_ButtonScript 
+	local script = Instance.new('LocalScript', OK_Button)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.InformationToggler.Value = false
+		local tween = game:GetService("TweenService")
+		tween:Create(script.Parent.Parent.Parent,TweenInfo.new(2,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{ImageTransparency = 1}):Play()
+		tween:Create(script.Parent.Parent,TweenInfo.new(1,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{Position = UDim2.new(0, 0,1.1, 0)}):Play()
+	end)
+
+	script.Parent.InformationToggler.Changed:Connect(function()
+		if script.Parent.InformationToggler.Value == true then
+			local tween = game:GetService("TweenService")
+			tween:Create(script.Parent.Parent.Parent,TweenInfo.new(1,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{ImageTransparency = 0.2}):Play()
+			tween:Create(script.Parent.Parent,TweenInfo.new(1.2,Enum.EasingStyle.Back,Enum.EasingDirection.InOut),{Position = UDim2.new(0, 0,0.82, 0)}):Play()
+		end
+	end)
+end
+coroutine.wrap(GTZIM_fake_script)()
+local function HCLEONP_fake_script() -- ExecuteButtonQuestion.ExecuteButtonQuestionScript 
+	local script = Instance.new('LocalScript', ExecuteButtonQuestion)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+
+	local iframe = script.Parent.Parent.Parent.Parent.Parent.InformationFrame
+	if iframe:FindFirstChild(iframe.InfoMain.InfoMainFrame.OK_Button:FindFirstChild("InformationToggler")) then
+		local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+		local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+		local txt = script.Parent.InfoText.Value
+
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if x.Value == false then
+				x2.Text = txt
+				x.Value = true
+			end
+		end)
+	end
+
+
+end
+coroutine.wrap(HCLEONP_fake_script)()
+local function SBCAB_fake_script() -- ToggleButtonQuestion.ToggleButtonQuestionScript 
+	local script = Instance.new('LocalScript', ToggleButtonQuestion)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+	local iframe = script.Parent.Parent.Parent.Parent.Parent.InformationFrame
+	local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+	local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+	local txt = script.Parent.InfoText.Value
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if x.Value == false then
+			x2.Text = txt
+			x.Value = true
+		end
+	end)
+
+end
+coroutine.wrap(SBCAB_fake_script)()
+local function AZIQTAM_fake_script() -- ButtonToToggle.ButtonToToggleScript 
+	local script = Instance.new('LocalScript', ButtonToToggle)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent.Parent.Parent.Name == "FunctionButtons" then return end
+	local tween = game:GetService("TweenService")
+	if script.Parent.Toggle.Value == true then
+		tween:Create(script.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(1,0,1,0)}):Play()
+	else
+		tween:Create(script.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0,0,0,0)}):Play()
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			script.Parent.Toggle.Value = false
+		else
+			script.Parent.Toggle.Value = true
+		end
+	end)
+
+	script.Parent.Toggler.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			script.Parent.Toggle.Value = false
+		else
+			script.Parent.Toggle.Value = true
+		end
+	end)
+
+	script.Parent.Toggle.Changed:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			tween:Create(script.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(1,0,1,0)}):Play()
+		else
+			tween:Create(script.Parent.Toggler.Toggler_Roundify_12px,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0,0,0,0)}):Play()
+		end
+	end)
+end
+coroutine.wrap(AZIQTAM_fake_script)()
+local function BOCZ_fake_script() -- ToToggleListQuestion.ToToggleListQuestionScript 
+	local script = Instance.new('LocalScript', ToToggleListQuestion)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+	local iframe = script.Parent.Parent.Parent.Parent.Parent.InformationFrame
+	local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+	local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+	local txt = script.Parent.InfoText.Value
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if x.Value == false then
+			x2.Text = txt
+			x.Value = true
+		end
+	end)
+
+end
+coroutine.wrap(BOCZ_fake_script)()
+local function YWRAB_fake_script() -- ToToggleListScroll.ToToggleListScrollScript 
+	local script = Instance.new('LocalScript', ToToggleListScroll)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent.Parent.Parent.Name == "FunctionButtons" then return end
+	local tween = game:GetService("TweenService")
+	local ing = false
+
+	script.Parent.MouseMoved:Connect(function()
+		ing = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		ing = false
+	end)
+
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseWheel and ing == true then
+			if input.Position.Z > 0 then
+				tween:Create(script.Parent,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,script.Parent.CanvasPosition.Y-100)}):Play()	
+			else
+				tween:Create(script.Parent,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,script.Parent.CanvasPosition.Y+100)}):Play()	
+			end
+		end
+	end)
+
+
+	while wait()do
+		script.Parent.CanvasSize = UDim2.new(0,0,1,75+(25*(#script.Parent:GetChildren()-7)+5))
+	end
+end
+coroutine.wrap(YWRAB_fake_script)()
+local function ZWDJ_fake_script() -- ButtonToToggle_2.ButtonToToggleScript 
+	local script = Instance.new('LocalScript', ButtonToToggle_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent.Parent.Parent.Name == "FunctionButtons" then return end
+	local tween = game:GetService("TweenService")
+	local going = false
+
+	if script.Parent.Toggle.Value == true then
+		if going == false then
+			going = true
+			tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+			script.Parent.Parent.ToToggleListScroll.Visible = true
+			tween:Create(script.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+			wait(0.5)
+			going = false
+		end
+	else
+		if going == false then
+			going = true
+			tween:Create(script.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+			tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+			wait(0.5)
+			script.Parent.Parent.ToToggleListScroll.Visible = false
+			going = false
+		end
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				script.Parent.Toggle.Value = false
+			end
+		else
+			if going == false then
+				script.Parent.Toggle.Value = true
+			end
+		end
+	end)
+
+	script.Parent.Toggler.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				script.Parent.Toggle.Value = false
+			end
+		else
+			if going == false then	
+				script.Parent.Toggle.Value = true
+			end
+		end
+	end)
+
+	script.Parent.Toggle.Changed:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				going = true
+				tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+				script.Parent.Parent.ToToggleListScroll.Visible = true
+				tween:Create(script.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+				wait(0.5)
+				going = false
+			end
+		else
+			if going == false then
+				going = true
+				tween:Create(script.Parent.Parent.ToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+				tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+				wait(0.5)
+				script.Parent.Parent.ToToggleListScroll.Visible = false
+				going = false
+			end
+		end
+	end)
+end
+coroutine.wrap(ZWDJ_fake_script)()
+local function YUVBAX_fake_script() -- JustTextQuestion.JustTextQuestionScript 
+	local script = Instance.new('LocalScript', JustTextQuestion)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+	local iframe = script.Parent.Parent.Parent.Parent.Parent.InformationFrame
+	local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+	local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+	local txt = script.Parent.InfoText.Value
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if x.Value == false then
+			x2.Text = txt
+			x.Value = true
+		end
+	end)
+
+end
+coroutine.wrap(YUVBAX_fake_script)()
+local function BNGK_fake_script() -- MultiToToggleListQuestion.MultiToToggleListQuestionScript 
+	local script = Instance.new('LocalScript', MultiToToggleListQuestion)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+
+	local iframe = script.Parent.Parent.Parent.Parent.Parent.InformationFrame
+	local x = iframe.InfoMain.InfoMainFrame.OK_Button.InformationToggler
+	local x2 = iframe.InfoMain.InfoMainFrame.InfoText
+	local txt = script.Parent.InfoText.Value
+
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if x.Value == false then
+			x2.Text = txt
+			x.Value = true
+		end
+	end)
+
+end
+coroutine.wrap(BNGK_fake_script)()
+local function RAMDOL_fake_script() -- MultiButtonToToggle.ButtonToToggleScript 
+	local script = Instance.new('LocalScript', MultiButtonToToggle)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent.Parent.Parent.Name == "FunctionButtons" then return end
+	local tween = game:GetService("TweenService")
+	local going = false
+
+	if script.Parent.Toggle.Value == true then
+		if going == false then
+			going = true
+			tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+			script.Parent.Parent.ToToggleListScroll.Visible = true
+			tween:Create(script.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+			wait(0.5)
+			going = false
+		end
+	else
+		if going == false then
+			going = true
+			tween:Create(script.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+			tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+			wait(0.5)
+			script.Parent.Parent.MultiToToggleListScroll.Visible = false
+			going = false
+		end
+	end
+	script.Parent.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				script.Parent.Toggle.Value = false
+			end
+		else
+			if going == false then
+				script.Parent.Toggle.Value = true
+			end
+		end
+	end)
+
+	script.Parent.Toggler.MouseButton1Down:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				script.Parent.Toggle.Value = false
+			end
+		else
+			if going == false then	
+				script.Parent.Toggle.Value = true
+			end
+		end
+	end)
+
+	script.Parent.Toggle.Changed:Connect(function()
+		if script.Parent.Toggle.Value == true then
+			if going == false then
+				going = true
+				tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 90}):Play()
+				script.Parent.Parent.MultiToToggleListScroll.Visible = true
+				tween:Create(script.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 100)}):Play()
+				wait(0.5)
+				going = false
+			end
+		else
+			if going == false then
+				going = true
+				tween:Create(script.Parent.Parent.MultiToToggleListScroll,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Size = UDim2.new(0, 300,0, 0)}):Play()
+				tween:Create(script.Parent.Toggler.ToggleButtonArrow,TweenInfo.new(0.5,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),{Rotation = 0}):Play()
+				wait(0.5)
+				script.Parent.Parent.MultiToToggleListScroll.Visible = false
+				going = false
+			end
+		end
+	end)
+end
+coroutine.wrap(RAMDOL_fake_script)()
+local function DMNVBTC_fake_script() -- MultiToToggleListScroll.ToToggleListScrollScript 
+	local script = Instance.new('LocalScript', MultiToToggleListScroll)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	if script.Parent.Parent.Parent.Name == "FunctionButtons" then return end
+	local tween = game:GetService("TweenService")
+	local ing = false
+
+	script.Parent.MouseMoved:Connect(function()
+		ing = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		ing = false
+	end)
+
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseWheel and ing == true then
+			if input.Position.Z > 0 then
+				tween:Create(script.Parent,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,script.Parent.CanvasPosition.Y-100)}):Play()	
+			else
+				tween:Create(script.Parent,TweenInfo.new(0.5),{CanvasPosition = Vector2.new(0,script.Parent.CanvasPosition.Y+100)}):Play()	
+			end
+		end
+	end)
+
+
+	while wait()do
+		script.Parent.CanvasSize = UDim2.new(0,0,1,75+(25*(#script.Parent:GetChildren()-7)+5))
+	end
+end
+coroutine.wrap(DMNVBTC_fake_script)()
+local function IWUMW_fake_script() -- MainFrame.Test 
+	local script = Instance.new('LocalScript', MainFrame)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	_G.getScript = require(script.Parent.MainHandler)
+	
+end
+coroutine.wrap(IWUMW_fake_script)()
+spawn(function()
+	repeat wait() until _G.Existing["#Settings"]
+	local function getTabCount(tab)
+		local co = 0
+		for i,v in pairs(tab)do
+			co = co+1
+		end
+		return co
+	end
+
+	local function isinTab(tab,val)
+		for i,v in pairs(tab)do
+			if v == val then
+				return true
+			end
+		end
+		return false
+	end
+
+	local function getmulties(list)
+		local tab = {}
+		for i,v in pairs(list)do
+			if v == true then
+				table.insert(tab,i)
+			end
+		end
+		return tab
+	end
+
+	local Name = _G.UIName..".settings"
+		local Library = _G.getScript
+		local DefaultSettings = {["DefaultProfile"] = {["Data"] = {},["LoadIn"] = true, ["Overwrite"] = false}}
+
+		for i2,v2 in pairs(_G.Existing)do
+			for i,v in pairs(v2)do
+				if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+					if i == "Value" then
+						if type(v) == "boolean" then
+							DefaultSettings["DefaultProfile"]["Data"][i2] = v
+						elseif type(v) == "string" then
+							DefaultSettings["DefaultProfile"]["Data"][i2] = v
+						elseif type(v) == "table" then
+							DefaultSettings["DefaultProfile"]["Data"][i2] = v
+						end
+					end
+				end
+			end
+		end
+
+		
+		local JSON
+			
+		if not pcall(function() readfile(Name) end) then 
+			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings)) 
+		end 	
+		pcall(function()
+		JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
+		end)
+		if not JSON then
+			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings)) 
+		end
+		
+			
+		local function Save()
+			writefile(Name,game:service'HttpService':JSONEncode(JSON))
+			JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
+		end
+			
+		local function resetToDefaults()
+			writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings))
+			JSON = game:service'HttpService':JSONDecode(readfile(Name)) 
+		end
+
+		local ProfileFrame = Library.CreateNewMainFrame("Profiles","Profs")
+		local loadedprofile = Library.CreateTextItem("Loaded Profile: Error_No Profile_Loaded","This will show your Profile that is currently Loaded\nNote: nothing will save while your Default Profile is loaded","loadingText",ProfileFrame.ReachingID)
+
+		local function UpdateNote(prof)
+			loadedprofile.TextFrame.Text.Text = "Loaded Profile: "..prof
+		end
+
+		local FunctionList
+		local ProfileList
+		local function ExeSelectedFunction()
+			if FunctionList.Value == "Create new Profile" then
+				local newData = {["Data"] = JSON.DefaultProfile.Data,["LoadIn"] = false, ["Overwrite"] = false}
+			--[[
+				for i2,v2 in pairs(_G.Existing)do
+					if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+						for i,v in pairs(v2)do
+							if i == "Value" then
+								if type(v) == "boolean" then
+									newData["Data"][i2] = v
+								elseif type(v) == "string" then
+									newData["Data"][i2] = v
+								elseif type(v) == "table" then
+									newData["Data"][i2] = v
+								end
+							end
+						end
+					end
+				end
+				 ]]
+				local co = 0
+				repeat wait() co = co+1 until not JSON["Profile"..co]
+				local ProfileName = "Profile"..co
+				JSON[ProfileName] = newData
+				Save()
+				ProfileList.DestroyFrame()
+				local ProfTab = {}
+				for i,v in pairs(JSON)do
+					table.insert(ProfTab,i)
+				end
+				ProfileList = Library.CreateNewListItem("Select Profile",ProfileName,ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
+
+			elseif FunctionList.Value == "Reset Profiles" then
+				resetToDefaults()
+				Save()
+				ProfileList.DestroyFrame()
+				local ProfTab = {}
+				for i,v in pairs(JSON)do
+					table.insert(ProfTab,i)
+				end
+				ProfileList = Library.CreateNewListItem("Select Profile","DefaultProfile",ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
+				
+			elseif FunctionList.Value == "Delete Selected Profile" then
+				if ProfileList.Value ~= "DefaultProfile" then
+					JSON[ProfileList.Value] = nil
+					Save()
+					ProfileList.DestroyFrame()
+					local ProfTab = {}
+					for i,v in pairs(JSON)do
+						table.insert(ProfTab,i)
+					end
+					ProfileList = Library.CreateNewListItem("Select Profile","DefaultProfile",ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
+				end
+			elseif FunctionList.Value == "Load Selected Profile" then
+				local prof = ProfileList.Value
+				if JSON[prof].LoadIn == false then
+					for i,v in pairs(JSON)do
+						v.Overwrite = false
+					end
+					JSON[prof].Overwrite = false
+					Save()
+					for i,v in pairs(JSON)do
+						if i == prof then
+							for i2,v2 in pairs(_G.Existing)do
+								if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+									for i,v in pairs(v2)do
+										if i == "Value" then
+											_G.Existing[i2].Value = JSON[prof].Data[i2]
+											if type(v) == "table" then
+												for i,v3 in pairs(_G.Existing[i2].ToggleFrame.MultiToToggleListScroll:GetChildren())do
+													if v3.Name == "ToToggleListScrollFrame" then
+														for i4,v4 in pairs(JSON[prof].Data[i2])do
+															if v4 == true and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
+																v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56,212,0)
+															elseif v4 == false and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
+																v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+															end
+														end
+													end
+												end
+											end
+											if type(v) == "string" then
+												_G.Existing[i2].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text = JSON[prof].Data[i2]
+											end
+										end
+									end
+								end
+							end
+							v.LoadIn = true
+						else
+							v.LoadIn = false
+						end
+					end
+					if prof ~= "DefaultProfile" then
+						JSON[prof].Overwrite = true
+						
+					end
+					UpdateNote(prof)
+					Save()
+					spawn(function()
+						if prof ~= "DefaultProfile" then
+							pcall(function()
+								while JSON[prof].Overwrite == true and Assasine03_GUI_REV and Assasine03_GUI_REV.Parent and wait(5)do
+									local changes = false
+									for i2,v2 in pairs(_G.Existing)do 
+										if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+											for i,v in pairs(v2)do
+												if i == "Value" and JSON[prof].Overwrite == true then
+													local Data = _G.Existing[i2].Value 
+													local Stored = JSON[prof].Data[i2]
+													if type(v) == "table" then
+														for i3,v3 in pairs(Data)do
+															if v3 ~= Stored[i3] then
+																JSON[prof].Data[i2] = Data
+																changes = true
+															end
+														end
+													end
+													if type(v) == "string" then
+														if Data ~= Stored then
+															JSON[prof].Data[i2] = Data
+															changes = true
+														end
+													end
+													if type(v) == "boolean" then
+														if Data ~= Stored then
+															JSON[prof].Data[i2] = Data
+															changes = true
+														end
+													end
+												end
+											end
+										end
+									end
+									if changes == true then
+										Save()
+									end
+								end
+							end)
+							
+						end
+					end)
+					
+				end
+			end
+		end
+		
+		local executioninfo = Library.CreateExecuteButton("Execute Function",ExeSelectedFunction,"Select a Function you want to Run and Execute it with this Button","ExecuteFunction",ProfileFrame.ReachingID)
+		local exeSave = Library.CreateExecuteButton("Save",Save,"Save all your Settings\nNote: Default Settings will not save","savef",ProfileFrame.ReachingID)
+
+		FunctionList = Library.CreateNewListItem("Functions","Create new Profile",{"Create new Profile","Delete Selected Profile","Load Selected Profile","Reset Profiles"},"Select a Function you want to Run","AllFunctions",ProfileFrame.ReachingID)
+		if not JSON then
+			resetToDefaults()
+		end
+		local ProfTab = {}
+		for i,v in pairs(JSON)do
+			table.insert(ProfTab,i)
+		end
+		local LoadingIn = "Loading Error"
+		for i,v in pairs(JSON)do
+			if i == "DefaultProfile" and v.LoadIn == true then
+				LoadingIn = i
+			elseif i ~= "DefaultProfile" and v.LoadIn == true then
+				LoadingIn = i
+				for i2,v2 in pairs(JSON)do
+					if i2 ~= i and v2.LoadIn == true then
+						v2.LoadIn = false
+					end
+				end
+			end
+		end
+		Save()
+		ProfileList = Library.CreateNewListItem("Select Profile",LoadingIn,ProfTab,"Select a Profile you want to Delete, Edit or Load","AllProfiles",ProfileFrame.ReachingID)
+		if LoadingIn ~= "Loading Error" then
+			local suc,log = pcall(function()
+				for i2,v2 in pairs(_G.Existing)do
+					if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+						for i,v in pairs(v2)do
+							if i == "Value" then
+								_G.Existing[i2].Value = JSON[LoadingIn].Data[i2]
+								if type(v) == "table" then
+									for i,v3 in pairs(_G.Existing[i2].ToggleFrame.MultiToToggleListScroll:GetChildren())do
+										if v3.Name == "ToToggleListScrollFrame" then
+											if JSON[LoadingIn].Data[i2] then
+												for i4,v4 in pairs(JSON[LoadingIn].Data[i2])do
+													if v4 == true and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
+														v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56,212,0)
+													elseif v4 == false and i4 == v3.ToToggleListScrollFrameExecuteButton.Text then
+														v3.ToToggleListScrollFrameExecuteButton.ToToggleListScrollFrameExecuteButton_Roundify_12px.ImageColor3 = Color3.fromRGB(56, 108, 170)
+													end
+												end
+											end
+										end
+									end
+								end
+								if type(v) == "string" then
+									_G.Existing[i2].ToggleFrame.CurrentSelected.CurrentSelectedButton.Text = JSON[LoadingIn].Data[i2]
+								end
+							end
+						end
+					end
+				end
+			end)
+			if not suc then
+				resetToDefaults()
+			end
+		end
+		UpdateNote(LoadingIn)
+		spawn(function()
+			local prof = LoadingIn
+			if prof ~= "DefaultProfile" then
+				pcall(function()
+					while JSON[prof].Overwrite == true and Assasine03_GUI_REV and Assasine03_GUI_REV.Parent and wait()do
+						local changes = false
+						for i2,v2 in pairs(_G.Existing)do 
+							if i2 ~= "AllProfiles" and i2 ~= "AllFunctions" then
+								for i,v in pairs(v2)do
+									if i == "Value" and JSON[prof].Overwrite == true then
+										local Data = _G.Existing[i2].Value 
+										local Stored = JSON[prof].Data[i2]
+										if type(v) == "table" then
+											for i3,v3 in pairs(Data)do
+												if v3 ~= Stored[i3] then
+													JSON[prof].Data[i2] = Data
+													changes = true
+												end
+											end
+										end
+										if type(v) == "string" then
+											if Data ~= Stored then
+												JSON[prof].Data[i2] = Data
+												changes = true
+											end
+										end
+										if type(v) == "boolean" then
+											if Data ~= Stored then
+												JSON[prof].Data[i2] = Data
+												changes = true
+											end
+										end
+									end
+								end
+							end
+						end
+						if changes == true then
+							Save()
+						end
+					end
+				end)
+				
+			end
+		end)
+	end)
+return _G.getScript
+end
